@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>Yogo&#39;s blog</title>
+    <link>/</link>
+    <description>Recent content on Yogo&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <managingEditor>rollcake.dev@gmail.com (YOGO)</managingEditor>
+    <webMaster>rollcake.dev@gmail.com (YOGO)</webMaster>
+    <copyright>©{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 31 May 2020 22:03:36 +0900</lastBuildDate>
+    
+        <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+      
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+
+      
+      <item>
+        <title>Hugo 블로그 시작</title>
+        <link>/posts/2020/05/first/</link>
+        <pubDate>Sun, 31 May 2020 22:03:36 +0900</pubDate>
+        <author>rollcake.dev@gmail.com (YOGO)</author>
+        <atom:modified>Sun, 31 May 2020 22:03:36 +0900</atom:modified>
+        <guid>/posts/2020/05/first/</guid>
+        <description>HUGO를 이용해서 드디어 깃헙 블로그를 개설! :) 그간 많은 플랫폼을 오고가고 비교하면서 블로깅을 했었는데 조금 더 자유롭고 재미있는 환경을 찾아오다가 Hugo</description>
+        
+        <dc:creator>Yogo</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>잡담</category>
+            
+          
+        
+        
+          
+            
+              <category>life</category>
+            
+          
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>
