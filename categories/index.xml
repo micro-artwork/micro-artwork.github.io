@@ -14,7 +14,7 @@
     <managingEditor>rollcake.dev@gmail.com (YOGO)</managingEditor>
     <webMaster>rollcake.dev@gmail.com (YOGO)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Sun, 31 May 2020 22:03:36 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 18 Jun 2020 11:22:48 +0900</lastBuildDate>
     
         <atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
@@ -23,12 +23,12 @@
 
       
       <item>
-        <title>life</title>
-        <link>/categories/life/</link>
-        <pubDate>Sun, 31 May 2020 22:03:36 +0900</pubDate>
+        <title>개인</title>
+        <link>/categories/%EA%B0%9C%EC%9D%B8/</link>
+        <pubDate>Thu, 18 Jun 2020 11:22:48 +0900</pubDate>
         <author>rollcake.dev@gmail.com (YOGO)</author>
         
-        <guid>/categories/life/</guid>
+        <guid>/categories/%EA%B0%9C%EC%9D%B8/</guid>
         <description></description>
         
         <dc:creator>YOGO</dc:creator>
