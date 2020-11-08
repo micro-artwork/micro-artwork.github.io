@@ -14,7 +14,7 @@
     <managingEditor>rollcake.dev@gmail.com (YOGO)</managingEditor>
     <webMaster>rollcake.dev@gmail.com (YOGO)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Thu, 18 Jun 2020 11:22:48 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 06 Oct 2020 13:37:56 +0900</lastBuildDate>
     
         <atom:link href="/categories/%EA%B0%9C%EC%9D%B8/index.xml" rel="self" type="application/rss+xml" />
     
@@ -23,13 +23,13 @@
 
       
       <item>
-        <title>블로그의 목적과 방향</title>
-        <link>/posts/2020/0618_purpose_and_direction/</link>
-        <pubDate>Thu, 18 Jun 2020 11:22:48 +0900</pubDate>
+        <title>장거리 운전</title>
+        <link>/posts/life/daily/2020-10-06/</link>
+        <pubDate>Tue, 06 Oct 2020 13:37:56 +0900</pubDate>
         <author>rollcake.dev@gmail.com (YOGO)</author>
-        <atom:modified>Thu, 18 Jun 2020 11:22:48 +0900</atom:modified>
-        <guid>/posts/2020/0618_purpose_and_direction/</guid>
-        <description>블로그를 다시 시작하면서 무작정 생각나는대로 게시물들을 draft 상태로 작성하고 있다. 그런데 무엇을 어떻게 남길 것인가에 대한 고민을 충분히 하지 않은 상태에서 작성하</description>
+        <atom:modified>Tue, 06 Oct 2020 13:37:56 +0900</atom:modified>
+        <guid>/posts/life/daily/2020-10-06/</guid>
+        <description>명절에 처가와 시골을 모두 가기 위해서 어렵게 장거리 운전을 선택했다. 결국 출고 한달도 안된 새차를 이끌고 난생 처음으로 4 ~ 5시간이나 되는 장거리 운전을 했는데,</description>
         
         <dc:creator>Yogo</dc:creator>
         
@@ -50,15 +50,93 @@
           
         
         
+          
+            
+              <category>초보운전</category>
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>첫 실수 그리고 스마트크루즈</title>
+        <link>/posts/life/daily/2020-09-27/</link>
+        <pubDate>Sun, 27 Sep 2020 11:28:00 +0900</pubDate>
+        <author>rollcake.dev@gmail.com (YOGO)</author>
+        <atom:modified>Sun, 27 Sep 2020 11:28:00 +0900</atom:modified>
+        <guid>/posts/life/daily/2020-09-27/</guid>
+        <description>초보운전자는 피할 수 없는 일종의 훈장이랄까 신차 인수받은지 한달도 안되서 범퍼를 인도턱?에 살짝 콕 하고 찍혀버렸다. 야외 주차장에서 차량을 빼던 도중 뒷차와 간격</description>
+        
+        <dc:creator>Yogo</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>일상</category>
+            
+          
+        
+        
+          
+            
+              <category>개인</category>
+            
+          
+        
+        
+          
+            
+              <category>초보운전</category>
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>18년 장롱면허의 첫차 구입과 운전</title>
+        <link>/posts/life/daily/2020-09-21/</link>
+        <pubDate>Mon, 21 Sep 2020 19:21:22 +0900</pubDate>
+        <author>rollcake.dev@gmail.com (YOGO)</author>
+        <atom:modified>Mon, 21 Sep 2020 19:21:22 +0900</atom:modified>
+        <guid>/posts/life/daily/2020-09-21/</guid>
+        <description>최근 결혼을 하고 미루고 미루었던 차(車)를 구입 했다. 구입은 오래전부터 생각은 하고 있었지만 대중교통이 잘 마련되어 있는 수도권에서만 생활을 하다보니 내차에 대</description>
+        
+        <dc:creator>Yogo</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>일상</category>
+            
+          
+        
+        
+          
+            
+              <category>개인</category>
+            
+          
+        
+        
+          
+            
+              <category>초보운전</category>
+            
+          
+        
       </item>
       
       <item>
         <title>블로그 재시작</title>
-        <link>/posts/2020/0531_first/</link>
+        <link>/posts/life/daily/2020-05-31/</link>
         <pubDate>Sun, 31 May 2020 22:03:00 +0900</pubDate>
         <author>rollcake.dev@gmail.com (YOGO)</author>
         <atom:modified>Sun, 31 May 2020 22:03:00 +0900</atom:modified>
-        <guid>/posts/2020/0531_first/</guid>
+        <guid>/posts/life/daily/2020-05-31/</guid>
         <description>새로이 블로그를 개설! :) 그간 많은 플랫폼을 오가면서 블로깅을 찔끔찔끔 했었는데 자유롭고 재미있는 환경을 찾아보다가 Github으로 정착을 하려고 한다. 나 또</description>
         
         <dc:creator>Yogo</dc:creator>

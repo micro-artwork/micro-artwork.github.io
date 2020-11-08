@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>vuejs on Yogo&#39;s blog</title>
+    <link>/tags/vuejs/</link>
+    <description>Recent content in vuejs on Yogo&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <managingEditor>rollcake.dev@gmail.com (YOGO)</managingEditor>
+    <webMaster>rollcake.dev@gmail.com (YOGO)</webMaster>
+    <copyright>©{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Tue, 06 Oct 2020 10:45:16 +0900</lastBuildDate>
+    
+        <atom:link href="/tags/vuejs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+
+      
+      <item>
+        <title>Vue 3 Global Properties and Typescript</title>
+        <link>/posts/dev/vue/2020-10-06-vue-3-global-properties-and-typescript/</link>
+        <pubDate>Tue, 06 Oct 2020 10:45:16 +0900</pubDate>
+        <author>rollcake.dev@gmail.com (YOGO)</author>
+        <atom:modified>Tue, 06 Oct 2020 10:45:16 +0900</atom:modified>
+        <guid>/posts/dev/vue/2020-10-06-vue-3-global-properties-and-typescript/</guid>
+        <description>기존 v2에서는 prototype에 변수나 모듈을 정의하면 this 키워드를 이용하여 접근할 수 있었는데 v3 부터는 config의 globalPropertie</description>
+        
+        <dc:creator>Yogo</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>vue</category>
+            
+          
+            
+              <category>vuejs</category>
+            
+          
+            
+              <category>typescript</category>
+            
+          
+        
+        
+          
+            
+              <category>개발</category>
+            
+          
+        
+        
+          
+            
+              <category>Vue</category>
+            
+          
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

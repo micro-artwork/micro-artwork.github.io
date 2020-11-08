@@ -14,12 +14,49 @@
     <managingEditor>rollcake.dev@gmail.com (YOGO)</managingEditor>
     <webMaster>rollcake.dev@gmail.com (YOGO)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Tue, 06 Oct 2020 13:37:56 +0900</lastBuildDate>
     
         <atom:link href="/series/index.xml" rel="self" type="application/rss+xml" />
     
     
     
 
+      
+      <item>
+        <title>초보운전</title>
+        <link>/series/%EC%B4%88%EB%B3%B4%EC%9A%B4%EC%A0%84/</link>
+        <pubDate>Tue, 06 Oct 2020 13:37:56 +0900</pubDate>
+        <author>rollcake.dev@gmail.com (YOGO)</author>
+        
+        <guid>/series/%EC%B4%88%EB%B3%B4%EC%9A%B4%EC%A0%84/</guid>
+        <description></description>
+        
+        <dc:creator>YOGO</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>Vue</title>
+        <link>/series/vue/</link>
+        <pubDate>Tue, 06 Oct 2020 10:45:16 +0900</pubDate>
+        <author>rollcake.dev@gmail.com (YOGO)</author>
+        
+        <guid>/series/vue/</guid>
+        <description></description>
+        
+        <dc:creator>YOGO</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
 
     
