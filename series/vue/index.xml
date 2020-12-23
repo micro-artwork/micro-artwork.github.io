@@ -14,13 +14,61 @@
     <managingEditor>rollcake.dev@gmail.com (YOGO)</managingEditor>
     <webMaster>rollcake.dev@gmail.com (YOGO)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Tue, 06 Oct 2020 10:45:16 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 22 Dec 2020 16:39:01 +0900</lastBuildDate>
     
         <atom:link href="/series/vue/index.xml" rel="self" type="application/rss+xml" />
     
     
     
 
+      
+      <item>
+        <title>Vue 3 - Implement simple tooltip</title>
+        <link>/posts/dev/vue/2020-12-22-vue-3-simple-tool-tip/</link>
+        <pubDate>Tue, 22 Dec 2020 16:39:01 +0900</pubDate>
+        <author>rollcake.dev@gmail.com (YOGO)</author>
+        <atom:modified>Tue, 22 Dec 2020 16:39:01 +0900</atom:modified>
+        <guid>/posts/dev/vue/2020-12-22-vue-3-simple-tool-tip/</guid>
+        <description>Vue 3 - 간단한 툴팁 기능 구현 Vuetify를 사용하다 보면 복잡한 레이아웃으로 구성된 화면이나 content가 많은 즉, 스크롤해야 하는 화면에서 v-menu, v-tooltip 같이 별</description>
+        
+        <dc:creator>Yogo</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>vue</category>
+            
+          
+            
+              <category>vue-next</category>
+            
+          
+            
+              <category>vue3</category>
+            
+          
+            
+              <category>typescript</category>
+            
+          
+        
+        
+          
+            
+              <category>개발</category>
+            
+          
+        
+        
+          
+            
+              <category>Vue</category>
+            
+          
+        
+      </item>
       
       <item>
         <title>Vue 3 Global Properties and Typescript</title>
@@ -42,7 +90,11 @@
             
           
             
-              <category>vuejs</category>
+              <category>vue-next</category>
+            
+          
+            
+              <category>vue3</category>
             
           
             

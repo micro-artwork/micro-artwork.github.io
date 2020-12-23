@@ -1,16 +1,109 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-	
-	<sitemap>
-	   	<loc>/ko/sitemap.xml</loc>
-		
-	   	<lastmod>2020-10-06T13:37:56+09:00</lastmod>
-		
-	</sitemap>
-	
-	<sitemap>
-	   	<loc>/en/sitemap.xml</loc>
-		
-	</sitemap>
-	
-</sitemapindex>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/categories/</loc>
+    <lastmod>2020-12-22T16:39:01+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/</loc>
+    <lastmod>2020-12-22T16:39:01+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/series/</loc>
+    <lastmod>2020-12-22T16:39:01+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-12-22T16:39:01+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/typescript/</loc>
+    <lastmod>2020-12-22T16:39:01+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/series/vue/</loc>
+    <lastmod>2020-12-22T16:39:01+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/vue/</loc>
+    <lastmod>2020-12-22T16:39:01+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/dev/vue/2020-12-22-vue-3-simple-tool-tip/</loc>
+    <lastmod>2020-12-22T16:39:01+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/vue-next/</loc>
+    <lastmod>2020-12-22T16:39:01+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/vue3/</loc>
+    <lastmod>2020-12-22T16:39:01+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2020-12-22T16:39:01+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/%EA%B0%9C%EB%B0%9C/</loc>
+    <lastmod>2020-12-22T16:39:01+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/%EA%B0%9C%EC%9D%B8/</loc>
+    <lastmod>2020-10-06T13:37:56+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/%EC%9D%BC%EC%83%81/</loc>
+    <lastmod>2020-10-06T13:37:56+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/life/daily/2020-10-06/</loc>
+    <lastmod>2020-10-06T13:37:56+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/series/%EC%B4%88%EB%B3%B4%EC%9A%B4%EC%A0%84/</loc>
+    <lastmod>2020-10-06T13:37:56+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/dev/vue/2020-10-06-vue-3-global-properties-and-typescript/</loc>
+    <lastmod>2020-10-06T10:45:16+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/life/daily/2020-09-27/</loc>
+    <lastmod>2020-09-27T11:28:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/life/daily/2020-09-21/</loc>
+    <lastmod>2020-09-21T19:21:22+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/life/daily/2020-05-31/</loc>
+    <lastmod>2020-05-31T22:03:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/about/</loc>
+  </url>
+  
+</urlset>
