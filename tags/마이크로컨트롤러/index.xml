@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>마이크로컨트롤러 on Yogo&#39;s blog</title>
+    <link>/tags/%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%EC%BB%A8%ED%8A%B8%EB%A1%A4%EB%9F%AC/</link>
+    <description>Recent content in 마이크로컨트롤러 on Yogo&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <managingEditor>rollcake.dev@gmail.com (YOGO)</managingEditor>
+    <webMaster>rollcake.dev@gmail.com (YOGO)</webMaster>
+    <copyright>©{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Wed, 27 Jan 2021 03:21:59 +0900</lastBuildDate>
+    
+        <atom:link href="/tags/%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%EC%BB%A8%ED%8A%B8%EB%A1%A4%EB%9F%AC/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+
+      
+      <item>
+        <title>PS2 듀얼쇼크 컨트롤러 호스트(리더) 구현 및 분석</title>
+        <link>/posts/dev/micro/2021-01-27-dualshock2-reader-implementation/</link>
+        <pubDate>Wed, 27 Jan 2021 03:21:59 +0900</pubDate>
+        <author>rollcake.dev@gmail.com (YOGO)</author>
+        <atom:modified>Wed, 27 Jan 2021 03:21:59 +0900</atom:modified>
+        <guid>/posts/dev/micro/2021-01-27-dualshock2-reader-implementation/</guid>
+        <description>2007년 초쯤 마이크로프로세서(이하 MCU) 스터디를 하면서 주로 해외에서 하드웨어 관련 정보를 찾아보던 도중 우연히 어느 일본인이 개인 홈페이지에 플레이스테인션</description>
+        
+        <dc:creator>Yogo</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>마이크로컨트롤러</category>
+            
+          
+        
+        
+          
+            
+              <category>개발 및 강좌</category>
+            
+          
+        
+        
+          
+            
+              <category>마이크로컨트롤러</category>
+            
+          
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

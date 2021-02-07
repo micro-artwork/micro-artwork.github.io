@@ -14,7 +14,7 @@
     <managingEditor>rollcake.dev@gmail.com (YOGO)</managingEditor>
     <webMaster>rollcake.dev@gmail.com (YOGO)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Tue, 22 Dec 2020 16:39:01 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 27 Jan 2021 03:21:59 +0900</lastBuildDate>
     
         <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
@@ -42,6 +42,42 @@
         
       
 
+      
+      <item>
+        <title>PS2 듀얼쇼크 컨트롤러 호스트(리더) 구현 및 분석</title>
+        <link>/posts/dev/micro/2021-01-27-dualshock2-reader-implementation/</link>
+        <pubDate>Wed, 27 Jan 2021 03:21:59 +0900</pubDate>
+        <author>rollcake.dev@gmail.com (YOGO)</author>
+        <atom:modified>Wed, 27 Jan 2021 03:21:59 +0900</atom:modified>
+        <guid>/posts/dev/micro/2021-01-27-dualshock2-reader-implementation/</guid>
+        <description>2007년 초쯤 마이크로프로세서(이하 MCU) 스터디를 하면서 주로 해외에서 하드웨어 관련 정보를 찾아보던 도중 우연히 어느 일본인이 개인 홈페이지에 플레이스테인션</description>
+        
+        <dc:creator>Yogo</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>마이크로컨트롤러</category>
+            
+          
+        
+        
+          
+            
+              <category>개발 및 강좌</category>
+            
+          
+        
+        
+          
+            
+              <category>마이크로컨트롤러</category>
+            
+          
+        
+      </item>
       
       <item>
         <title>Vue 3 - Implement simple tooltip</title>

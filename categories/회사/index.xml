@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>회사 on Yogo&#39;s blog</title>
+    <link>/categories/%ED%9A%8C%EC%82%AC/</link>
+    <description>Recent content in 회사 on Yogo&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <managingEditor>rollcake.dev@gmail.com (YOGO)</managingEditor>
+    <webMaster>rollcake.dev@gmail.com (YOGO)</webMaster>
+    <copyright>©{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Thu, 07 Jan 2021 11:44:43 +0900</lastBuildDate>
+    
+        <atom:link href="/categories/%ED%9A%8C%EC%82%AC/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+
+      
+      <item>
+        <title>채용을 진행하면서 느낀 점 - 1</title>
+        <link>/posts/life/startup/2021-01-07-recruiting-01/</link>
+        <pubDate>Thu, 07 Jan 2021 11:44:43 +0900</pubDate>
+        <author>rollcake.dev@gmail.com (YOGO)</author>
+        <atom:modified>Thu, 07 Jan 2021 11:44:43 +0900</atom:modified>
+        <guid>/posts/life/startup/2021-01-07-recruiting-01/</guid>
+        <description>현재 몸 담고 있는 스타트업 회사에서 개발자 인력 채용을 진행했습니다. 참고로 저 또한 개발자 이며, 작은 회사의 특성상 별도의 인사팀이나 체계를 갖추지 못하였기 때문</description>
+        
+        <dc:creator>Yogo</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>창업</category>
+            
+          
+        
+        
+          
+            
+              <category>회사</category>
+            
+          
+        
+        
+          
+            
+              <category>스타트업</category>
+            
+          
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>
