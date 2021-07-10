@@ -14,7 +14,7 @@
     <managingEditor>rollcake.dev@gmail.com (YOGO)</managingEditor>
     <webMaster>rollcake.dev@gmail.com (YOGO)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Wed, 27 Jan 2021 03:21:59 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 06 Jul 2021 23:05:02 +0900</lastBuildDate>
     
         <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
@@ -42,6 +42,50 @@
         
       
 
+      
+      <item>
+        <title>Nintendo Entertainment System - CPU</title>
+        <link>/posts/projects/nesdev/2021-07-06-nesdoc-kr-01/</link>
+        <pubDate>Tue, 06 Jul 2021 23:05:02 +0900</pubDate>
+        <author>rollcake.dev@gmail.com (YOGO)</author>
+        <atom:modified>Tue, 06 Jul 2021 23:05:02 +0900</atom:modified>
+        <guid>/posts/projects/nesdev/2021-07-06-nesdoc-kr-01/</guid>
+        <description>Nintendo Entertainment System NesDev Wiki1와 Nintendo Entertainment System Documentation2 문서를 기반으로 NES 시스템을 정리 하고자 합니다. 해당 문서에서는 하드웨어 및 프로세서에 대한 내용을 많이 담고 있어서 이해를 위해서</description>
+        
+        <dc:creator>Yogo</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>프로젝트</category>
+            
+          
+            
+              <category>NES</category>
+            
+          
+            
+              <category>Emulator</category>
+            
+          
+        
+        
+          
+            
+              <category>프로젝트</category>
+            
+          
+        
+        
+          
+            
+              <category>NES Emulator</category>
+            
+          
+        
+      </item>
       
       <item>
         <title>PS2 듀얼쇼크 컨트롤러 호스트(리더) 구현 및 분석</title>

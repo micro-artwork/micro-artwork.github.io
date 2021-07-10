@@ -4,31 +4,61 @@
   
   <url>
     <loc>/categories/</loc>
-    <lastmod>2021-01-27T03:21:59+09:00</lastmod>
+    <lastmod>2021-07-06T23:05:02+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/emulator/</loc>
+    <lastmod>2021-07-06T23:05:02+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/nes/</loc>
+    <lastmod>2021-07-06T23:05:02+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/series/nes-emulator/</loc>
+    <lastmod>2021-07-06T23:05:02+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/projects/nesdev/2021-07-06-nesdoc-kr-01/</loc>
+    <lastmod>2021-07-06T23:05:02+09:00</lastmod>
   </url>
   
   <url>
     <loc>/posts/</loc>
-    <lastmod>2021-01-27T03:21:59+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/posts/dev/micro/2021-01-27-dualshock2-reader-implementation/</loc>
-    <lastmod>2021-01-27T03:21:59+09:00</lastmod>
+    <lastmod>2021-07-06T23:05:02+09:00</lastmod>
   </url>
   
   <url>
     <loc>/series/</loc>
-    <lastmod>2021-01-27T03:21:59+09:00</lastmod>
+    <lastmod>2021-07-06T23:05:02+09:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/</loc>
-    <lastmod>2021-01-27T03:21:59+09:00</lastmod>
+    <lastmod>2021-07-06T23:05:02+09:00</lastmod>
   </url>
   
   <url>
     <loc>/</loc>
+    <lastmod>2021-07-06T23:05:02+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/</loc>
+    <lastmod>2021-07-06T23:05:02+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/</loc>
+    <lastmod>2021-07-06T23:05:02+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/dev/micro/2021-01-27-dualshock2-reader-implementation/</loc>
     <lastmod>2021-01-27T03:21:59+09:00</lastmod>
   </url>
   

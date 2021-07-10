@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>NES on Yogo&#39;s blog</title>
+    <link>/tags/nes/</link>
+    <description>Recent content in NES on Yogo&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <managingEditor>rollcake.dev@gmail.com (YOGO)</managingEditor>
+    <webMaster>rollcake.dev@gmail.com (YOGO)</webMaster>
+    <copyright>©{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Tue, 06 Jul 2021 23:05:02 +0900</lastBuildDate>
+    
+        <atom:link href="/tags/nes/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+
+      
+      <item>
+        <title>Nintendo Entertainment System - CPU</title>
+        <link>/posts/projects/nesdev/2021-07-06-nesdoc-kr-01/</link>
+        <pubDate>Tue, 06 Jul 2021 23:05:02 +0900</pubDate>
+        <author>rollcake.dev@gmail.com (YOGO)</author>
+        <atom:modified>Tue, 06 Jul 2021 23:05:02 +0900</atom:modified>
+        <guid>/posts/projects/nesdev/2021-07-06-nesdoc-kr-01/</guid>
+        <description>Nintendo Entertainment System NesDev Wiki1와 Nintendo Entertainment System Documentation2 문서를 기반으로 NES 시스템을 정리 하고자 합니다. 해당 문서에서는 하드웨어 및 프로세서에 대한 내용을 많이 담고 있어서 이해를 위해서</description>
+        
+        <dc:creator>Yogo</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>프로젝트</category>
+            
+          
+            
+              <category>NES</category>
+            
+          
+            
+              <category>Emulator</category>
+            
+          
+        
+        
+          
+            
+              <category>프로젝트</category>
+            
+          
+        
+        
+          
+            
+              <category>NES Emulator</category>
+            
+          
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>
