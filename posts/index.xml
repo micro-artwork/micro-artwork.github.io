@@ -14,13 +14,51 @@
     <managingEditor>rollcake.dev@gmail.com (YOGO)</managingEditor>
     <webMaster>rollcake.dev@gmail.com (YOGO)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Tue, 06 Jul 2021 23:05:02 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 07 Oct 2021 11:11:23 +0900</lastBuildDate>
     
         <atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     
 
+      
+      <item>
+        <title>짤(밈) 생성 페이지 제작</title>
+        <link>/posts/dev/web/2021-10-07-simple-meme-generator/</link>
+        <pubDate>Thu, 07 Oct 2021 11:11:23 +0900</pubDate>
+        <author>rollcake.dev@gmail.com (YOGO)</author>
+        <atom:modified>Thu, 07 Oct 2021 11:11:23 +0900</atom:modified>
+        <guid>/posts/dev/web/2021-10-07-simple-meme-generator/</guid>
+        <description>요즘은 사회 전반적으로 특정 이벤트나 이슈가 생길 때마다 사람들이 재치있는 아이디어로 국내에선 짤, 해외에선 밈(meme)이라고 불리우는 패러디 이미지가 많이</description>
+        
+        <dc:creator>Yogo</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>web</category>
+            
+          
+            
+              <category>javascript</category>
+            
+          
+            
+              <category>meme</category>
+            
+          
+        
+        
+          
+            
+              <category>개발</category>
+            
+          
+        
+        
+      </item>
       
       <item>
         <title>Nintendo Entertainment System - CPU</title>
@@ -151,42 +189,6 @@
       </item>
       
       <item>
-        <title>장거리 운전</title>
-        <link>/posts/life/daily/2020-10-06/</link>
-        <pubDate>Tue, 06 Oct 2020 13:37:56 +0900</pubDate>
-        <author>rollcake.dev@gmail.com (YOGO)</author>
-        <atom:modified>Tue, 06 Oct 2020 13:37:56 +0900</atom:modified>
-        <guid>/posts/life/daily/2020-10-06/</guid>
-        <description>명절에 처가와 시골을 모두 가기 위해서 어렵게 장거리 운전을 선택했다. 결국 출고 한달도 안된 새차를 이끌고 난생 처음으로 4 ~ 5시간이나 되는 장거리 운전을 했는데,</description>
-        
-        <dc:creator>Yogo</dc:creator>
-        
-        
-        
-        
-          
-            
-              <category>일상</category>
-            
-          
-        
-        
-          
-            
-              <category>개인</category>
-            
-          
-        
-        
-          
-            
-              <category>초보운전</category>
-            
-          
-        
-      </item>
-      
-      <item>
         <title>Vue 3 Global Properties and Typescript</title>
         <link>/posts/dev/vue/2020-10-06-vue-3-global-properties-and-typescript/</link>
         <pubDate>Tue, 06 Oct 2020 10:45:16 +0900</pubDate>
@@ -229,42 +231,6 @@
           
             
               <category>Vue</category>
-            
-          
-        
-      </item>
-      
-      <item>
-        <title>첫 실수 그리고 스마트크루즈</title>
-        <link>/posts/life/daily/2020-09-27/</link>
-        <pubDate>Sun, 27 Sep 2020 11:28:00 +0900</pubDate>
-        <author>rollcake.dev@gmail.com (YOGO)</author>
-        <atom:modified>Sun, 27 Sep 2020 11:28:00 +0900</atom:modified>
-        <guid>/posts/life/daily/2020-09-27/</guid>
-        <description>초보운전자는 피할 수 없는 일종의 훈장이랄까 신차 인수받은지 한달도 안되서 범퍼를 인도턱?에 살짝 콕 하고 찍혀버렸다. 야외 주차장에서 차량을 빼던 도중 뒷차와 간격</description>
-        
-        <dc:creator>Yogo</dc:creator>
-        
-        
-        
-        
-          
-            
-              <category>일상</category>
-            
-          
-        
-        
-          
-            
-              <category>개인</category>
-            
-          
-        
-        
-          
-            
-              <category>초보운전</category>
             
           
         

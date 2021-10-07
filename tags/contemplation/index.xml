@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>contemplation on Yogo&#39;s blog</title>
+    <link>/tags/contemplation/</link>
+    <description>Recent content in contemplation on Yogo&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <managingEditor>rollcake.dev@gmail.com (YOGO)</managingEditor>
+    <webMaster>rollcake.dev@gmail.com (YOGO)</webMaster>
+    <copyright>©{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 04 Jul 2021 21:34:47 +0900</lastBuildDate>
+    
+        <atom:link href="/tags/contemplation/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+
+      
+      <item>
+        <title>인간 관계에 대한 고찰 - 1</title>
+        <link>/posts/life/contemplation/2021-07-04-human-being-01/</link>
+        <pubDate>Sun, 04 Jul 2021 21:34:47 +0900</pubDate>
+        <author>rollcake.dev@gmail.com (YOGO)</author>
+        <atom:modified>Sun, 04 Jul 2021 21:34:47 +0900</atom:modified>
+        <guid>/posts/life/contemplation/2021-07-04-human-being-01/</guid>
+        <description>올해로 만은 아니지만 한국 나이로 불혹을 맞이했습니다. 갑자기 나이가 마흔이 되었다고 삼십대와 생각이나 행동이 달라질 일은 없지만, 그래도 이 나이가 되면 제목의 주</description>
+        
+        <dc:creator>Yogo</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>life</category>
+            
+          
+            
+              <category>contemplation</category>
+            
+          
+        
+        
+          
+            
+              <category>개인</category>
+            
+          
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

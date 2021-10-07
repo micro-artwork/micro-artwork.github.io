@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>rpi4 on Yogo&#39;s blog</title>
+    <link>/tags/rpi4/</link>
+    <description>Recent content in rpi4 on Yogo&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <managingEditor>rollcake.dev@gmail.com (YOGO)</managingEditor>
+    <webMaster>rollcake.dev@gmail.com (YOGO)</webMaster>
+    <copyright>©{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Wed, 30 Dec 2020 23:35:40 +0900</lastBuildDate>
+    
+        <atom:link href="/tags/rpi4/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+
+      
+      <item>
+        <title>NESPi 4 CASE 짤막 리뷰</title>
+        <link>/posts/life/review/2020-12-21-nespi-4-case-review/</link>
+        <pubDate>Wed, 30 Dec 2020 23:35:40 +0900</pubDate>
+        <author>rollcake.dev@gmail.com (YOGO)</author>
+        <atom:modified>Wed, 30 Dec 2020 23:35:40 +0900</atom:modified>
+        <guid>/posts/life/review/2020-12-21-nespi-4-case-review/</guid>
+        <description></description>
+        
+        <dc:creator>Yogo</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>rpi</category>
+            
+          
+            
+              <category>rpi4</category>
+            
+          
+        
+        
+          
+            
+              <category>개인</category>
+            
+          
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

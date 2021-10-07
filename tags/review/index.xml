@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>review on Yogo&#39;s blog</title>
+    <link>/tags/review/</link>
+    <description>Recent content in review on Yogo&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <managingEditor>rollcake.dev@gmail.com (YOGO)</managingEditor>
+    <webMaster>rollcake.dev@gmail.com (YOGO)</webMaster>
+    <copyright>©{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Thu, 31 Dec 2020 00:20:20 +0900</lastBuildDate>
+    
+        <atom:link href="/tags/review/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+
+      
+      <item>
+        <title>사이버펑크 2077 플레이 소감</title>
+        <link>/posts/life/review/2020-12-31-cyberpunk-2077-review/</link>
+        <pubDate>Thu, 31 Dec 2020 00:20:20 +0900</pubDate>
+        <author>rollcake.dev@gmail.com (YOGO)</author>
+        <atom:modified>Thu, 31 Dec 2020 00:20:20 +0900</atom:modified>
+        <guid>/posts/life/review/2020-12-31-cyberpunk-2077-review/</guid>
+        <description>12월 10일 발매일부터 지금까지 86.7시간 플레이하여 상당 수 엔딩 분기점을 확인하였고, 사이드 퀘스트를 몽땅 밀고 도전과제는 39/44를 완료하고 간략한</description>
+        
+        <dc:creator>Yogo</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>game</category>
+            
+          
+            
+              <category>review</category>
+            
+          
+        
+        
+          
+            
+              <category>개인</category>
+            
+          
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>
