@@ -13,18 +13,39 @@
       referrerpolicy="no-referrer"
     ></script>
     <style>
+      :root {
+        /* Default values */
+        --image-width: 600px;
+        --font-size: 20px;
+        --input-padding: 8px;
+        --scale: 1px;
+      }
+
       body {
         display: flex;
         font-family: 'Noto Sans KR', sans-serif;
+      }
+
+      body[data-size='0'] {
+        --scale: 0px;
+      }
+      body[data-size='1'] {
+        --scale: 1px;
+      }
+      body[data-size='2'] {
+        --scale: 2px;
       }
 
       #main {
         display: inline-block;
         margin: auto;
         justify-self: center;
+        width: 800px !important;
       }
 
       img {
+        width: calc(var(--image-width) + (var(--scale) * 100));
+        min-width: 600px;
         max-width: 800px;
       }
 
@@ -69,24 +90,24 @@
       }
 
       .text-input {
-        padding: 16px;
+        min-height: 40px;
+        padding: calc(var(--input-padding) + (var(--scale) * 4));
         text-align: center;
         font-weight: 400;
-        font-size: 24px;
-        min-height: 28px;
+        font-size: calc(var(--font-size) + (var(--scale) * 2));
         color: white;
         text-shadow: -1px -1px 0 #2222227f, 1px -1px 0 #2222227f, -1px 1px 0 #2222227f, 1px 1px 0 #2222227f;
       }
 
       .text-input.small {
-        padding: 8px;
-        font-size: 16px;
-        color: white;
         min-height: 16px;
+        padding: calc(var(--input-padding) - 4px + (var(--scale) * 2));
+        font-size: calc(var(--font-size) - 8px + (var(--scale) * 2));
+        color: white;
       }
 
       .text-input.large {
-        font-size: 30px;
+        font-size: calc(var(--font-size) + 6px + (var(--scale) * 2));
         color: white;
       }
 
@@ -114,8 +135,14 @@
         padding: 16px;
       }
 
+      .ui-container {
+        display: flex;
+        justify-content: space-between;
+        height: 48px;
+      }
+
       button {
-        margin: 8px 8px 0 0;
+        margin: 8px;
       }
 
       .tab-cotainer {
@@ -145,6 +172,10 @@
 
       .tab:active {
         background-color: #ddd;
+      }
+
+      label[for='image-size']::before {
+        content: 'Image Size ';
       }
 
       #main[data-type='starwars'] .tab[data-type='starwars'],
@@ -202,6 +233,10 @@
       }
 
       /* i18n */
+      [data-lang='ko-KR'] label[for='image-size']::before {
+        content: '크기 ';
+      }
+
       [data-lang='ko-KR'] .title::after {
         content: '심플 밈 생성기';
       }
@@ -235,9 +270,21 @@
       }
     </style>
   </head>
-  <body>
+  <body data-size="1">
     <div id="main">
       <h1 class="title"></h1>
+
+      <div class="ui-container">
+        <div>
+          <input type="range" id="image-size" name="image-size" min="0" max="2" />
+          <label for="image-size">(600, 700, 800px)</label>
+        </div>
+
+        <div>
+          <button id="btn-capture"></button>
+          <button id="btn-clear"></button>
+        </div>
+      </div>
 
       <div class="tab-cotainer">
         <div class="tab" data-type="starwars"></div>
@@ -306,11 +353,6 @@
           </div>
         </div>
       </div>
-
-      <div>
-        <button id="btn-capture"></button>
-        <button id="btn-clear"></button>
-      </div>
     </div>
 
     <div id="dialog-dimming">
@@ -369,6 +411,11 @@
       document.getElementById('btn-close').onclick = () => {
         [...dialogContentEl.children].forEach((childEl) => childEl.remove());
         dimmingEl.style.display = 'none';
+      };
+
+      document.getElementById('image-size').oninput = (e) => {
+        document.body.setAttribute('data-size', e.target.value);
+        console.log(e.target.value);
       };
     </script>
   </body>
