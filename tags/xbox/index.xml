@@ -29,7 +29,7 @@
         <author>rollcake.dev@gmail.com (YOGO)</author>
         <atom:modified>Tue, 26 Oct 2021 19:34:10 +0900</atom:modified>
         <guid>/posts/projects/xi2ds/2021-10-26-xi2ds/</guid>
-        <description>XInput to Dualshock 4 (XI2DS) About The XI2DS is designed to run and control Play Station Remote Play(PSRP) using Xbox controllers(or XInput Compatable, XC) without DualShock4(DS4) controllers on Windows. Although it is considered to be able to recognize and map up to 4 controllers, PSRP only accepts one controller input, so only the first connected controller can be recognized. Unfortunately, for some unknown reason, the touchpad press may not work</description>
+        <description>XInput to Dualshock 4 (XI2DS) https://github.com/micro-artwork/xi2ds About The XI2DS is designed to run and control Play Station Remote Play(PSRP) using Xbox(or XInput) controllers(XC) instead of DualShock4(DS4) controllers on Windows. Although it is considered to be able to recognize and map up to 4 controllers, PSRP only accepts one controller input, so only the first connected controller can be recognized. Unfortunately, for some unknown reason, the touchpad press may not work</description>
         
         <dc:creator>Yogo</dc:creator>
         
