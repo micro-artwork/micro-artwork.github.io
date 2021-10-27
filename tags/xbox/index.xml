@@ -14,7 +14,7 @@
     <managingEditor>rollcake.dev@gmail.com (YOGO)</managingEditor>
     <webMaster>rollcake.dev@gmail.com (YOGO)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Tue, 26 Oct 2021 19:34:10 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 27 Oct 2021 13:39:06 +0900</lastBuildDate>
     
         <atom:link href="/tags/xbox/index.xml" rel="self" type="application/rss+xml" />
     
@@ -23,11 +23,55 @@
 
       
       <item>
+        <title>XInput to DualShock 4 (XI2DS) 개발</title>
+        <link>/posts/projects/xi2ds/2021-10-27-xi2ds-dev/</link>
+        <pubDate>Wed, 27 Oct 2021 13:39:06 +0900</pubDate>
+        <author>rollcake.dev@gmail.com (YOGO)</author>
+        <atom:modified>Wed, 27 Oct 2021 17:26:40 +0900</atom:modified>
+        <guid>/posts/projects/xi2ds/2021-10-27-xi2ds-dev/</guid>
+        <description>개발동기 18년도 초 몬스터헌터 월드가 플스로 발매될 때 워낙 유명한 게임이라서 같이 플레이 하자라는 주변 권유로 인해서, 호기심으로 한번은 경험해보고자 동생으로</description>
+        
+        <dc:creator>Yogo</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>project</category>
+            
+          
+            
+              <category>XBOX</category>
+            
+          
+            
+              <category>DualShock4</category>
+            
+          
+        
+        
+          
+            
+              <category>Project</category>
+            
+          
+        
+        
+          
+            
+              <category>XI2DS</category>
+            
+          
+        
+      </item>
+      
+      <item>
         <title>XInput to Dualshock 4 (XI2DS)</title>
         <link>/posts/projects/xi2ds/2021-10-26-xi2ds/</link>
         <pubDate>Tue, 26 Oct 2021 19:34:10 +0900</pubDate>
         <author>rollcake.dev@gmail.com (YOGO)</author>
-        <atom:modified>Wed, 27 Oct 2021 14:28:59 +0900</atom:modified>
+        <atom:modified>Wed, 27 Oct 2021 17:26:40 +0900</atom:modified>
         <guid>/posts/projects/xi2ds/2021-10-26-xi2ds/</guid>
         <description>XInput to Dualshock 4 (XI2DS) https://github.com/micro-artwork/xi2ds
 About The XI2DS is designed to run and control Play Station Remote Play(PSRP) using Xbox(or XInput) controllers(XC) instead of DualShock4(DS4) controllers on Windows. Although it is considered to be able to recognize and map up to 4 controllers, PSRP only accepts one controller input, so only the first connected controller can be recognized.
@@ -55,7 +99,7 @@ Unfortunately, for some unknown reason, the touchpad press may not work in some 
         
           
             
-              <category>Proejct</category>
+              <category>Project</category>
             
           
         
