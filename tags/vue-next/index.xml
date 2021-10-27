@@ -27,7 +27,7 @@
         <link>/posts/dev/vue/2020-12-22-vue-3-simple-tool-tip/</link>
         <pubDate>Tue, 22 Dec 2020 16:39:01 +0900</pubDate>
         <author>rollcake.dev@gmail.com (YOGO)</author>
-        <atom:modified>Tue, 22 Dec 2020 16:39:01 +0900</atom:modified>
+        <atom:modified>Sun, 07 Feb 2021 16:50:12 +0900</atom:modified>
         <guid>/posts/dev/vue/2020-12-22-vue-3-simple-tool-tip/</guid>
         <description>Vue 3 - 간단한 툴팁 기능 구현 Vuetify를 사용하다 보면 복잡한 레이아웃으로 구성된 화면이나 content가 많은 즉, 스크롤해야 하는 화면에서 v-menu, v-tooltip 같이 별</description>
         
@@ -75,7 +75,7 @@
         <link>/posts/dev/vue/2020-10-06-vue-3-global-properties-and-typescript/</link>
         <pubDate>Tue, 06 Oct 2020 10:45:16 +0900</pubDate>
         <author>rollcake.dev@gmail.com (YOGO)</author>
-        <atom:modified>Tue, 06 Oct 2020 10:45:16 +0900</atom:modified>
+        <atom:modified>Tue, 22 Dec 2020 20:02:27 +0900</atom:modified>
         <guid>/posts/dev/vue/2020-10-06-vue-3-global-properties-and-typescript/</guid>
         <description>기존 v2에서는 prototype에 변수나 모듈을 정의하면 this 키워드를 이용하여 접근할 수 있었는데 v3 부터는 config의 globalPropertie</description>
         

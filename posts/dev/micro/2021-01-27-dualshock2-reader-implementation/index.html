@@ -9,11 +9,14 @@
     
 
 
+  
+  <script defer src="/js/fuse.min.c4bee9a8d44273d6154fe86006923d4131eb2e8069d8897687137c6f37f553e3.js"></script>
+
+
+
 <script src="/js/enquire.min.aa37bdcb743826eecdae5c5d177fc7d6552340f1b4378ffaa9c82b2c6111400b.js"></script>
 
 <script defer src="/js/lazysizes.min.5e11d056075a05065b9c0bfec44084a113fc2976c2952ec804dedb61c7662db9.js"></script>
-
-<script defer src="/js/fuse.min.c4bee9a8d44273d6154fe86006923d4131eb2e8069d8897687137c6f37f553e3.js"></script>
 
 <script defer src="/js/helper/getParents.min.1618c696be7c98933f9a92677f518b512a74e55bdbb976b09936b4182e93181b.js"></script>
 
@@ -551,11 +554,15 @@
 
   
     
+    var baseurl = JSON.parse("\"/\"");
+    
     var permalink = JSON.parse("\"/posts/dev/micro/2021-01-27-dualshock2-reader-implementation/\"");
     var searchResults = null;
     var searchMenu = null;
     var searchText = null;
     
+    
+    var enableSearch = JSON.parse("true");
     
     var enableSearchHighlight = JSON.parse("true");
     
@@ -564,31 +571,33 @@
     var sectionType = JSON.parse("\"post\"");
 
     var fuse = null;
-
-    (function initFuse() {
-      var xhr = new XMLHttpRequest();
-      xhr.open('GET', permalink + "index.json");
-      xhr.setRequestHeader('Content-Type', 'application/json; charset=utf-8');
-      xhr.onload = function () {
-        if (xhr.status === 200) {
-          fuse = new Fuse(JSON.parse(xhr.response.toString('utf-8')), {
-            keys: sectionType.includes('publication') ? ['title', 'abstract'] : ['title', 'description', 'content'],
-            includeMatches: enableSearchHighlight,
-            shouldSort: true,
-            threshold: 0.4,
-            location: 0,
-            distance: 100,
-            maxPatternLength: 32,
-            minMatchCharLength: 1,
-          });
-          window.fuse = fuse;
-        }
-        else {
-          console.error('[' + xhr.status + ']Error:', xhr.statusText);
-        }
-      };
-      xhr.send();
-    })();
+    
+    if (enableSearch) {
+      (function initFuse() {
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', baseurl + "/index.json");
+        xhr.setRequestHeader('Content-Type', 'application/json; charset=utf-8');
+        xhr.onload = function () {
+          if (xhr.status === 200) {
+            fuse = new Fuse(JSON.parse(xhr.response.toString('utf-8')), {
+              keys: sectionType.includes('publication') ? ['title', 'abstract'] : ['title', 'description', 'content'],
+              includeMatches: enableSearchHighlight,
+              shouldSort: true,
+              threshold: 0.4,
+              location: 0,
+              distance: 100,
+              maxPatternLength: 32,
+              minMatchCharLength: 1,
+            });
+            window.fuse = fuse;
+          }
+          else {
+            console.error('[' + xhr.status + ']Error:', xhr.statusText);
+          }
+        };
+        xhr.send();
+      })();
+    }
 
     function makeLi(ulElem, obj) {
       var li = document.createElement('li');
@@ -1217,7 +1226,7 @@
 <meta name="keywords" content="마이크로컨트롤러">
 
 <meta name="created" content="2021-01-27T03:21:59&#43;0900">
-<meta name="modified" content="2021-01-27T03:21:59&#43;0900">
+<meta name="modified" content="2021-02-07T16:50:12&#43;0900">
 <meta property="article:published_time" content="2021-01-27T03:21:59&#43;0900">
 
 <meta name="author" content="Yogo">
@@ -1230,7 +1239,7 @@
 <meta property="og:type" content="article">
 <meta property="og:description" content="Yogo&#39;s life and devlog">
 
-<meta name="generator" content="Hugo 0.71.1" />
+<meta name="generator" content="Hugo 0.72.0" />
 <meta name="msapplication-TileColor" content="#fff">
 
 <meta name="theme-color" content="#fff">
@@ -1255,7 +1264,7 @@
     "@type": "WebPage",
     "headline": "PS2 듀얼쇼크 컨트롤러 호스트(리더) 구현 및 분석",
     "datePublished": "2021-01-27T03:21:59+09:00",
-    "dateModified": "2021-01-27T03:21:59+09:00",
+    "dateModified": "2021-02-07T16:50:12+09:00",
     "url" : "/posts/dev/micro/2021-01-27-dualshock2-reader-implementation/",
     "description": "2007년 초쯤 마이크로프로세서(이하 MCU) 스터디를 하면서 주로 해외에서 하드웨어 관련 정보를 찾아보던 도중 우연히 어느 일본인이 개인 홈페이지에 플레이스테인션",
     "keywords": ["마이크로컨트롤러"],
@@ -1277,7 +1286,31 @@
 
     
   
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'G-GM0SKNFX2M', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
   
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'G-GM0SKNFX2M', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
 
 
 
@@ -1506,6 +1539,8 @@
 <div class="single__infos">
   <time class="single__info" title="작성일">📅&nbsp;2021년 01월 27일 </time>
   
+  &nbsp;&middot;&nbsp; <time class="single__info" title="수정일"> 📝&nbsp;2021년 02월 07일 </time>
+  
   &nbsp;&middot;&nbsp; <span class="single__info" title="읽는 시간"> ☕&nbsp;15&nbsp;min read </span>
   
   &nbsp;&middot;&nbsp; <span class="single__info" title="글쓴이">✍️&nbsp;Yogo</span>
@@ -1523,12 +1558,6 @@
   <li><a href="/tags/%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%EC%BB%A8%ED%8A%B8%EB%A1%A4%EB%9F%AC/" class="single__tag" title="마이크로컨트롤러">#마이크로컨트롤러</a></li>
 
 </ul>      
-    </div>
-    
-    <div class="views" style="margin: 16px;">
-      <span class="views">
-          <img src="https://visitor-badge.glitch.me/badge?page_id=%2fposts%2fdev%2fmicro%2f2021-01-27-dualshock2-reader-implementation%2f" alt="Views"/>
-      </span>
     </div>
     
     <article class="single__contents" data-dir="ltr" data-ani="true">

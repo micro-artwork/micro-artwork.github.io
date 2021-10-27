@@ -9,11 +9,14 @@
     
 
 
+  
+  <script defer src="/js/fuse.min.c4bee9a8d44273d6154fe86006923d4131eb2e8069d8897687137c6f37f553e3.js"></script>
+
+
+
 <script src="/js/enquire.min.aa37bdcb743826eecdae5c5d177fc7d6552340f1b4378ffaa9c82b2c6111400b.js"></script>
 
 <script defer src="/js/lazysizes.min.5e11d056075a05065b9c0bfec44084a113fc2976c2952ec804dedb61c7662db9.js"></script>
-
-<script defer src="/js/fuse.min.c4bee9a8d44273d6154fe86006923d4131eb2e8069d8897687137c6f37f553e3.js"></script>
 
 <script defer src="/js/helper/getParents.min.1618c696be7c98933f9a92677f518b512a74e55bdbb976b09936b4182e93181b.js"></script>
 
@@ -551,11 +554,15 @@
 
   
     
+    var baseurl = JSON.parse("\"/\"");
+    
     var permalink = JSON.parse("\"/tags/vue3/\"");
     var searchResults = null;
     var searchMenu = null;
     var searchText = null;
     
+    
+    var enableSearch = JSON.parse("true");
     
     var enableSearchHighlight = JSON.parse("true");
     
@@ -564,31 +571,33 @@
     var sectionType = JSON.parse("\"tags\"");
 
     var fuse = null;
-
-    (function initFuse() {
-      var xhr = new XMLHttpRequest();
-      xhr.open('GET', permalink + "index.json");
-      xhr.setRequestHeader('Content-Type', 'application/json; charset=utf-8');
-      xhr.onload = function () {
-        if (xhr.status === 200) {
-          fuse = new Fuse(JSON.parse(xhr.response.toString('utf-8')), {
-            keys: sectionType.includes('publication') ? ['title', 'abstract'] : ['title', 'description', 'content'],
-            includeMatches: enableSearchHighlight,
-            shouldSort: true,
-            threshold: 0.4,
-            location: 0,
-            distance: 100,
-            maxPatternLength: 32,
-            minMatchCharLength: 1,
-          });
-          window.fuse = fuse;
-        }
-        else {
-          console.error('[' + xhr.status + ']Error:', xhr.statusText);
-        }
-      };
-      xhr.send();
-    })();
+    
+    if (enableSearch) {
+      (function initFuse() {
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', baseurl + "/index.json");
+        xhr.setRequestHeader('Content-Type', 'application/json; charset=utf-8');
+        xhr.onload = function () {
+          if (xhr.status === 200) {
+            fuse = new Fuse(JSON.parse(xhr.response.toString('utf-8')), {
+              keys: sectionType.includes('publication') ? ['title', 'abstract'] : ['title', 'description', 'content'],
+              includeMatches: enableSearchHighlight,
+              shouldSort: true,
+              threshold: 0.4,
+              location: 0,
+              distance: 100,
+              maxPatternLength: 32,
+              minMatchCharLength: 1,
+            });
+            window.fuse = fuse;
+          }
+          else {
+            console.error('[' + xhr.status + ']Error:', xhr.statusText);
+          }
+        };
+        xhr.send();
+      })();
+    }
 
     function makeLi(ulElem, obj) {
       var li = document.createElement('li');
@@ -1217,7 +1226,7 @@
 
 
 <meta name="created" content="2020-12-22T16:39:01&#43;0900">
-<meta name="modified" content="2020-12-22T16:39:01&#43;0900">
+<meta name="modified" content="2021-02-07T16:50:12&#43;0900">
 <meta property="article:published_time" content="2020-12-22T16:39:01&#43;0900">
 
 <meta name="author" content="YOGO">
@@ -1229,7 +1238,7 @@
 <meta property="og:type" content="website">
 <meta property="og:description" content="Yogo&#39;s life and devlog">
 
-<meta name="generator" content="Hugo 0.71.1" />
+<meta name="generator" content="Hugo 0.72.0" />
 <meta name="msapplication-TileColor" content="#fff">
 
 <meta name="theme-color" content="#fff">
@@ -1269,7 +1278,31 @@
 
     
   
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'G-GM0SKNFX2M', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
   
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'G-GM0SKNFX2M', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
 
 
 
@@ -1505,9 +1538,11 @@
 
     <div class="summary-classic__content">
       <header>
-        <h5 class="title h5"><a href='/posts/dev/vue/2020-12-22-vue-3-simple-tool-tip/'> Vue 3 - Implement simple tooltip</a> </h5>
+        <h5 class="title h5"><a href='/posts/dev/vue/2020-12-22-vue-3-simple-tool-tip/'>Vue 3 - Implement simple tooltip</a> </h5>
         <h6 class="subtitle caption">
           <time title="작성일" dir="ltr">📅&nbsp;2020년 12월 22일 </time>
+          
+          <time title="수정일" dir="ltr"> &middot; 📝&nbsp;2021년 02월 07일 </time>
           
           <span title="읽는 시간" dir="ltr"> &middot; ☕&nbsp;4&nbsp;min read </span>
           
@@ -1539,9 +1574,11 @@
 
     <div class="summary-classic__content">
       <header>
-        <h5 class="title h5"><a href='/posts/dev/vue/2020-10-06-vue-3-global-properties-and-typescript/'> Vue 3 Global Properties and Typescript</a> </h5>
+        <h5 class="title h5"><a href='/posts/dev/vue/2020-10-06-vue-3-global-properties-and-typescript/'>Vue 3 Global Properties and Typescript</a> </h5>
         <h6 class="subtitle caption">
           <time title="작성일" dir="ltr">📅&nbsp;2020년 10월 06일 </time>
+          
+          <time title="수정일" dir="ltr"> &middot; 📝&nbsp;2020년 12월 22일 </time>
           
           <span title="읽는 시간" dir="ltr"> &middot; ☕&nbsp;1&nbsp;min read </span>
           
@@ -1632,6 +1669,7 @@
                 태그
             </a>
         </span>
+        
         
         
             <span class="tag">
@@ -1841,6 +1879,20 @@
         </span>
         
         
+        
+            <span class="tag">
+                <a href="/categories/proejct/" class="is-categories taxo__link" data-dir="ltr">
+                    <span class="taxo__text">
+                        Proejct
+                    </span>
+                    <span class="taxo__num" dir="auto">
+                        1
+                    </span>
+                </a>
+            </span>
+        
+        
+        
             <span class="tag">
                 <a href="/categories/%EA%B0%9C%EB%B0%9C/" class="is-categories taxo__link" data-dir="ltr">
                     <span class="taxo__text">
@@ -1886,7 +1938,7 @@
                         프로젝트
                     </span>
                     <span class="taxo__num" dir="auto">
-                        2
+                        1
                     </span>
                 </a>
             </span>
@@ -1903,6 +1955,7 @@
                 시리즈
             </a>
         </span>
+        
         
         
             <span class="tag">

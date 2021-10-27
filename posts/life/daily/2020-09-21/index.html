@@ -9,11 +9,14 @@
     
 
 
+  
+  <script defer src="/js/fuse.min.c4bee9a8d44273d6154fe86006923d4131eb2e8069d8897687137c6f37f553e3.js"></script>
+
+
+
 <script src="/js/enquire.min.aa37bdcb743826eecdae5c5d177fc7d6552340f1b4378ffaa9c82b2c6111400b.js"></script>
 
 <script defer src="/js/lazysizes.min.5e11d056075a05065b9c0bfec44084a113fc2976c2952ec804dedb61c7662db9.js"></script>
-
-<script defer src="/js/fuse.min.c4bee9a8d44273d6154fe86006923d4131eb2e8069d8897687137c6f37f553e3.js"></script>
 
 <script defer src="/js/helper/getParents.min.1618c696be7c98933f9a92677f518b512a74e55bdbb976b09936b4182e93181b.js"></script>
 
@@ -551,11 +554,15 @@
 
   
     
+    var baseurl = JSON.parse("\"/\"");
+    
     var permalink = JSON.parse("\"/posts/life/daily/2020-09-21/\"");
     var searchResults = null;
     var searchMenu = null;
     var searchText = null;
     
+    
+    var enableSearch = JSON.parse("true");
     
     var enableSearchHighlight = JSON.parse("true");
     
@@ -564,31 +571,33 @@
     var sectionType = JSON.parse("\"post\"");
 
     var fuse = null;
-
-    (function initFuse() {
-      var xhr = new XMLHttpRequest();
-      xhr.open('GET', permalink + "index.json");
-      xhr.setRequestHeader('Content-Type', 'application/json; charset=utf-8');
-      xhr.onload = function () {
-        if (xhr.status === 200) {
-          fuse = new Fuse(JSON.parse(xhr.response.toString('utf-8')), {
-            keys: sectionType.includes('publication') ? ['title', 'abstract'] : ['title', 'description', 'content'],
-            includeMatches: enableSearchHighlight,
-            shouldSort: true,
-            threshold: 0.4,
-            location: 0,
-            distance: 100,
-            maxPatternLength: 32,
-            minMatchCharLength: 1,
-          });
-          window.fuse = fuse;
-        }
-        else {
-          console.error('[' + xhr.status + ']Error:', xhr.statusText);
-        }
-      };
-      xhr.send();
-    })();
+    
+    if (enableSearch) {
+      (function initFuse() {
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', baseurl + "/index.json");
+        xhr.setRequestHeader('Content-Type', 'application/json; charset=utf-8');
+        xhr.onload = function () {
+          if (xhr.status === 200) {
+            fuse = new Fuse(JSON.parse(xhr.response.toString('utf-8')), {
+              keys: sectionType.includes('publication') ? ['title', 'abstract'] : ['title', 'description', 'content'],
+              includeMatches: enableSearchHighlight,
+              shouldSort: true,
+              threshold: 0.4,
+              location: 0,
+              distance: 100,
+              maxPatternLength: 32,
+              minMatchCharLength: 1,
+            });
+            window.fuse = fuse;
+          }
+          else {
+            console.error('[' + xhr.status + ']Error:', xhr.statusText);
+          }
+        };
+        xhr.send();
+      })();
+    }
 
     function makeLi(ulElem, obj) {
       var li = document.createElement('li');
@@ -1217,7 +1226,7 @@
 <meta name="keywords" content="일상">
 
 <meta name="created" content="2020-09-21T19:21:22&#43;0900">
-<meta name="modified" content="2020-09-21T19:21:22&#43;0900">
+<meta name="modified" content="2021-02-07T16:50:12&#43;0900">
 <meta property="article:published_time" content="2020-09-21T19:21:22&#43;0900">
 
 <meta name="author" content="Yogo">
@@ -1230,7 +1239,7 @@
 <meta property="og:type" content="article">
 <meta property="og:description" content="Yogo&#39;s life and devlog">
 
-<meta name="generator" content="Hugo 0.71.1" />
+<meta name="generator" content="Hugo 0.72.0" />
 <meta name="msapplication-TileColor" content="#fff">
 
 <meta name="theme-color" content="#fff">
@@ -1255,7 +1264,7 @@
     "@type": "WebPage",
     "headline": "18년 장롱면허의 첫차 구입과 운전",
     "datePublished": "2020-09-21T19:21:22+09:00",
-    "dateModified": "2020-09-21T19:21:22+09:00",
+    "dateModified": "2021-02-07T16:50:12+09:00",
     "url" : "/posts/life/daily/2020-09-21/",
     "description": "최근 결혼을 하고 미루고 미루었던 차(車)를 구입 했다. 구입은 오래전부터 생각은 하고 있었지만 대중교통이 잘 마련되어 있는 수도권에서만 생활을 하다보니 내차에 대",
     "keywords": ["일상"],
@@ -1277,7 +1286,31 @@
 
     
   
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'G-GM0SKNFX2M', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
   
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'G-GM0SKNFX2M', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
 
 
 
@@ -1506,6 +1539,8 @@
 <div class="single__infos">
   <time class="single__info" title="작성일">📅&nbsp;2020년 09월 21일 </time>
   
+  &nbsp;&middot;&nbsp; <time class="single__info" title="수정일"> 📝&nbsp;2021년 02월 07일 </time>
+  
   &nbsp;&middot;&nbsp; <span class="single__info" title="읽는 시간"> ☕&nbsp;11&nbsp;min read </span>
   
   &nbsp;&middot;&nbsp; <span class="single__info" title="글쓴이">✍️&nbsp;Yogo</span>
@@ -1523,12 +1558,6 @@
   <li><a href="/tags/%EC%9D%BC%EC%83%81/" class="single__tag" title="일상">#일상</a></li>
 
 </ul>      
-    </div>
-    
-    <div class="views" style="margin: 16px;">
-      <span class="views">
-          <img src="https://visitor-badge.glitch.me/badge?page_id=%2fposts%2flife%2fdaily%2f2020-09-21%2f" alt="Views"/>
-      </span>
     </div>
     
     <article class="single__contents" data-dir="ltr" data-ani="true">
