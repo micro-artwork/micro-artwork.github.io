@@ -14,57 +14,13 @@
     <managingEditor>rollcake.dev@gmail.com (YOGO)</managingEditor>
     <webMaster>rollcake.dev@gmail.com (YOGO)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Thu, 28 Oct 2021 11:58:34 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 27 Oct 2021 13:39:06 +0900</lastBuildDate>
     
         <atom:link href="/tags/project/index.xml" rel="self" type="application/rss+xml" />
     
     
     
 
-      
-      <item>
-        <title>모스(Morse) 부호 키보드 만들기</title>
-        <link>/posts/projects/morse-keyboard/2021-10-28-morse-keyboard-dev/</link>
-        <pubDate>Thu, 28 Oct 2021 11:58:34 +0900</pubDate>
-        <author>rollcake.dev@gmail.com (YOGO)</author>
-        <atom:modified>Fri, 29 Oct 2021 00:07:35 +0900</atom:modified>
-        <guid>/posts/projects/morse-keyboard/2021-10-28-morse-keyboard-dev/</guid>
-        <description>잠이오지 않아 뒤척이던 어느 늦은밤 커뮤니티의 게시물을 훑어보던 도중 재미있는 짤을 하나 발견했습니다. 아앗! 작고 아름다운 그것은 야심한 새벽에 그렇게 제 마음에</description>
-        
-        <dc:creator>Yogo</dc:creator>
-        
-        
-        
-        
-          
-            
-              <category>project</category>
-            
-          
-            
-              <category>취미전자</category>
-            
-          
-            
-              <category>Hobby Electronics</category>
-            
-          
-        
-        
-          
-            
-              <category>Projects</category>
-            
-          
-        
-        
-          
-            
-              <category>취미전자</category>
-            
-          
-        
-      </item>
       
       <item>
         <title>XInput to DualShock 4 (XI2DS) 개발</title>
