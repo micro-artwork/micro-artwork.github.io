@@ -9,14 +9,11 @@
     
 
 
-  
-  <script defer src="/js/fuse.min.c4bee9a8d44273d6154fe86006923d4131eb2e8069d8897687137c6f37f553e3.js"></script>
-
-
-
 <script src="/js/enquire.min.aa37bdcb743826eecdae5c5d177fc7d6552340f1b4378ffaa9c82b2c6111400b.js"></script>
 
 <script defer src="/js/lazysizes.min.5e11d056075a05065b9c0bfec44084a113fc2976c2952ec804dedb61c7662db9.js"></script>
+
+<script defer src="/js/fuse.min.c4bee9a8d44273d6154fe86006923d4131eb2e8069d8897687137c6f37f553e3.js"></script>
 
 <script defer src="/js/helper/getParents.min.1618c696be7c98933f9a92677f518b512a74e55bdbb976b09936b4182e93181b.js"></script>
 
@@ -554,15 +551,11 @@
 
   
     
-    var baseurl = JSON.parse("\"/\"");
-    
     var permalink = JSON.parse("\"/\"");
     var searchResults = null;
     var searchMenu = null;
     var searchText = null;
     
-    
-    var enableSearch = JSON.parse("true");
     
     var enableSearchHighlight = JSON.parse("true");
     
@@ -571,33 +564,31 @@
     var sectionType = JSON.parse("\"page\"");
 
     var fuse = null;
-    
-    if (enableSearch) {
-      (function initFuse() {
-        var xhr = new XMLHttpRequest();
-        xhr.open('GET', baseurl + "/index.json");
-        xhr.setRequestHeader('Content-Type', 'application/json; charset=utf-8');
-        xhr.onload = function () {
-          if (xhr.status === 200) {
-            fuse = new Fuse(JSON.parse(xhr.response.toString('utf-8')), {
-              keys: sectionType.includes('publication') ? ['title', 'abstract'] : ['title', 'description', 'content'],
-              includeMatches: enableSearchHighlight,
-              shouldSort: true,
-              threshold: 0.4,
-              location: 0,
-              distance: 100,
-              maxPatternLength: 32,
-              minMatchCharLength: 1,
-            });
-            window.fuse = fuse;
-          }
-          else {
-            console.error('[' + xhr.status + ']Error:', xhr.statusText);
-          }
-        };
-        xhr.send();
-      })();
-    }
+
+    (function initFuse() {
+      var xhr = new XMLHttpRequest();
+      xhr.open('GET', permalink + "index.json");
+      xhr.setRequestHeader('Content-Type', 'application/json; charset=utf-8');
+      xhr.onload = function () {
+        if (xhr.status === 200) {
+          fuse = new Fuse(JSON.parse(xhr.response.toString('utf-8')), {
+            keys: sectionType.includes('publication') ? ['title', 'abstract'] : ['title', 'description', 'content'],
+            includeMatches: enableSearchHighlight,
+            shouldSort: true,
+            threshold: 0.4,
+            location: 0,
+            distance: 100,
+            maxPatternLength: 32,
+            minMatchCharLength: 1,
+          });
+          window.fuse = fuse;
+        }
+        else {
+          console.error('[' + xhr.status + ']Error:', xhr.statusText);
+        }
+      };
+      xhr.send();
+    })();
 
     function makeLi(ulElem, obj) {
       var li = document.createElement('li');
@@ -1227,9 +1218,9 @@
 <meta name="description" content="Yogo&#39;s life and devlog" />
 
 
-<meta name="created" content="2021-10-27T13:39:06&#43;0900">
-<meta name="modified" content="2021-10-28T17:15:50&#43;0900">
-<meta property="article:published_time" content="2021-10-27T13:39:06&#43;0900">
+<meta name="created" content="2021-10-28T11:58:34&#43;0900">
+<meta name="modified" content="2021-10-28T23:20:41&#43;0900">
+<meta property="article:published_time" content="2021-10-28T11:58:34&#43;0900">
 
 <meta name="author" content="YOGO">
 
@@ -1240,7 +1231,7 @@
 <meta property="og:type" content="website">
 <meta property="og:description" content="Yogo&#39;s life and devlog">
 
-<meta name="generator" content="Hugo 0.72.0" />
+<meta name="generator" content="Hugo 0.71.1" />
 <meta name="msapplication-TileColor" content="#fff">
 
 <meta name="theme-color" content="#fff">
@@ -1511,9 +1502,39 @@ if (!doNotTrack) {
             
             
             
-            
-            
-            
+                
+  <article class="summary-classic" data-ani="true">
+  <div class="summary-classic__flex-box" >
+
+    
+
+    <div class="summary-classic__content">
+      <header>
+        <h5 class="title h5"><a href='/posts/projects/morse-keyboard/2021-10-28-morse-keyboard-dev/'> 모스(Morse) 부호 키보드 만들기</a> </h5>
+        <h6 class="subtitle caption">
+          <time title="작성일" dir="ltr">📅&nbsp;2021년 10월 28일 </time>
+          
+          <span title="읽는 시간" dir="ltr"> &middot; ☕&nbsp;11&nbsp;min read </span>
+          
+          &middot; <span title="글쓴이" dir="ltr">✍️&nbsp;Yogo</span>
+          
+        </h6>
+      </header>
+      <div>
+        <div class="summary-classic__text p2">
+          
+            잠이오지 않아 뒤척이던 어느 늦은밤 커뮤니티의 게시물을 훑어보던 도중 재미있는 짤을 하나 발견했습니다. 아앗! 작고 아름다운 그것은 야심한 새벽에 그렇게 제 마음에
+          
+        </div>
+      </div>
+    </div>
+
+    
+    
+  </div>
+  <hr />
+</article>
+
             
                 
   <article class="summary-classic" data-ani="true">
@@ -1523,7 +1544,7 @@ if (!doNotTrack) {
 
     <div class="summary-classic__content">
       <header>
-        <h5 class="title h5"><a href='/posts/projects/xi2ds/2021-10-27-xi2ds-dev/'>XInput to DualShock 4 (XI2DS) 개발</a> </h5>
+        <h5 class="title h5"><a href='/posts/projects/xi2ds/2021-10-27-xi2ds-dev/'> XInput to DualShock 4 (XI2DS) 개발</a> </h5>
         <h6 class="subtitle caption">
           <time title="작성일" dir="ltr">📅&nbsp;2021년 10월 27일 </time>
           
@@ -1559,7 +1580,7 @@ if (!doNotTrack) {
 
     <div class="summary-classic__content">
       <header>
-        <h5 class="title h5"><a href='/posts/projects/xi2ds/2021-10-26-xi2ds/'>XInput to Dualshock 4 (XI2DS)</a> </h5>
+        <h5 class="title h5"><a href='/posts/projects/xi2ds/2021-10-26-xi2ds/'> XInput to Dualshock 4 (XI2DS)</a> </h5>
         <h6 class="subtitle caption">
           <time title="작성일" dir="ltr">📅&nbsp;2021년 10월 26일 </time>
           
@@ -1597,7 +1618,7 @@ Unfortunately, for some unknown reason, the touchpad press may not work in some 
 
     <div class="summary-classic__content">
       <header>
-        <h5 class="title h5"><a href='/posts/dev/web/2021-10-07-simple-meme-generator/'>짤(밈) 생성 페이지 제작</a> </h5>
+        <h5 class="title h5"><a href='/posts/dev/web/2021-10-07-simple-meme-generator/'> 짤(밈) 생성 페이지 제작</a> </h5>
         <h6 class="subtitle caption">
           <time title="작성일" dir="ltr">📅&nbsp;2021년 10월 07일 </time>
           
@@ -1633,7 +1654,7 @@ Unfortunately, for some unknown reason, the touchpad press may not work in some 
 
     <div class="summary-classic__content">
       <header>
-        <h5 class="title h5"><a href='/posts/projects/nesdev/2021-07-06-nesdoc-kr-01/'>Nintendo Entertainment System - CPU</a> </h5>
+        <h5 class="title h5"><a href='/posts/projects/nesdev/2021-07-06-nesdoc-kr-01/'> Nintendo Entertainment System - CPU</a> </h5>
         <h6 class="subtitle caption">
           <time title="작성일" dir="ltr">📅&nbsp;2021년 07월 06일 </time>
           
@@ -1669,7 +1690,7 @@ Unfortunately, for some unknown reason, the touchpad press may not work in some 
 
     <div class="summary-classic__content">
       <header>
-        <h5 class="title h5"><a href='/posts/dev/micro/2021-01-27-dualshock2-reader-implementation/'>PS2 듀얼쇼크 컨트롤러 호스트(리더) 구현 및 분석</a> </h5>
+        <h5 class="title h5"><a href='/posts/dev/micro/2021-01-27-dualshock2-reader-implementation/'> PS2 듀얼쇼크 컨트롤러 호스트(리더) 구현 및 분석</a> </h5>
         <h6 class="subtitle caption">
           <time title="작성일" dir="ltr">📅&nbsp;2021년 01월 27일 </time>
           
@@ -1705,7 +1726,7 @@ Unfortunately, for some unknown reason, the touchpad press may not work in some 
 
     <div class="summary-classic__content">
       <header>
-        <h5 class="title h5"><a href='/posts/dev/vue/2020-12-22-vue-3-simple-tool-tip/'>Vue 3 - Implement simple tooltip</a> </h5>
+        <h5 class="title h5"><a href='/posts/dev/vue/2020-12-22-vue-3-simple-tool-tip/'> Vue 3 - Implement simple tooltip</a> </h5>
         <h6 class="subtitle caption">
           <time title="작성일" dir="ltr">📅&nbsp;2020년 12월 22일 </time>
           
@@ -1741,7 +1762,7 @@ Unfortunately, for some unknown reason, the touchpad press may not work in some 
 
     <div class="summary-classic__content">
       <header>
-        <h5 class="title h5"><a href='/posts/dev/vue/2020-10-06-vue-3-global-properties-and-typescript/'>Vue 3 Global Properties and Typescript</a> </h5>
+        <h5 class="title h5"><a href='/posts/dev/vue/2020-10-06-vue-3-global-properties-and-typescript/'> Vue 3 Global Properties and Typescript</a> </h5>
         <h6 class="subtitle caption">
           <time title="작성일" dir="ltr">📅&nbsp;2020년 10월 06일 </time>
           
@@ -1777,7 +1798,7 @@ Unfortunately, for some unknown reason, the touchpad press may not work in some 
 
     <div class="summary-classic__content">
       <header>
-        <h5 class="title h5"><a href='/posts/life/daily/2020-09-21/'>18년 장롱면허의 첫차 구입과 운전</a> </h5>
+        <h5 class="title h5"><a href='/posts/life/daily/2020-09-21/'> 18년 장롱면허의 첫차 구입과 운전</a> </h5>
         <h6 class="subtitle caption">
           <time title="작성일" dir="ltr">📅&nbsp;2020년 09월 21일 </time>
           
@@ -1813,7 +1834,7 @@ Unfortunately, for some unknown reason, the touchpad press may not work in some 
 
     <div class="summary-classic__content">
       <header>
-        <h5 class="title h5"><a href='/posts/life/daily/2020-05-31/'>블로그 재시작</a> </h5>
+        <h5 class="title h5"><a href='/posts/life/daily/2020-05-31/'> 블로그 재시작</a> </h5>
         <h6 class="subtitle caption">
           <time title="작성일" dir="ltr">📅&nbsp;2020년 05월 31일 </time>
           
@@ -2015,6 +2036,10 @@ Unfortunately, for some unknown reason, the touchpad press may not work in some 
             <ul class="sidebar-recent__ul">
                 
                     <li>
+                        <a href="/posts/projects/morse-keyboard/2021-10-28-morse-keyboard-dev/" class="sidebar-recent__a p2">모스(Morse) 부호 키보드 만들기</a>
+                    </li>
+                
+                    <li>
                         <a href="/posts/projects/xi2ds/2021-10-27-xi2ds-dev/" class="sidebar-recent__a p2">XInput to DualShock 4 (XI2DS) 개발</a>
                     </li>
                 
@@ -2028,10 +2053,6 @@ Unfortunately, for some unknown reason, the touchpad press may not work in some 
                 
                     <li>
                         <a href="/posts/projects/nesdev/2021-07-06-nesdoc-kr-01/" class="sidebar-recent__a p2">Nintendo Entertainment System - CPU</a>
-                    </li>
-                
-                    <li>
-                        <a href="/posts/dev/micro/2021-01-27-dualshock2-reader-implementation/" class="sidebar-recent__a p2">PS2 듀얼쇼크 컨트롤러 호스트(리더) 구현 및 분석</a>
                     </li>
                 
             </ul>
@@ -2052,7 +2073,6 @@ Unfortunately, for some unknown reason, the touchpad press may not work in some 
         </span>
         
         
-        
             <span class="tag">
                 <a href="/tags/dualshock4/" class="is-tags taxo__link" data-dir="ltr">
                     <span class="taxo__text">
@@ -2070,6 +2090,19 @@ Unfortunately, for some unknown reason, the touchpad press may not work in some 
                 <a href="/tags/emulator/" class="is-tags taxo__link" data-dir="ltr">
                     <span class="taxo__text">
                         Emulator
+                    </span>
+                    <span class="taxo__num" dir="auto">
+                        1
+                    </span>
+                </a>
+            </span>
+        
+        
+        
+            <span class="tag">
+                <a href="/tags/hobby-electronics/" class="is-tags taxo__link" data-dir="ltr">
+                    <span class="taxo__text">
+                        Hobby Electronics
                     </span>
                     <span class="taxo__num" dir="auto">
                         1
@@ -2124,7 +2157,7 @@ Unfortunately, for some unknown reason, the touchpad press may not work in some 
                         project
                     </span>
                     <span class="taxo__num" dir="auto">
-                        2
+                        3
                     </span>
                 </a>
             </span>
@@ -2236,6 +2269,19 @@ Unfortunately, for some unknown reason, the touchpad press may not work in some 
         
         
             <span class="tag">
+                <a href="/tags/%EC%B7%A8%EB%AF%B8%EC%A0%84%EC%9E%90/" class="is-tags taxo__link" data-dir="ltr">
+                    <span class="taxo__text">
+                        취미전자
+                    </span>
+                    <span class="taxo__num" dir="auto">
+                        1
+                    </span>
+                </a>
+            </span>
+        
+        
+        
+            <span class="tag">
                 <a href="/tags/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/" class="is-tags taxo__link" data-dir="ltr">
                     <span class="taxo__text">
                         프로젝트
@@ -2260,14 +2306,13 @@ Unfortunately, for some unknown reason, the touchpad press may not work in some 
         </span>
         
         
-        
             <span class="tag">
                 <a href="/categories/projects/" class="is-categories taxo__link" data-dir="ltr">
                     <span class="taxo__text">
                         Projects
                     </span>
                     <span class="taxo__num" dir="auto">
-                        2
+                        3
                     </span>
                 </a>
             </span>
@@ -2338,7 +2383,6 @@ Unfortunately, for some unknown reason, the touchpad press may not work in some 
         </span>
         
         
-        
             <span class="tag">
                 <a href="/series/nes-emulator/" class="is-series taxo__link" data-dir="ltr">
                     <span class="taxo__text">
@@ -2395,6 +2439,19 @@ Unfortunately, for some unknown reason, the touchpad press may not work in some 
                 <a href="/series/%EC%B4%88%EB%B3%B4%EC%9A%B4%EC%A0%84/" class="is-series taxo__link" data-dir="ltr">
                     <span class="taxo__text">
                         초보운전
+                    </span>
+                    <span class="taxo__num" dir="auto">
+                        1
+                    </span>
+                </a>
+            </span>
+        
+        
+        
+            <span class="tag">
+                <a href="/series/%EC%B7%A8%EB%AF%B8%EC%A0%84%EC%9E%90/" class="is-series taxo__link" data-dir="ltr">
+                    <span class="taxo__text">
+                        취미전자
                     </span>
                     <span class="taxo__num" dir="auto">
                         1

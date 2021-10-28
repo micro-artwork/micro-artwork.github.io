@@ -9,14 +9,11 @@
     
 
 
-  
-  <script defer src="/js/fuse.min.c4bee9a8d44273d6154fe86006923d4131eb2e8069d8897687137c6f37f553e3.js"></script>
-
-
-
 <script src="/js/enquire.min.aa37bdcb743826eecdae5c5d177fc7d6552340f1b4378ffaa9c82b2c6111400b.js"></script>
 
 <script defer src="/js/lazysizes.min.5e11d056075a05065b9c0bfec44084a113fc2976c2952ec804dedb61c7662db9.js"></script>
+
+<script defer src="/js/fuse.min.c4bee9a8d44273d6154fe86006923d4131eb2e8069d8897687137c6f37f553e3.js"></script>
 
 <script defer src="/js/helper/getParents.min.1618c696be7c98933f9a92677f518b512a74e55bdbb976b09936b4182e93181b.js"></script>
 
@@ -554,15 +551,11 @@
 
   
     
-    var baseurl = JSON.parse("\"/\"");
-    
     var permalink = JSON.parse("\"/posts/projects/xi2ds/2021-10-27-xi2ds-dev/\"");
     var searchResults = null;
     var searchMenu = null;
     var searchText = null;
     
-    
-    var enableSearch = JSON.parse("true");
     
     var enableSearchHighlight = JSON.parse("true");
     
@@ -571,33 +564,31 @@
     var sectionType = JSON.parse("\"post\"");
 
     var fuse = null;
-    
-    if (enableSearch) {
-      (function initFuse() {
-        var xhr = new XMLHttpRequest();
-        xhr.open('GET', baseurl + "/index.json");
-        xhr.setRequestHeader('Content-Type', 'application/json; charset=utf-8');
-        xhr.onload = function () {
-          if (xhr.status === 200) {
-            fuse = new Fuse(JSON.parse(xhr.response.toString('utf-8')), {
-              keys: sectionType.includes('publication') ? ['title', 'abstract'] : ['title', 'description', 'content'],
-              includeMatches: enableSearchHighlight,
-              shouldSort: true,
-              threshold: 0.4,
-              location: 0,
-              distance: 100,
-              maxPatternLength: 32,
-              minMatchCharLength: 1,
-            });
-            window.fuse = fuse;
-          }
-          else {
-            console.error('[' + xhr.status + ']Error:', xhr.statusText);
-          }
-        };
-        xhr.send();
-      })();
-    }
+
+    (function initFuse() {
+      var xhr = new XMLHttpRequest();
+      xhr.open('GET', permalink + "index.json");
+      xhr.setRequestHeader('Content-Type', 'application/json; charset=utf-8');
+      xhr.onload = function () {
+        if (xhr.status === 200) {
+          fuse = new Fuse(JSON.parse(xhr.response.toString('utf-8')), {
+            keys: sectionType.includes('publication') ? ['title', 'abstract'] : ['title', 'description', 'content'],
+            includeMatches: enableSearchHighlight,
+            shouldSort: true,
+            threshold: 0.4,
+            location: 0,
+            distance: 100,
+            maxPatternLength: 32,
+            minMatchCharLength: 1,
+          });
+          window.fuse = fuse;
+        }
+        else {
+          console.error('[' + xhr.status + ']Error:', xhr.statusText);
+        }
+      };
+      xhr.send();
+    })();
 
     function makeLi(ulElem, obj) {
       var li = document.createElement('li');
@@ -1226,7 +1217,7 @@
 <meta name="keywords" content="project,XBOX,DualShock4">
 
 <meta name="created" content="2021-10-27T13:39:06&#43;0900">
-<meta name="modified" content="2021-10-28T17:15:50&#43;0900">
+<meta name="modified" content="2021-10-28T23:20:41&#43;0900">
 <meta property="article:published_time" content="2021-10-27T13:39:06&#43;0900">
 
 <meta name="author" content="Yogo">
@@ -1239,7 +1230,7 @@
 <meta property="og:type" content="article">
 <meta property="og:description" content="Yogo&#39;s life and devlog">
 
-<meta name="generator" content="Hugo 0.72.0" />
+<meta name="generator" content="Hugo 0.71.1" />
 <meta name="msapplication-TileColor" content="#fff">
 
 <meta name="theme-color" content="#fff">
@@ -1264,7 +1255,7 @@
     "@type": "WebPage",
     "headline": "XInput to DualShock 4 (XI2DS) 개발",
     "datePublished": "2021-10-27T13:39:06+09:00",
-    "dateModified": "2021-10-28T17:15:50+09:00",
+    "dateModified": "2021-10-28T23:20:41+09:00",
     "url" : "/posts/projects/xi2ds/2021-10-27-xi2ds-dev/",
     "description": "개발동기 18년도 초 몬스터헌터 월드가 플스로 발매될 때 워낙 유명한 게임이라서 같이 플레이 하자라는 주변 권유로 인해서, 호기심으로 한번은 경험해보고자 동생으로",
     "keywords": ["project","XBOX","DualShock4"],
@@ -1555,9 +1546,9 @@ if (!doNotTrack) {
   🏷️
   
 
-  <li><a href="/tags/dualshock4/" class="single__tag" title="DualShock4">#DualShock4</a></li>
-
   <li><a href="/tags/project/" class="single__tag" title="project">#project</a></li>
+
+  <li><a href="/tags/dualshock4/" class="single__tag" title="DualShock4">#DualShock4</a></li>
 
   <li><a href="/tags/xbox/" class="single__tag" title="XBOX">#XBOX</a></li>
 
@@ -1609,6 +1600,7 @@ if (!doNotTrack) {
 <p>기존에 완전 날림 코드를 유지보수가 용이한 방향으로 덜 날리는 코드(?)로 리팩토링 하였습니다.</p>
 <h4 id="아이콘">아이콘</h4>
 <p><img src="/images/projects/xi2ds/icon.png" alt="icon" /></p>
+<p><img src="/images/projects/xi2ds/affinity.jpg" alt="affinity" /></p>
 <p>그래도 공개 앱이라면 아이콘은 있어야 할 것 같아서 아이콘을 만들어서 구색을 갖춰보았습니다.</p>
 <h4 id="기능-개선">기능 개선</h4>
 <p>기존에 제공하던 기능을 개선하여 하나만 인식가능했던 컨트롤러를 최대 4개가 인식되도록 확장했습니다. 하지만 현재 PC용 리모트 플레이에는 1개의 패드만 인식 가능합니다. 사실상 현재로썬 쓸모없는 기능이고 그냥 여러개 컨트롤러가 연결되어 있으면 골라서 쓸수 있다 정도의 의미만 있을 것 같고, 나중이라도 제한이 풀려야 실질적으로 유용한 기능이 될 것 같습니다.</p>
@@ -1757,28 +1749,47 @@ if (!doNotTrack) {
     
     <div class="grow"></div>
     
+      <a href="/posts/projects/morse-keyboard/2021-10-28-morse-keyboard-dev/" class="pagination-single__right">      
+        <div class="pagination-single__right-title">모스(Morse) 부호 키보드 만들기</div>
+        <div class="pagination-single__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 1.42.39.39 1.02.39 1.41 0l6.59-6.59c.39-.39.39-1.02 0-1.41l-6.58-6.6c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41L16.17 11H5c-.55 0-1 .45-1 1s.45 1 1 1z"/></svg>
+        </div>
+      </a>
+    
   
 </nav>
     
   
-    <div id="disqus_thread"></div>
+    <div id="utterances"></div>
+<noscript>Please enable JavaScript to view the <a href="https://github.com/utterance">comments powered by utterances.</a></noscript>
 <script>
-  let disqus_config = function () {
-    
-    
-    
-  };
-  (function () {
-    if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
-      document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
-      return;
+  document.addEventListener('DOMContentLoaded', function () {
+    try {
+      
+      var owner = JSON.parse("\"micro-artwork\"");
+      
+      var repo = JSON.parse("\"micro-artwork.github.io\"");
+      var localTheme = localStorage.getItem('theme');
+      var utterTheme = localTheme === "dark" || localTheme === "hacker" ? 'photon-dark' : localTheme === 'kimbie' ? 'github-dark-orange' : 'github-light'
+
+      var myScript = document.createElement('script');
+      myScript.setAttribute('src', 'https://utteranc.es/client.js');
+      myScript.setAttribute('repo', `${owner}/${repo}`);
+      myScript.setAttribute('issue-term', 'pathname');
+      myScript.setAttribute('theme', utterTheme);
+      myScript.setAttribute('crossorigin', 'anonymous');
+      myScript.setAttribute('async', '');
+
+      myScript.onload = function() {
+      }
+
+      document.getElementById('utterances').appendChild(myScript);
+    } catch (err) {
+      console.log(err);
     }
-    var d = document, s = d.createElement('script'); s.async = true;
-    s.src = 'https://' + 'rollcake-dev' + '.disqus.com/embed.js';
-  s.setAttribute('data-timestamp', +new Date());
-  (d.head || d.body).appendChild(s);
-  }) ();
+  });
 </script>
+
   
 
     <div class="modal micromodal-slide" id="modal" aria-hidden="true">

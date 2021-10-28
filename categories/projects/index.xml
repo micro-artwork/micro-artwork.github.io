@@ -14,7 +14,7 @@
     <managingEditor>rollcake.dev@gmail.com (YOGO)</managingEditor>
     <webMaster>rollcake.dev@gmail.com (YOGO)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Wed, 27 Oct 2021 13:39:06 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 28 Oct 2021 11:58:34 +0900</lastBuildDate>
     
         <atom:link href="/categories/projects/index.xml" rel="self" type="application/rss+xml" />
     
@@ -23,11 +23,55 @@
 
       
       <item>
+        <title>모스(Morse) 부호 키보드 만들기</title>
+        <link>/posts/projects/morse-keyboard/2021-10-28-morse-keyboard-dev/</link>
+        <pubDate>Thu, 28 Oct 2021 11:58:34 +0900</pubDate>
+        <author>rollcake.dev@gmail.com (YOGO)</author>
+        <atom:modified>Thu, 28 Oct 2021 23:20:41 +0900</atom:modified>
+        <guid>/posts/projects/morse-keyboard/2021-10-28-morse-keyboard-dev/</guid>
+        <description>잠이오지 않아 뒤척이던 어느 늦은밤 커뮤니티의 게시물을 훑어보던 도중 재미있는 짤을 하나 발견했습니다. 아앗! 작고 아름다운 그것은 야심한 새벽에 그렇게 제 마음에</description>
+        
+        <dc:creator>Yogo</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>project</category>
+            
+          
+            
+              <category>취미전자</category>
+            
+          
+            
+              <category>Hobby Electronics</category>
+            
+          
+        
+        
+          
+            
+              <category>Projects</category>
+            
+          
+        
+        
+          
+            
+              <category>취미전자</category>
+            
+          
+        
+      </item>
+      
+      <item>
         <title>XInput to DualShock 4 (XI2DS) 개발</title>
         <link>/posts/projects/xi2ds/2021-10-27-xi2ds-dev/</link>
         <pubDate>Wed, 27 Oct 2021 13:39:06 +0900</pubDate>
         <author>rollcake.dev@gmail.com (YOGO)</author>
-        <atom:modified>Thu, 28 Oct 2021 17:15:50 +0900</atom:modified>
+        <atom:modified>Thu, 28 Oct 2021 23:20:41 +0900</atom:modified>
         <guid>/posts/projects/xi2ds/2021-10-27-xi2ds-dev/</guid>
         <description>개발동기 18년도 초 몬스터헌터 월드가 플스로 발매될 때 워낙 유명한 게임이라서 같이 플레이 하자라는 주변 권유로 인해서, 호기심으로 한번은 경험해보고자 동생으로</description>
         
