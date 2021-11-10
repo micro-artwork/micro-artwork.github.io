@@ -14,13 +14,57 @@
     <managingEditor>rollcake.dev@gmail.com (YOGO)</managingEditor>
     <webMaster>rollcake.dev@gmail.com (YOGO)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Thu, 28 Oct 2021 11:58:34 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 08 Nov 2021 11:22:45 +0900</lastBuildDate>
     
         <atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     
 
+      
+      <item>
+        <title>유튜브 미디어 컨트롤러 제작기 - 01</title>
+        <link>/posts/projects/media-controller/2021-11-08-media-controller-dev-01/</link>
+        <pubDate>Mon, 08 Nov 2021 11:22:45 +0900</pubDate>
+        <author>rollcake.dev@gmail.com (YOGO)</author>
+        <atom:modified>Wed, 10 Nov 2021 17:18:23 +0900</atom:modified>
+        <guid>/posts/projects/media-controller/2021-11-08-media-controller-dev-01/</guid>
+        <description>PC에서 게임을 하거나 음악을 들을 때 간혹 소리가 너무 작거나 또는 큰 이유로 볼륨을 조절해야할 때가 종종 있습니다. 외장 DAC이나 사운드 카드 또는 스피커를 사용 시</description>
+        
+        <dc:creator>Yogo</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>project</category>
+            
+          
+            
+              <category>취미전자</category>
+            
+          
+            
+              <category>Hobby Electronics</category>
+            
+          
+        
+        
+          
+            
+              <category>Projects</category>
+            
+          
+        
+        
+          
+            
+              <category>취미전자</category>
+            
+          
+        
+      </item>
       
       <item>
         <title>모스(Morse) 부호 키보드 만들기</title>
