@@ -44,11 +44,11 @@
 
       
       <item>
-        <title>유튜브 미디어 컨트롤러 제작기 - 02</title>
+        <title>유튜브 플레이어 컨트롤러 제작기 - 02</title>
         <link>/posts/projects/media-controller/2021-11-12-media-controller-dev-02/</link>
         <pubDate>Fri, 12 Nov 2021 11:29:20 +0900</pubDate>
         <author>rollcake.dev@gmail.com (YOGO)</author>
-        <atom:modified>Fri, 12 Nov 2021 11:45:44 +0900</atom:modified>
+        <atom:modified>Fri, 12 Nov 2021 16:37:41 +0900</atom:modified>
         <guid>/posts/projects/media-controller/2021-11-12-media-controller-dev-02/</guid>
         <description>지난 포스트에서 미디어 컨트롤러를 제작하고 동작하는 것을 확인하였습니다. 다만, 포스트 마지막에 남겼듯이 유튜브 다양한 기능 제어를 위해서는 미디어 컨트롤러만</description>
         
@@ -88,11 +88,11 @@
       </item>
       
       <item>
-        <title>유튜브 미디어 컨트롤러 제작기 - 01</title>
+        <title>유튜브 플레이어 컨트롤러 제작기 - 01</title>
         <link>/posts/projects/media-controller/2021-11-08-media-controller-dev-01/</link>
         <pubDate>Mon, 08 Nov 2021 11:22:45 +0900</pubDate>
         <author>rollcake.dev@gmail.com (YOGO)</author>
-        <atom:modified>Wed, 10 Nov 2021 17:28:24 +0900</atom:modified>
+        <atom:modified>Fri, 12 Nov 2021 16:37:41 +0900</atom:modified>
         <guid>/posts/projects/media-controller/2021-11-08-media-controller-dev-01/</guid>
         <description>PC에서 게임을 하거나 음악을 들을 때 간혹 소리가 너무 작거나 또는 큰 이유로 볼륨을 조절해야할 때가 종종 있습니다. 외장 DAC이나 사운드 카드 또는 스피커를 사용 시</description>
         
