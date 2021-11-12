@@ -14,13 +14,57 @@
     <managingEditor>rollcake.dev@gmail.com (YOGO)</managingEditor>
     <webMaster>rollcake.dev@gmail.com (YOGO)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Mon, 08 Nov 2021 11:22:45 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 12 Nov 2021 11:29:20 +0900</lastBuildDate>
     
         <atom:link href="/tags/%EC%B7%A8%EB%AF%B8%EC%A0%84%EC%9E%90/index.xml" rel="self" type="application/rss+xml" />
     
     
     
 
+      
+      <item>
+        <title>유튜브 미디어 컨트롤러 제작기 - 02</title>
+        <link>/posts/projects/media-controller/2021-11-12-media-controller-dev-02/</link>
+        <pubDate>Fri, 12 Nov 2021 11:29:20 +0900</pubDate>
+        <author>rollcake.dev@gmail.com (YOGO)</author>
+        <atom:modified>Fri, 12 Nov 2021 11:45:44 +0900</atom:modified>
+        <guid>/posts/projects/media-controller/2021-11-12-media-controller-dev-02/</guid>
+        <description>지난 포스트에서 미디어 컨트롤러를 제작하고 동작하는 것을 확인하였습니다. 다만, 포스트 마지막에 남겼듯이 유튜브 다양한 기능 제어를 위해서는 미디어 컨트롤러만</description>
+        
+        <dc:creator>Yogo</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>project</category>
+            
+          
+            
+              <category>취미전자</category>
+            
+          
+            
+              <category>Hobby Electronics</category>
+            
+          
+        
+        
+          
+            
+              <category>Projects</category>
+            
+          
+        
+        
+          
+            
+              <category>취미전자</category>
+            
+          
+        
+      </item>
       
       <item>
         <title>유튜브 미디어 컨트롤러 제작기 - 01</title>
