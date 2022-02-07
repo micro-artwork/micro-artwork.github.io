@@ -1,240 +1,146 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>/categories/</loc>
     <lastmod>2022-02-07T18:41:12+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/emulator/</loc>
     <lastmod>2022-02-07T18:41:12+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/nes/</loc>
     <lastmod>2022-02-07T18:41:12+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/projects/nesdev/2022-02-07-nes-cpu-emulation-01/</loc>
     <lastmod>2022-02-07T18:41:12+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/series/nes-emulator/</loc>
     <lastmod>2022-02-07T18:41:12+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/</loc>
     <lastmod>2022-02-07T18:41:12+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/series/</loc>
     <lastmod>2022-02-07T18:41:12+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/</loc>
     <lastmod>2022-02-07T18:41:12+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/</loc>
     <lastmod>2022-02-07T18:41:12+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/</loc>
     <lastmod>2022-02-07T18:41:12+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/categories/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/</loc>
     <lastmod>2022-02-07T18:41:12+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/hobby-electronics/</loc>
     <lastmod>2021-11-12T16:37:41+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/project/</loc>
     <lastmod>2021-11-12T16:37:41+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/categories/projects/</loc>
     <lastmod>2021-11-12T16:37:41+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/projects/media-controller/2021-11-12-media-controller-dev-02/</loc>
     <lastmod>2021-11-12T16:37:41+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%EC%B7%A8%EB%AF%B8%EC%A0%84%EC%9E%90/</loc>
     <lastmod>2021-11-12T16:37:41+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/series/%EC%B7%A8%EB%AF%B8%EC%A0%84%EC%9E%90/</loc>
     <lastmod>2021-11-12T16:37:41+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/projects/media-controller/2021-11-08-media-controller-dev-01/</loc>
     <lastmod>2021-11-12T16:37:41+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/projects/morse-keyboard/2021-10-28-morse-keyboard-dev/</loc>
     <lastmod>2021-10-29T19:34:04+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/dualshock4/</loc>
     <lastmod>2021-10-29T03:16:05+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/xbox/</loc>
     <lastmod>2021-10-29T03:16:05+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/series/xi2ds/</loc>
     <lastmod>2021-10-29T03:16:05+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/projects/xi2ds/2021-10-27-xi2ds-dev/</loc>
     <lastmod>2021-10-29T03:16:05+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/projects/xi2ds/2021-10-26-xi2ds/</loc>
     <lastmod>2021-10-28T17:15:50+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/javascript/</loc>
     <lastmod>2021-10-08T16:44:40+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/meme/</loc>
     <lastmod>2021-10-08T16:44:40+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/web/</loc>
     <lastmod>2021-10-08T16:44:40+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/categories/%EA%B0%9C%EB%B0%9C/</loc>
     <lastmod>2021-10-08T16:44:40+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/dev/web/2021-10-07-simple-meme-generator/</loc>
     <lastmod>2021-10-08T16:44:40+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/projects/nesdev/2021-07-06-nesdoc-kr-01/</loc>
     <lastmod>2022-02-06T23:34:39+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/dev/micro/2021-01-27-dualshock2-reader-implementation/</loc>
     <lastmod>2021-02-07T16:50:12+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/categories/%EA%B0%9C%EB%B0%9C-%EB%B0%8F-%EA%B0%95%EC%A2%8C/</loc>
     <lastmod>2021-02-07T16:50:12+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%EC%BB%A8%ED%8A%B8%EB%A1%A4%EB%9F%AC/</loc>
     <lastmod>2021-02-07T16:50:12+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/series/%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%EC%BB%A8%ED%8A%B8%EB%A1%A4%EB%9F%AC/</loc>
     <lastmod>2021-02-07T16:50:12+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/typescript/</loc>
     <lastmod>2021-02-07T16:50:12+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/series/vue/</loc>
     <lastmod>2021-02-07T16:50:12+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/vue/</loc>
     <lastmod>2021-02-07T16:50:12+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/dev/vue/2020-12-22-vue-3-simple-tool-tip/</loc>
     <lastmod>2021-02-07T16:50:12+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/vue-next/</loc>
     <lastmod>2021-02-07T16:50:12+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/vue3/</loc>
     <lastmod>2021-02-07T16:50:12+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/dev/vue/2020-10-06-vue-3-global-properties-and-typescript/</loc>
     <lastmod>2020-12-22T20:02:27+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/life/daily/2020-09-21/</loc>
     <lastmod>2021-02-07T16:50:12+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/categories/%EA%B0%9C%EC%9D%B8/</loc>
     <lastmod>2021-02-07T16:50:12+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%EC%9D%BC%EC%83%81/</loc>
     <lastmod>2021-02-07T16:50:12+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/series/%EC%B4%88%EB%B3%B4%EC%9A%B4%EC%A0%84/</loc>
     <lastmod>2021-02-07T16:50:12+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/life/daily/2020-05-31/</loc>
     <lastmod>2020-11-08T21:42:56+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/about/</loc>
     <lastmod>2020-11-08T21:42:56+09:00</lastmod>
   </url>
-  
 </urlset>

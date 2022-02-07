@@ -15,9 +15,9 @@
 
 <script defer src="/js/fuse.min.c4bee9a8d44273d6154fe86006923d4131eb2e8069d8897687137c6f37f553e3.js"></script>
 
-<script defer src="/js/helper/getParents.min.1618c696be7c98933f9a92677f518b512a74e55bdbb976b09936b4182e93181b.js"></script>
+<script defer src="/js/helper/getParents.min.ccd45f158c1b17849307ba913a72beac239c410f2b6e648496a79842da84e55b.js"></script>
 
-<script defer src="/js/helper/fadeinout.min.93a331f96194789a542f33690bbe4f0c102c7e78ffc018217f5a1c33010bad91.js"></script>
+<script defer src="/js/helper/fadeinout.min.9fb19682560d5fa5596fffec85da605067c4acc86aad05add4d8fff9d362a446.js"></script>
 
 <script defer src="/js/helper/closest.min.js"></script>
   
@@ -1230,7 +1230,7 @@
 <meta property="og:type" content="article">
 <meta property="og:description" content="Yogo&#39;s life and devlog">
 
-<meta name="generator" content="Hugo 0.71.1" />
+<meta name="generator" content="Hugo 0.92.1" />
 <meta name="msapplication-TileColor" content="#fff">
 
 <meta name="theme-color" content="#fff">
@@ -1277,16 +1277,14 @@
 
     
   
-<script type="application/javascript">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G83TEBX87R"></script>
+<script>
 var doNotTrack = false;
 if (!doNotTrack) {
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	ga('create', 'G-G83TEBX87R', 'auto');
-	
-	ga('send', 'pageview');
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-G83TEBX87R', { 'anonymize_ip': false });
 }
 </script>
 
@@ -1567,7 +1565,7 @@ if (!doNotTrack) {
 <p>이러한 특징이 가능한 것은 대부분 일반적인 컨트롤러에서 디지털 버튼의 눌림은 두 전극이 통전될 시 전원 논리 값 변화(on, off)만 감지하는데 반해, DS2의 경우에는 누르는 압력에 의한 전도성의 차이<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> 감지가 가능하기 때문입니다.</p>
 <h4 id="2-dualshock2-port-구조">2. Dualshock2 Port 구조</h4>
 <p>아래 그림?은 DS2 커넥터를 바라본 시점에서 포트 이미지를 텍스트로 구성<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>한 것 입니다.</p>
-<pre><code>  1  2  3   4  5  6   7  8  9
+<pre tabindex="0"><code>  1  2  3   4  5  6   7  8  9
 -------------------------------
 | o  o  o | o  o  o | o  o  o |  (at the Controller)
 \_____________________________/
@@ -1650,7 +1648,7 @@ if (!doNotTrack) {
 <p>이 경우에는 6번 핀의 논리 신호가 low가 되면 PS2가 &lsquo;너랑 통신을 할거야&rsquo; 라고 DS2에 알려주는 용도이고, 9번핀은 논리 신호가 low가 되면 DS2가 PS2에게 &lsquo;데이터 잘 받았어, 다음 데이터를 받을 수 있어&rsquo;라고 알려주는 용도로 사용됩니다.</p>
 <p>조금 더 자세한 특성 정보는 Interfacing a PS2 (PlayStation 2) Controller<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup> 페이지에서 확인 하실 수 있습니다.</p>
 <h4 id="3-통신-라인-및-시그널-분석">3. 통신 라인 및 시그널 분석</h4>
-<pre><code>Overview
+<pre tabindex="0"><code>Overview
       ____                                                              _____
  SEL-     |____________________________________________________________|     
       ______        ____        ____        ____        ____        _________
@@ -1889,22 +1887,22 @@ Top command. First comminucation(device check)
 <hr />
 <ol>
 <li id="fn:1" role="doc-endnote">
-<p><a href="https://electronics.howstuffworks.com/ps23.htm">https://electronics.howstuffworks.com/ps23.htm</a> <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p><a href="https://electronics.howstuffworks.com/ps23.htm">https://electronics.howstuffworks.com/ps23.htm</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:2" role="doc-endnote">
-<p><a href="http://www.hardwarebook.info/Sony_Playstation_Controller_Port">http://www.hardwarebook.info/Sony_Playstation_Controller_Port</a> <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p><a href="http://www.hardwarebook.info/Sony_Playstation_Controller_Port">http://www.hardwarebook.info/Sony_Playstation_Controller_Port</a>&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:3" role="doc-endnote">
-<p><a href="https://www.ti.com/lit/ug/sprugp2a/sprugp2a.pdf?ts=1611639876953&amp;ref_url=https%253A%252F%252Fwww.google.com%252F">https://www.ti.com/lit/ug/sprugp2a/sprugp2a.pdf?ts=1611639876953&amp;ref_url=https%253A%252F%252Fwww.google.com%252F</a> <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p><a href="https://www.ti.com/lit/ug/sprugp2a/sprugp2a.pdf?ts=1611639876953&amp;ref_url=https%253A%252F%252Fwww.google.com%252F">https://www.ti.com/lit/ug/sprugp2a/sprugp2a.pdf?ts=1611639876953&amp;ref_url=https%253A%252F%252Fwww.google.com%252F</a>&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:4" role="doc-endnote">
-<p><a href="https://store.curiousinventor.com/guides/PS2">https://store.curiousinventor.com/guides/PS2</a> <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p><a href="https://store.curiousinventor.com/guides/PS2">https://store.curiousinventor.com/guides/PS2</a>&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:5" role="doc-endnote">
-<p><a href="https://www.raphnet.net/electronique/psx_adaptor/Playstation.txt">https://www.raphnet.net/electronique/psx_adaptor/Playstation.txt</a> <a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p><a href="https://www.raphnet.net/electronique/psx_adaptor/Playstation.txt">https://www.raphnet.net/electronique/psx_adaptor/Playstation.txt</a>&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:6" role="doc-endnote">
-<p><a href="https://www.microchip.com/wwwproducts/en/PIC16F877A">https://www.microchip.com/wwwproducts/en/PIC16F877A</a> <a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p><a href="https://www.microchip.com/wwwproducts/en/PIC16F877A">https://www.microchip.com/wwwproducts/en/PIC16F877A</a>&#160;<a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </div>
@@ -2070,7 +2068,7 @@ Top command. First comminucation(device check)
 </div>
 
 
-<script defer src="/js/swipe.min.08ff2be1b74347bad9e267f732f1388d271b2f9d97b6a8a87bd6a510f17c5ad2.js"></script>
+<script defer src="/js/swipe.min.c83bcee984a774ad7affbdc0d5d6c69ffba07f022cf1de53e2bdcea55ef8774f.js"></script>
 
 <script defer src="/js/micromodal.min.de01b44b2f383056bbcaf6ee921fd385d79108ec1129afd0eb2f3f5a07e11f45.js"></script>
 

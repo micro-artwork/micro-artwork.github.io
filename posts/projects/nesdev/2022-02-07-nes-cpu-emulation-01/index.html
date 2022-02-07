@@ -15,9 +15,9 @@
 
 <script defer src="/js/fuse.min.c4bee9a8d44273d6154fe86006923d4131eb2e8069d8897687137c6f37f553e3.js"></script>
 
-<script defer src="/js/helper/getParents.min.1618c696be7c98933f9a92677f518b512a74e55bdbb976b09936b4182e93181b.js"></script>
+<script defer src="/js/helper/getParents.min.ccd45f158c1b17849307ba913a72beac239c410f2b6e648496a79842da84e55b.js"></script>
 
-<script defer src="/js/helper/fadeinout.min.93a331f96194789a542f33690bbe4f0c102c7e78ffc018217f5a1c33010bad91.js"></script>
+<script defer src="/js/helper/fadeinout.min.9fb19682560d5fa5596fffec85da605067c4acc86aad05add4d8fff9d362a446.js"></script>
 
 <script defer src="/js/helper/closest.min.js"></script>
   
@@ -1230,7 +1230,7 @@
 <meta property="og:type" content="article">
 <meta property="og:description" content="Yogo&#39;s life and devlog">
 
-<meta name="generator" content="Hugo 0.71.1" />
+<meta name="generator" content="Hugo 0.92.1" />
 <meta name="msapplication-TileColor" content="#fff">
 
 <meta name="theme-color" content="#fff">
@@ -1277,16 +1277,14 @@
 
     
   
-<script type="application/javascript">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G83TEBX87R"></script>
+<script>
 var doNotTrack = false;
 if (!doNotTrack) {
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	ga('create', 'G-G83TEBX87R', 'auto');
-	
-	ga('send', 'pageview');
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-G83TEBX87R', { 'anonymize_ip': false });
 }
 </script>
 
@@ -1544,11 +1542,11 @@ if (!doNotTrack) {
   🏷️
   
 
-  <li><a href="/tags/emulator/" class="single__tag" title="Emulator">#Emulator</a></li>
+  <li><a href="/tags/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/" class="single__tag" title="프로젝트">#프로젝트</a></li>
 
   <li><a href="/tags/nes/" class="single__tag" title="NES">#NES</a></li>
 
-  <li><a href="/tags/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/" class="single__tag" title="프로젝트">#프로젝트</a></li>
+  <li><a href="/tags/emulator/" class="single__tag" title="Emulator">#Emulator</a></li>
 
 </ul>      
     </div>
@@ -1626,7 +1624,7 @@ if (!doNotTrack) {
 <p>Negative Flag (N) - 바이트의 비트 7은 해당 바이트의 부호를 나타내며 0은 양수이고 1은 음수입니다. 이 부호 비트가 1이면 음수 플래그(부호 플래그라고도 함)가 세트됩니다.</p>
 </li>
 </ul>
-<pre><code>// 상태 레지스터
+<pre tabindex="0"><code>// 상태 레지스터
   7   6   5   4   3   2   1   0
 +-------------------------------+
 | N | V |   | B | D | I | Z | C |
@@ -1643,12 +1641,12 @@ if (!doNotTrack) {
 <p>특정 메모리 주소나 위치를 참조하는 것이 아니라 값(value)으로서 사용 합니다!</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-ASM" data-lang="ASM"><span class="c">; 명령어 #$값
+<pre tabindex="0" class="chroma"><code class="language-ASM" data-lang="ASM"><span class="c">; 명령어 #$값
 </span><span class="c"></span><span class="nf">LDX</span> <span class="c">#$01    ; X 레지스터에 #$01을 저장 (Immediate)
 </span><span class="c"></span><span class="no">LDX</span> <span class="no">$01</span>     <span class="c">; X 레지스터에 $01 번지에 있는 값을 저장 (Zero Page)
 </span></code></pre></td></tr></table>
@@ -1657,11 +1655,11 @@ if (!doNotTrack) {
 <p>Zero Page는 첫 페이지(256 byte) 메모리 $0000 ~ $00FF 위치를 뜻하기도 하며, 해당 어드레싱 모드는 바로 첫 페이지만을 참조하기 위해서 8bit 크기 만큼만 주소영역으로 사용합니다. 상대적으로 짧은 주소 및 적은 operand 사용으로 빠른 접근과 연산을 목적으로 하고 있습니다.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-ASM" data-lang="ASM"><span class="c">; 명령어 $주소(8bit)
+<pre tabindex="0" class="chroma"><code class="language-ASM" data-lang="ASM"><span class="c">; 명령어 $주소(8bit)
 </span><span class="c"></span><span class="nf">AND</span> <span class="no">$12</span> <span class="c">; $12 번지의 데이터와 AND 연산
 </span></code></pre></td></tr></table>
 </div>
@@ -1671,12 +1669,12 @@ if (!doNotTrack) {
 <p>예를 들어 X 레지스터 값이 $01이고 $FF가 참조할 기본 주소인 경우 최종 참조 주소는 $0100이 아닌 $00이 됩니다.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-ASM" data-lang="ASM"><span class="nf">LDX</span> <span class="c">#$01    ; X 레지스터에 #$01을 저장
+<pre tabindex="0" class="chroma"><code class="language-ASM" data-lang="ASM"><span class="nf">LDX</span> <span class="c">#$01    ; X 레지스터에 #$01을 저장
 </span><span class="c"></span><span class="no">STA</span> <span class="no">$FF</span><span class="p">,</span> <span class="no">X</span>  <span class="c">; $FF 번지에서 X 레지스터 오프셋 만큼 증가한 위치에 A 값을 저장
 </span><span class="c"></span>            <span class="c">; $FF + $01 is $00, not $0100
 </span></code></pre></td></tr></table>
@@ -1685,11 +1683,11 @@ if (!doNotTrack) {
 <p>어드레싱 버스 크기(16bit)의 메모리 주소를 참조합니다.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-ASM" data-lang="ASM"><span class="c">; 명령어 $주소(16bit)
+<pre tabindex="0" class="chroma"><code class="language-ASM" data-lang="ASM"><span class="c">; 명령어 $주소(16bit)
 </span><span class="c"></span><span class="nf">STA</span> <span class="no">$2000</span> <span class="c"># $2000 번지에 A(accumlator) 값을 저장
 </span></code></pre></td></tr></table>
 </div>
@@ -1697,12 +1695,12 @@ if (!doNotTrack) {
 <p>Absolute 메모리 주소에서 X, Y 레지스터에 저장된 값 만큼 증가한 주소를 참조합니다.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-ASM" data-lang="ASM"><span class="c">; 명령어 $주소(16bit), X(or Y)
+<pre tabindex="0" class="chroma"><code class="language-ASM" data-lang="ASM"><span class="c">; 명령어 $주소(16bit), X(or Y)
 </span><span class="c"></span><span class="nf">LDX</span> <span class="c">#$01      ; X 레지스터에 #$01을 저장
 </span><span class="c"></span><span class="no">STA</span> <span class="no">$2000</span><span class="p">,</span> <span class="no">X</span>  <span class="c">; $2000 번지에X 레지스터 값 만큼 증가한 위치($2001)에 A 값을 저장
 </span></code></pre></td></tr></table>
@@ -1713,7 +1711,7 @@ if (!doNotTrack) {
 <p>다시 말하자면 직접 참조할 메모리 주소에 최종적으로 참조할 메모리 주소가 있다는 뜻입니다.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -1721,7 +1719,7 @@ if (!doNotTrack) {
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-ASM" data-lang="ASM"><span class="c">; 명령어 $주소(16bit)
+<pre tabindex="0" class="chroma"><code class="language-ASM" data-lang="ASM"><span class="c">; 명령어 $주소(16bit)
 </span><span class="c"></span><span class="nf">LDA</span> <span class="c">#$01
 </span><span class="c"></span><span class="no">STA</span> <span class="no">$F0</span>
 <span class="nf">LDA</span> <span class="c">#$CC
@@ -1748,12 +1746,11 @@ if (!doNotTrack) {
 <div class="expand">
   <button type="button" class="expand__button" aria-label="Expand Button">
     <span class="expand-icon expand-icon__right">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M9.29 15.88L13.17 12 9.29 8.12c-.39-.39-.39-1.02 0-1.41.39-.39 1.02-.39 1.41 0l4.59 4.59c.39.39.39 1.02 0 1.41L10.7 17.3c-.39.39-1.02.39-1.41 0-.38-.39-.39-1.03 0-1.42z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M9.29 15.88L13.17 12 9.29 8.12c-.39-.39-.39-1.02 0-1.41.39-.39 1.02-.39 1.41 0l4.59 4.59c.39.39.39 1.02 0 1.41L10.7 17.3c-.39.39-1.02.39-1.41 0-.38-.39-.39-1.03 0-1.42z"/></svg>
     </span>
     Instruction Table
   </button>
-  <div class="expand__content">
-    <table>
+  <div class="expand__content table-wrapper"><table>
 <thead>
 <tr>
 <th></th>
@@ -2082,17 +2079,16 @@ if (!doNotTrack) {
 </tr>
 </tbody>
 </table>
-  </div>
+</div>
 </div>
 <div class="expand">
   <button type="button" class="expand__button" aria-label="Expand Button">
     <span class="expand-icon expand-icon__right">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M9.29 15.88L13.17 12 9.29 8.12c-.39-.39-.39-1.02 0-1.41.39-.39 1.02-.39 1.41 0l4.59 4.59c.39.39.39 1.02 0 1.41L10.7 17.3c-.39.39-1.02.39-1.41 0-.38-.39-.39-1.03 0-1.42z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M9.29 15.88L13.17 12 9.29 8.12c-.39-.39-.39-1.02 0-1.41.39-.39 1.02-.39 1.41 0l4.59 4.59c.39.39.39 1.02 0 1.41L10.7 17.3c-.39.39-1.02.39-1.41 0-.38-.39-.39-1.03 0-1.42z"/></svg>
     </span>
     어드레싱 모드 설명
   </button>
-  <div class="expand__content">
-    <table>
+  <div class="expand__content table-wrapper"><table>
 <thead>
 <tr>
 <th>약어</th>
@@ -2168,17 +2164,16 @@ if (!doNotTrack) {
 </tr>
 </tbody>
 </table>
-  </div>
+</div>
 </div>
 <div class="expand">
   <button type="button" class="expand__button" aria-label="Expand Button">
     <span class="expand-icon expand-icon__right">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M9.29 15.88L13.17 12 9.29 8.12c-.39-.39-.39-1.02 0-1.41.39-.39 1.02-.39 1.41 0l4.59 4.59c.39.39.39 1.02 0 1.41L10.7 17.3c-.39.39-1.02.39-1.41 0-.38-.39-.39-1.03 0-1.42z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M9.29 15.88L13.17 12 9.29 8.12c-.39-.39-.39-1.02 0-1.41.39-.39 1.02-.39 1.41 0l4.59 4.59c.39.39.39 1.02 0 1.41L10.7 17.3c-.39.39-1.02.39-1.41 0-.38-.39-.39-1.03 0-1.42z"/></svg>
     </span>
     명령어 리스트(이름)
   </button>
-  <div class="expand__content">
-    <table>
+  <div class="expand__content table-wrapper"><table>
 <thead>
 <tr>
 <th>Opcode</th>
@@ -2412,7 +2407,7 @@ if (!doNotTrack) {
 </tr>
 </tbody>
 </table>
-  </div>
+</div>
 </div>
 <h5 id="비공식-명령어-unofficialillegalundocumented-opcodesillegal">비공식 명령어 (Unofficial/Illegal/Undocumented Opcodes)<sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup></h5>
 <p>명령어 세트 중에서는 일종의 비공식 명령어 세트가 있습니다. 원래 디자인에서는 공식적으로 사용되지도 않고 문서화되어 있지 않지만 실제로는 다양한 작업을 수행할 수 있습니다. 이러한 명령어는 유용하기도 하지만 예측이 불가능하고 불안정하기도 합니다.</p>
@@ -2458,51 +2453,177 @@ if (!doNotTrack) {
 </tr>
 </tbody>
 </table>
-<p><strong>Stack</strong><br />
-|항목|설명|<br />
-|-|-|<br />
-|설명|스택을 푸시 또는 풀하거나 X 레지스터를 사용하여 스택 포인터를 조작합니다|<br />
-|명령어|<a href="https://www.pagetable.com/c64ref/6502/?tab=2#PHA">PHA</a>, <a href="https://www.pagetable.com/c64ref/6502/?tab=2#PHP">PHP</a>, <a href="https://www.pagetable.com/c64ref/6502/?tab=2#PLA">PLA</a>, <a href="https://www.pagetable.com/c64ref/6502/?tab=2#PLP">PLP</a>|</p>
-<p><strong>Logical</strong><br />
-|항목|설명|<br />
-|-|-|<br />
-|설명|누산기 및 메모리에 저장된 값에 대한 논리 연산을 수행합니다|<br />
-|명령어|<a href="https://www.pagetable.com/c64ref/6502/?tab=2#AND">AND</a>, <a href="https://www.pagetable.com/c64ref/6502/?tab=2#BIT">BIT</a>, <a href="https://www.pagetable.com/c64ref/6502/?tab=2#EOR">EOR</a>, <a href="https://www.pagetable.com/c64ref/6502/?tab=2#ORA">ORA</a>|</p>
-<p><strong>Arithmetic</strong><br />
-|항목|설명|<br />
-|-|-|<br />
-|설명|레지스터와 메모리에 대한 산술 연산을 수행합니다|<br />
-|명령어|<a href="https://www.pagetable.com/c64ref/6502/?tab=2#ADC">ADC</a>, <a href="https://www.pagetable.com/c64ref/6502/?tab=2#CMP">CMP</a>, <a href="https://www.pagetable.com/c64ref/6502/?tab=2#CPX">CPX</a>, <a href="https://www.pagetable.com/c64ref/6502/?tab=2#CPY">CPY</a>, <a href="https://www.pagetable.com/c64ref/6502/?tab=2#SBC">SBC</a>|</p>
-<p><strong>Increase/Decrease</strong><br />
-|항목|설명|<br />
-|-|-|<br />
-|설명|X 또는 Y 레지스터 또는 메모리에 저장된 값을 증가 또는 감소시킵니다|<br />
-|명령어|<a href="https://www.pagetable.com/c64ref/6502/?tab=2#DEC">DEC</a>, <a href="https://www.pagetable.com/c64ref/6502/?tab=2#DEX">DEX</a>, <a href="https://www.pagetable.com/c64ref/6502/?tab=2#DEY">DEY</a>, <a href="https://www.pagetable.com/c64ref/6502/?tab=2#INC">INC</a>, <a href="https://www.pagetable.com/c64ref/6502/?tab=2#INX">INX</a>, <a href="https://www.pagetable.com/c64ref/6502/?tab=2#INY">INY</a>|</p>
-<p><strong>Shifts</strong><br />
-|항목|설명|<br />
-|-|-|<br />
-|설명|누산기 또는 메모리 위치의 비트를 왼쪽이나 오른쪽으로 1비트 이동합니다|<br />
-|명령어|<a href="https://www.pagetable.com/c64ref/6502/?tab=2#ASL">ASL</a>, <a href="https://www.pagetable.com/c64ref/6502/?tab=2#LSR">LSR</a>, <a href="https://www.pagetable.com/c64ref/6502/?tab=2#ROL">ROL</a>, <a href="https://www.pagetable.com/c64ref/6502/?tab=2#ROR">ROR</a>|</p>
-<p><strong>Jumps/Calls</strong><br />
-|항목|설명|<br />
-|-|-|<br />
-|설명|순차적인 실행 시퀀스를 중단하고, 지정된 주소에서 재게 합니다|<br />
-|명령어|<a href="https://www.pagetable.com/c64ref/6502/?tab=2#BRK">BRK</a>, <a href="https://www.pagetable.com/c64ref/6502/?tab=2#JMP">JMP</a>, <a href="https://www.pagetable.com/c64ref/6502/?tab=2#JSR">JSR</a>, <a href="https://www.pagetable.com/c64ref/6502/?tab=2#RTI">RTI</a>, <a href="https://www.pagetable.com/c64ref/6502/?tab=2#RTS">RTS</a>|</p>
-<p><strong>Branches</strong><br />
-|항목|설명|<br />
-|-|-|<br />
-|설명|특정한 조건을 만족하면 분기하여 Jumps/Calls 처럼 동작합니다. 조건은 상태 레지스터의 특정 비트와 관련이 있습니다|<br />
-|명령어|<a href="https://www.pagetable.com/c64ref/6502/?tab=2#BCC">BCC</a>, <a href="https://www.pagetable.com/c64ref/6502/?tab=2#BCS">BCS</a>, <a href="https://www.pagetable.com/c64ref/6502/?tab=2#BEQ">BEQ</a>, <a href="https://www.pagetable.com/c64ref/6502/?tab=2#BMI">BMI</a>, <a href="https://www.pagetable.com/c64ref/6502/?tab=2#BNE">BNE</a>, <a href="https://www.pagetable.com/c64ref/6502/?tab=2#BPL">BPL</a>, <a href="https://www.pagetable.com/c64ref/6502/?tab=2#BVC">BVC</a>, <a href="https://www.pagetable.com/c64ref/6502/?tab=2#BVS">BVS</a>|</p>
-<p><strong>Status Register</strong><br />
-|항목|설명|<br />
-|-|-|<br />
-|설명|상태 레지스터에서 플래그를 세트하거나 클리어 합니다|<br />
-|명령어|<a href="https://www.pagetable.com/c64ref/6502/?tab=2#CLC">CLC</a>, <a href="https://www.pagetable.com/c64ref/6502/?tab=2#CLD">CLD</a>, <a href="https://www.pagetable.com/c64ref/6502/?tab=2#CLI">CLI</a>, <a href="https://www.pagetable.com/c64ref/6502/?tab=2#CLV">CLV</a>, <a href="https://www.pagetable.com/c64ref/6502/?tab=2#SEC">SEC</a>, <a href="https://www.pagetable.com/c64ref/6502/?tab=2#SED">SED</a>, <a href="https://www.pagetable.com/c64ref/6502/?tab=2#SEI">SEI</a>|</p>
-<p><strong>System Functions</strong><br />
-|항목|설명|<br />
-|-|-|<br />
-|설명|거의 사용하지 않는 기능을 수행합니다|<br />
-|명령어|<a href="https://www.pagetable.com/c64ref/6502/?tab=2#NOP">NOP</a>|</p>
+<p><strong>Stack</strong></p>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>설명</td>
+<td>스택을 푸시 또는 풀하거나 X 레지스터를 사용하여 스택 포인터를 조작합니다</td>
+</tr>
+<tr>
+<td>명령어</td>
+<td><a href="https://www.pagetable.com/c64ref/6502/?tab=2#PHA">PHA</a>, <a href="https://www.pagetable.com/c64ref/6502/?tab=2#PHP">PHP</a>, <a href="https://www.pagetable.com/c64ref/6502/?tab=2#PLA">PLA</a>, <a href="https://www.pagetable.com/c64ref/6502/?tab=2#PLP">PLP</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Logical</strong></p>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>설명</td>
+<td>누산기 및 메모리에 저장된 값에 대한 논리 연산을 수행합니다</td>
+</tr>
+<tr>
+<td>명령어</td>
+<td><a href="https://www.pagetable.com/c64ref/6502/?tab=2#AND">AND</a>, <a href="https://www.pagetable.com/c64ref/6502/?tab=2#BIT">BIT</a>, <a href="https://www.pagetable.com/c64ref/6502/?tab=2#EOR">EOR</a>, <a href="https://www.pagetable.com/c64ref/6502/?tab=2#ORA">ORA</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Arithmetic</strong></p>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>설명</td>
+<td>레지스터와 메모리에 대한 산술 연산을 수행합니다</td>
+</tr>
+<tr>
+<td>명령어</td>
+<td><a href="https://www.pagetable.com/c64ref/6502/?tab=2#ADC">ADC</a>, <a href="https://www.pagetable.com/c64ref/6502/?tab=2#CMP">CMP</a>, <a href="https://www.pagetable.com/c64ref/6502/?tab=2#CPX">CPX</a>, <a href="https://www.pagetable.com/c64ref/6502/?tab=2#CPY">CPY</a>, <a href="https://www.pagetable.com/c64ref/6502/?tab=2#SBC">SBC</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Increase/Decrease</strong></p>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>설명</td>
+<td>X 또는 Y 레지스터 또는 메모리에 저장된 값을 증가 또는 감소시킵니다</td>
+</tr>
+<tr>
+<td>명령어</td>
+<td><a href="https://www.pagetable.com/c64ref/6502/?tab=2#DEC">DEC</a>, <a href="https://www.pagetable.com/c64ref/6502/?tab=2#DEX">DEX</a>, <a href="https://www.pagetable.com/c64ref/6502/?tab=2#DEY">DEY</a>, <a href="https://www.pagetable.com/c64ref/6502/?tab=2#INC">INC</a>, <a href="https://www.pagetable.com/c64ref/6502/?tab=2#INX">INX</a>, <a href="https://www.pagetable.com/c64ref/6502/?tab=2#INY">INY</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Shifts</strong></p>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>설명</td>
+<td>누산기 또는 메모리 위치의 비트를 왼쪽이나 오른쪽으로 1비트 이동합니다</td>
+</tr>
+<tr>
+<td>명령어</td>
+<td><a href="https://www.pagetable.com/c64ref/6502/?tab=2#ASL">ASL</a>, <a href="https://www.pagetable.com/c64ref/6502/?tab=2#LSR">LSR</a>, <a href="https://www.pagetable.com/c64ref/6502/?tab=2#ROL">ROL</a>, <a href="https://www.pagetable.com/c64ref/6502/?tab=2#ROR">ROR</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Jumps/Calls</strong></p>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>설명</td>
+<td>순차적인 실행 시퀀스를 중단하고, 지정된 주소에서 재게 합니다</td>
+</tr>
+<tr>
+<td>명령어</td>
+<td><a href="https://www.pagetable.com/c64ref/6502/?tab=2#BRK">BRK</a>, <a href="https://www.pagetable.com/c64ref/6502/?tab=2#JMP">JMP</a>, <a href="https://www.pagetable.com/c64ref/6502/?tab=2#JSR">JSR</a>, <a href="https://www.pagetable.com/c64ref/6502/?tab=2#RTI">RTI</a>, <a href="https://www.pagetable.com/c64ref/6502/?tab=2#RTS">RTS</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Branches</strong></p>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>설명</td>
+<td>특정한 조건을 만족하면 분기하여 Jumps/Calls 처럼 동작합니다. 조건은 상태 레지스터의 특정 비트와 관련이 있습니다</td>
+</tr>
+<tr>
+<td>명령어</td>
+<td><a href="https://www.pagetable.com/c64ref/6502/?tab=2#BCC">BCC</a>, <a href="https://www.pagetable.com/c64ref/6502/?tab=2#BCS">BCS</a>, <a href="https://www.pagetable.com/c64ref/6502/?tab=2#BEQ">BEQ</a>, <a href="https://www.pagetable.com/c64ref/6502/?tab=2#BMI">BMI</a>, <a href="https://www.pagetable.com/c64ref/6502/?tab=2#BNE">BNE</a>, <a href="https://www.pagetable.com/c64ref/6502/?tab=2#BPL">BPL</a>, <a href="https://www.pagetable.com/c64ref/6502/?tab=2#BVC">BVC</a>, <a href="https://www.pagetable.com/c64ref/6502/?tab=2#BVS">BVS</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Status Register</strong></p>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>설명</td>
+<td>상태 레지스터에서 플래그를 세트하거나 클리어 합니다</td>
+</tr>
+<tr>
+<td>명령어</td>
+<td><a href="https://www.pagetable.com/c64ref/6502/?tab=2#CLC">CLC</a>, <a href="https://www.pagetable.com/c64ref/6502/?tab=2#CLD">CLD</a>, <a href="https://www.pagetable.com/c64ref/6502/?tab=2#CLI">CLI</a>, <a href="https://www.pagetable.com/c64ref/6502/?tab=2#CLV">CLV</a>, <a href="https://www.pagetable.com/c64ref/6502/?tab=2#SEC">SEC</a>, <a href="https://www.pagetable.com/c64ref/6502/?tab=2#SED">SED</a>, <a href="https://www.pagetable.com/c64ref/6502/?tab=2#SEI">SEI</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>System Functions</strong></p>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>설명</td>
+<td>거의 사용하지 않는 기능을 수행합니다</td>
+</tr>
+<tr>
+<td>명령어</td>
+<td><a href="https://www.pagetable.com/c64ref/6502/?tab=2#NOP">NOP</a></td>
+</tr>
+</tbody>
+</table>
 <h5 id="참조-페이지-명령어-설명">참조 페이지 명령어 설명</h5>
 <p>Ultimate Commodore 64 Reference 페이지에서 명령어 설명을 참조할 시 이해를 돕기 위한 내용을 기술 합니다.</p>
 <div id="ADC" class="reference_card arith_light"><table class="reference_flags_table"><tr><th>N</th><th>V</th><th>-</th><th>B</th><th>D</th><th>I</th><th>Z</th><th>C</th></tr><tr><td>✓</td><td>✓</td><td>-</td><td>-</td><td>-</td><td>-</td><td>✓</td><td>✓</td></tr></table><h5>ADC - Add Memory to Accumulator with Carry</h5><p><b>Operation</b>: A + M + C → A, C<br></p><p>This instruction adds the value of memory and carry from the previous operation to the value of the accumulator and stores the result in the accumulator.</p><p>This instruction affects the accumulator; sets the carry flag when the sum of a binary add exceeds 255 or when the sum of a decimal add exceeds 99, otherwise carry is reset. The overflow flag is set when the sign or bit 7 is changed due to the result exceeding +127 or -128, otherwise overflow is reset. The negative flag is set if the accumulator result contains bit 7 on, otherwise the negative flag is reset. The zero flag is set if the accumulator result is 0, otherwise the zero flag is reset.</p>
@@ -2525,25 +2646,25 @@ https://www.middle-engine.com/blog/posts/2020/06/23/programming-the-nes-the-6502
 <hr />
 <ol>
 <li id="fn:1" role="doc-endnote">
-<p><a href="http://nesdev.com/NESDoc.pdf">http://nesdev.com/NESDoc.pdf</a> <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p><a href="http://nesdev.com/NESDoc.pdf">http://nesdev.com/NESDoc.pdf</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:2" role="doc-endnote">
-<p><a href="https://en.wikipedia.org/wiki/MOS_Technology_6502">https://en.wikipedia.org/wiki/MOS_Technology_6502</a> <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p><a href="https://en.wikipedia.org/wiki/MOS_Technology_6502">https://en.wikipedia.org/wiki/MOS_Technology_6502</a>&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:3" role="doc-endnote">
-<p><a href="https://skilldrick.github.io/easy6502">https://skilldrick.github.io/easy6502</a> <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p><a href="https://skilldrick.github.io/easy6502">https://skilldrick.github.io/easy6502</a>&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:4" role="doc-endnote">
-<p><a href="https://www.pagetable.com/c64ref/6502/?tab=3">https://www.pagetable.com/c64ref/6502/?tab=3</a> <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p><a href="https://www.pagetable.com/c64ref/6502/?tab=3">https://www.pagetable.com/c64ref/6502/?tab=3</a>&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:5" role="doc-endnote">
-<p><a href="https://www.masswerk.at/6502/6502_instruction_set.html">https://www.masswerk.at/6502/6502_instruction_set.html</a> <a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p><a href="https://www.masswerk.at/6502/6502_instruction_set.html">https://www.masswerk.at/6502/6502_instruction_set.html</a>&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:6" role="doc-endnote">
-<p><a href="https://wiki.nesdev.org/w/index.php/CPU_unofficial_opcodes">https://wiki.nesdev.org/w/index.php/CPU_unofficial_opcodes</a> <a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p><a href="https://wiki.nesdev.org/w/index.php/CPU_unofficial_opcodes">https://wiki.nesdev.org/w/index.php/CPU_unofficial_opcodes</a>&#160;<a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:7" role="doc-endnote">
-<p><a href="https://www.pagetable.com/c64ref/6502/?tab=2">https://www.pagetable.com/c64ref/6502/?tab=2</a> <a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p><a href="https://www.pagetable.com/c64ref/6502/?tab=2">https://www.pagetable.com/c64ref/6502/?tab=2</a>&#160;<a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </div>
@@ -2717,7 +2838,7 @@ https://www.middle-engine.com/blog/posts/2020/06/23/programming-the-nes-the-6502
 </div>
 
 
-<script defer src="/js/swipe.min.08ff2be1b74347bad9e267f732f1388d271b2f9d97b6a8a87bd6a510f17c5ad2.js"></script>
+<script defer src="/js/swipe.min.c83bcee984a774ad7affbdc0d5d6c69ffba07f022cf1de53e2bdcea55ef8774f.js"></script>
 
 <script defer src="/js/micromodal.min.de01b44b2f383056bbcaf6ee921fd385d79108ec1129afd0eb2f3f5a07e11f45.js"></script>
 
