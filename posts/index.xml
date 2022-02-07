@@ -14,13 +14,57 @@
     <managingEditor>rollcake.dev@gmail.com (YOGO)</managingEditor>
     <webMaster>rollcake.dev@gmail.com (YOGO)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Fri, 12 Nov 2021 11:29:20 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 07 Feb 2022 18:07:00 +0900</lastBuildDate>
     
         <atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     
 
+      
+      <item>
+        <title>NES CPU(6502) 에뮬레이션 - 1</title>
+        <link>/posts/projects/nesdev/2022-02-07-nes-cpu-emulation-01/</link>
+        <pubDate>Mon, 07 Feb 2022 18:07:00 +0900</pubDate>
+        <author>rollcake.dev@gmail.com (YOGO)</author>
+        <atom:modified>Mon, 07 Feb 2022 18:41:12 +0900</atom:modified>
+        <guid>/posts/projects/nesdev/2022-02-07-nes-cpu-emulation-01/</guid>
+        <description>NES 에뮬레이션을 위해서 C# 환경에서 6502 CPU를 구현 하면서 참조한 지식과 경험을 정리합니다. 이전의 NESDOC1 포스트 내용이 상당수 그대로 반영이 되어있습니다. 들어가며</description>
+        
+        <dc:creator>Yogo</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>프로젝트</category>
+            
+          
+            
+              <category>NES</category>
+            
+          
+            
+              <category>Emulator</category>
+            
+          
+        
+        
+          
+            
+              <category>프로젝트</category>
+            
+          
+        
+        
+          
+            
+              <category>NES Emulator</category>
+            
+          
+        
+      </item>
       
       <item>
         <title>유튜브 플레이어 컨트롤러 제작기 - 02</title>
@@ -287,7 +331,7 @@ Unfortunately, for some unknown reason, the touchpad press may not work in some 
         <link>/posts/projects/nesdev/2021-07-06-nesdoc-kr-01/</link>
         <pubDate>Tue, 06 Jul 2021 23:05:02 +0900</pubDate>
         <author>rollcake.dev@gmail.com (YOGO)</author>
-        <atom:modified>Wed, 06 Oct 2021 03:17:52 +0900</atom:modified>
+        <atom:modified>Sun, 06 Feb 2022 23:34:39 +0900</atom:modified>
         <guid>/posts/projects/nesdev/2021-07-06-nesdoc-kr-01/</guid>
         <description>Nintendo Entertainment System NesDev Wiki1와 Nintendo Entertainment System Documentation2 문서를 기반으로 NES 시스템을 정리 하고자 합니다. 해당 문서에서는 하드웨어 및 프로세서에 대한 내용을 많이 담고 있어서 이해를 위해서</description>
         
