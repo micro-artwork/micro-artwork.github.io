@@ -14,13 +14,57 @@
     <managingEditor>rollcake.dev@gmail.com (YOGO)</managingEditor>
     <webMaster>rollcake.dev@gmail.com (YOGO)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Mon, 07 Feb 2022 18:07:00 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 10 Feb 2022 23:35:55 +0900</lastBuildDate>
     
         <atom:link href="/categories/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/index.xml" rel="self" type="application/rss+xml" />
     
     
     
 
+      
+      <item>
+        <title>NES CPU(6502) 에뮬레이션 - 2</title>
+        <link>/posts/projects/nesdev/2022-02-10-nes-cpu-emulation-02/</link>
+        <pubDate>Thu, 10 Feb 2022 23:35:55 +0900</pubDate>
+        <author>rollcake.dev@gmail.com (YOGO)</author>
+        <atom:modified>Thu, 10 Feb 2022 23:35:55 +0900</atom:modified>
+        <guid>/posts/projects/nesdev/2022-02-10-nes-cpu-emulation-02/</guid>
+        <description>이전 포스트에서 6502 프로세서의 간략한 특징과 명령어, 어드레싱 모드에 대해서 정리를 했습니다. 에뮬레이션을 위해서는 더 많은 내용의 정리가 필요하지만 이미 레퍼런</description>
+        
+        <dc:creator>Yogo</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>프로젝트</category>
+            
+          
+            
+              <category>NES</category>
+            
+          
+            
+              <category>Emulator</category>
+            
+          
+        
+        
+          
+            
+              <category>프로젝트</category>
+            
+          
+        
+        
+          
+            
+              <category>NES Emulator</category>
+            
+          
+        
+      </item>
       
       <item>
         <title>NES CPU(6502) 에뮬레이션 - 1</title>
