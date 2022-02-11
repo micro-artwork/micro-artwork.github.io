@@ -27,7 +27,7 @@
         <link>/posts/projects/nesdev/2022-02-10-nes-cpu-emulation-02/</link>
         <pubDate>Thu, 10 Feb 2022 23:35:55 +0900</pubDate>
         <author>rollcake.dev@gmail.com (YOGO)</author>
-        <atom:modified>Thu, 10 Feb 2022 23:35:55 +0900</atom:modified>
+        <atom:modified>Fri, 11 Feb 2022 00:15:53 +0900</atom:modified>
         <guid>/posts/projects/nesdev/2022-02-10-nes-cpu-emulation-02/</guid>
         <description>이전 포스트에서 6502 프로세서의 간략한 특징과 명령어, 어드레싱 모드에 대해서 정리를 했습니다. 에뮬레이션을 위해서는 더 많은 내용의 정리가 필요하지만 이미 레퍼런</description>
         
@@ -71,7 +71,7 @@
         <link>/posts/projects/nesdev/2022-02-07-nes-cpu-emulation-01/</link>
         <pubDate>Mon, 07 Feb 2022 18:07:00 +0900</pubDate>
         <author>rollcake.dev@gmail.com (YOGO)</author>
-        <atom:modified>Mon, 07 Feb 2022 18:41:12 +0900</atom:modified>
+        <atom:modified>Fri, 11 Feb 2022 00:15:53 +0900</atom:modified>
         <guid>/posts/projects/nesdev/2022-02-07-nes-cpu-emulation-01/</guid>
         <description>NES 에뮬레이션을 위해서 C# 환경에서 6502 CPU를 구현 하면서 참조한 지식과 경험을 정리합니다. 이전의 NESDOC1 포스트 내용이 상당수 그대로 반영이 되어있습니다. 들어가며</description>
         
