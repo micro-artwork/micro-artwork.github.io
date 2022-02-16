@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>Dev on Yogo&#39;s blog</title>
+    <link>/categories/dev/</link>
+    <description>Recent content in Dev on Yogo&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <managingEditor>rollcake.dev@gmail.com (YOGO)</managingEditor>
+    <webMaster>rollcake.dev@gmail.com (YOGO)</webMaster>
+    <copyright>©2022, All Rights Reserved</copyright>
+    <lastBuildDate>Thu, 07 Oct 2021 11:11:23 +0900</lastBuildDate>
+    
+        <atom:link href="/categories/dev/index.xml" rel="self" type="application/rss+xml" />
+    
+
+      
+      <item>
+        <title>짤(밈) 생성 페이지 제작</title>
+        <link>/posts/dev/web/2021-10-07-simple-meme-generator/</link>
+        <pubDate>Thu, 07 Oct 2021 11:11:23 +0900</pubDate>
+        <author>rollcake.dev@gmail.com (YOGO)</author>
+        <atom:modified>Wed, 16 Feb 2022 15:16:52 +0900</atom:modified>
+        <guid>/posts/dev/web/2021-10-07-simple-meme-generator/</guid>
+        <description>요즘은 사회 전반적으로 특정 이벤트나 이슈가 생길 때마다 사람들이 재치있는 아이디어로 국내에선 짤, 해외에선 밈(meme)이라고 불리우는 패러디 이미지가 많이</description>
+        
+        <dc:creator>Yogo</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>web</category>
+            
+          
+            
+              <category>javascript</category>
+            
+          
+            
+              <category>meme</category>
+            
+          
+        
+        
+          
+            
+              <category>Dev</category>
+            
+          
+        
+        
+      </item>
+      
+      <item>
+        <title>PS2 듀얼쇼크 컨트롤러 호스트(리더) 구현 및 분석</title>
+        <link>/posts/dev/micro/2021-01-27-dualshock2-reader-implementation/</link>
+        <pubDate>Wed, 27 Jan 2021 03:21:59 +0900</pubDate>
+        <author>rollcake.dev@gmail.com (YOGO)</author>
+        <atom:modified>Wed, 16 Feb 2022 15:16:52 +0900</atom:modified>
+        <guid>/posts/dev/micro/2021-01-27-dualshock2-reader-implementation/</guid>
+        <description>2007년 초쯤 마이크로프로세서(이하 MCU) 스터디를 하면서 주로 해외에서 하드웨어 관련 정보를 찾아보던 도중 우연히 어느 일본인이 개인 홈페이지에 플레이스테인션</description>
+        
+        <dc:creator>Yogo</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>마이크로컨트롤러</category>
+            
+          
+        
+        
+          
+            
+              <category>Dev</category>
+            
+          
+        
+        
+          
+            
+              <category>마이크로컨트롤러</category>
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>Vue 3 - Implement simple tooltip</title>
+        <link>/posts/dev/vue/2020-12-22-vue-3-simple-tool-tip/</link>
+        <pubDate>Tue, 22 Dec 2020 16:39:01 +0900</pubDate>
+        <author>rollcake.dev@gmail.com (YOGO)</author>
+        <atom:modified>Wed, 16 Feb 2022 15:16:52 +0900</atom:modified>
+        <guid>/posts/dev/vue/2020-12-22-vue-3-simple-tool-tip/</guid>
+        <description>Vue 3 - 간단한 툴팁 기능 구현 Vuetify를 사용하다 보면 복잡한 레이아웃으로 구성된 화면이나 content가 많은 즉, 스크롤해야 하는 화면에서 v-menu, v-tooltip 같이 별</description>
+        
+        <dc:creator>Yogo</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>vue</category>
+            
+          
+            
+              <category>vue-next</category>
+            
+          
+            
+              <category>vue3</category>
+            
+          
+            
+              <category>typescript</category>
+            
+          
+        
+        
+          
+            
+              <category>Dev</category>
+            
+          
+        
+        
+          
+            
+              <category>Vue</category>
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>Vue 3 Global Properties and Typescript</title>
+        <link>/posts/dev/vue/2020-10-06-vue-3-global-properties-and-typescript/</link>
+        <pubDate>Tue, 06 Oct 2020 10:45:16 +0900</pubDate>
+        <author>rollcake.dev@gmail.com (YOGO)</author>
+        <atom:modified>Wed, 16 Feb 2022 15:16:52 +0900</atom:modified>
+        <guid>/posts/dev/vue/2020-10-06-vue-3-global-properties-and-typescript/</guid>
+        <description>기존 v2에서는 prototype에 변수나 모듈을 정의하면 this 키워드를 이용하여 접근할 수 있었는데 v3 부터는 config의 globalPropertie</description>
+        
+        <dc:creator>Yogo</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>vue</category>
+            
+          
+            
+              <category>vue-next</category>
+            
+          
+            
+              <category>vue3</category>
+            
+          
+            
+              <category>typescript</category>
+            
+          
+        
+        
+          
+            
+              <category>Dev</category>
+            
+          
+        
+        
+          
+            
+              <category>Vue</category>
+            
+          
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

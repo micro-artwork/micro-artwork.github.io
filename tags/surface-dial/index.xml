@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>Surface Dial on Yogo&#39;s blog</title>
+    <link>/tags/surface-dial/</link>
+    <description>Recent content in Surface Dial on Yogo&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <managingEditor>rollcake.dev@gmail.com (YOGO)</managingEditor>
+    <webMaster>rollcake.dev@gmail.com (YOGO)</webMaster>
+    <copyright>©2022, All Rights Reserved</copyright>
+    <lastBuildDate>Tue, 15 Feb 2022 22:43:26 +0900</lastBuildDate>
+    
+        <atom:link href="/tags/surface-dial/index.xml" rel="self" type="application/rss+xml" />
+    
+
+      
+      <item>
+        <title>마이크로소프트 서피스 다이얼 클론 제작 - 1 (Wanna be Surface Dial)</title>
+        <link>/posts/projects/suface-dial/2022-02-15-how-to-make-1/</link>
+        <pubDate>Tue, 15 Feb 2022 22:43:26 +0900</pubDate>
+        <author>rollcake.dev@gmail.com (YOGO)</author>
+        <atom:modified>Wed, 16 Feb 2022 15:16:52 +0900</atom:modified>
+        <guid>/posts/projects/suface-dial/2022-02-15-how-to-make-1/</guid>
+        <description>마이크로소프트 서피스 다이얼(Microsoft Surface Dial)12 마이크로소프트 서피스 다이얼(이하 서피스다이얼 또는 다이얼)은 퍽(Puck) 형태로 회전과 클릭이</description>
+        
+        <dc:creator>Yogo</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>project</category>
+            
+          
+            
+              <category>취미전자</category>
+            
+          
+            
+              <category>Hobby Electronics</category>
+            
+          
+            
+              <category>Surface Dial</category>
+            
+          
+        
+        
+          
+            
+              <category>Projects</category>
+            
+          
+        
+        
+          
+            
+              <category>Surface Dial</category>
+            
+          
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

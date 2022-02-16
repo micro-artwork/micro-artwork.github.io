@@ -9,15 +9,18 @@
     
 
 
+  
+  <script defer src="/js/fuse.min.8dfbf8696f107ab8b55732efbb04c5c51576692a4a2cce6effef9f6e92d341a7.js"></script>
+
+
+
 <script src="/js/enquire.min.aa37bdcb743826eecdae5c5d177fc7d6552340f1b4378ffaa9c82b2c6111400b.js"></script>
 
-<script defer src="/js/lazysizes.min.5e11d056075a05065b9c0bfec44084a113fc2976c2952ec804dedb61c7662db9.js"></script>
-
-<script defer src="/js/fuse.min.c4bee9a8d44273d6154fe86006923d4131eb2e8069d8897687137c6f37f553e3.js"></script>
+<script defer src="/js/lazysizes.min.498676c34eb225e85357ab0ce19c3c1244f3bd0bf595e5684d1b9d50ea4fbc42.js"></script>
 
 <script defer src="/js/helper/getParents.min.ccd45f158c1b17849307ba913a72beac239c410f2b6e648496a79842da84e55b.js"></script>
 
-<script defer src="/js/helper/fadeinout.min.9fb19682560d5fa5596fffec85da605067c4acc86aad05add4d8fff9d362a446.js"></script>
+<script defer src="/js/helper/fadeinout.min.1d13d3e810c3940e80cbba6216a1c76fbf42b5431fc83537ea6997863802362b.js"></script>
 
 <script defer src="/js/helper/closest.min.js"></script>
   
@@ -96,6 +99,74 @@
           navCollapse.setAttribute('data-open', 'true');
           navCollapse.style.maxHeight = navCollapse.scrollHeight + "px";
           navCollapseBtn.classList.add('is-active');
+        }
+      }
+    }) : null;
+    
+
+
+    
+    var tables = document.querySelectorAll('.single__contents > table');
+    for (let i = 0; i < tables.length; i++) {
+      var table = tables[i];
+      var wrapper = document.createElement('div');
+      wrapper.className = 'table-wrapper';
+      table.parentElement.replaceChild(wrapper, table);
+      wrapper.appendChild(table);
+    }
+    
+
+
+    
+    var footNoteRefs = document.querySelectorAll('.footnote-ref');
+    var footNoteBackRefs = document.querySelectorAll('.footnote-backref');
+
+    footNoteRefs ? 
+    footNoteRefs.forEach(function(elem, idx) {
+      elem.onmouseenter = function () {
+        if (navbar.classList.contains('scrolling')) {
+          navbar.classList.remove('scrolling');
+        }
+      }
+
+      elem.onmouseleave = function () {
+        if (!navbar.classList.contains('scrolling')) {
+          setTimeout(function () {
+            navbar.classList.add('scrolling');
+          }, 100);
+        }
+      }
+
+      elem.onclick = function () {
+        if (!navbar.classList.contains('scrolling')) {
+          navbar.classList.remove('navbar--show');
+          navbar.classList.remove('navbar--hide');
+          navbar.classList.add('navbar--hide');
+        }
+      }
+    }) : null;
+
+    footNoteBackRefs ? 
+    footNoteBackRefs.forEach(function(elem, idx) {
+      elem.onmouseenter = function () {
+        if (navbar.classList.contains('scrolling')) {
+          navbar.classList.remove('scrolling');
+        }
+      }
+
+      elem.onmouseleave = function () {
+        if (!navbar.classList.contains('scrolling')) {
+          setTimeout(function() {
+            navbar.classList.add('scrolling');
+          }, 100);
+        }
+      }
+
+      elem.onclick = function () {
+        if (!navbar.classList.contains('scrolling')) {
+          navbar.classList.remove('navbar--show');
+          navbar.classList.remove('navbar--hide');
+          navbar.classList.add('navbar--hide');
         }
       }
     }) : null;
@@ -289,11 +360,13 @@
         if (st < 45) {
           return null;
         }
-        
-        if (!navbar.classList.contains('navbar--hide')) {
-          navbar.classList.add('navbar--hide');
-        } else if (navbar.classList.contains('navbar--show')) {
-          navbar.classList.remove('navbar--show');
+
+        if (navbar.classList.contains('scrolling')) {
+          if (!navbar.classList.contains('navbar--hide')) {
+            navbar.classList.add('navbar--hide');
+          } else if (navbar.classList.contains('navbar--show')) {
+            navbar.classList.remove('navbar--show');
+          }
         }
 
         if (singleContentsElem) {
@@ -360,10 +433,12 @@
           gttBtn.style.display = "none";
         }
 
-        if (navbar.classList.contains('navbar--hide')) {
-          navbar.classList.remove('navbar--hide');
-        } else if (!navbar.classList.contains('navbar--show')) {
-          navbar.classList.add('navbar--show');
+        if (navbar.classList.contains('scrolling')) {
+          if (navbar.classList.contains('navbar--hide')) {
+            navbar.classList.remove('navbar--hide');
+          } else if (!navbar.classList.contains('navbar--show')) {
+            navbar.classList.add('navbar--show');
+          }
         }
 
         if (singleContentsElem) {
@@ -444,6 +519,17 @@
     var rootEleme = document.getElementById('root');
     var selectThemeElem = document.querySelectorAll('.select-theme');
     var selectThemeItemElem = document.querySelectorAll('.select-theme__item');
+    
+    
+    var skinDarkCode = JSON.parse("\"dark\"");
+    
+    var skinLightCode = JSON.parse("\"light\"");
+    
+    var skinHackerCode = JSON.parse("\"hacker\"");
+    
+    var skinSolarizedCode = JSON.parse("\"solarized\"");
+    
+    var skinKimbieCode = JSON.parse("\"kimbie\"");
 
     var setMetaColor = function(themeColor) {
       var metaMsapplicationTileColor = document.getElementsByName('msapplication-TileColor')[0];
@@ -476,7 +562,21 @@
         metaThemeColor.setAttribute('content', '#eee8d5');
         metaMsapplicationNavbuttonColor.setAttribute('content', '#eee8d5');
         metaAppleMobileWebAappStatusBarStyle.setAttribute('content', '#eee8d5');
-      } 
+      }
+    }
+
+    var parseSkinCode = function(themeText) {
+      if (themeText === skinDarkCode) {
+        return 'dark';
+      } else if (themeText === skinLightCode) {
+        return 'light';
+      } else if (themeText === skinHackerCode) {
+        return 'hacker';
+      } else if (themeText === skinSolarizedCode) {
+        return 'solarized';
+      } else if (themeText === skinKimbieCode) {
+        return 'kimbie';
+      }
     }
     
     if (localTheme) {
@@ -497,7 +597,7 @@
     selectThemeItemElem ? 
     selectThemeItemElem.forEach(function (v, i) {
       v.addEventListener('click', function (e) {
-        var selectedThemeVariant = e.target.text.trim();
+        var selectedThemeVariant = parseSkinCode(e.target.text.trim());
         localStorage.setItem('theme', selectedThemeVariant);
         setMetaColor(selectedThemeVariant);
 
@@ -551,60 +651,85 @@
 
   
     
+    var baseurl = JSON.parse("\"/\"");
+    
     var permalink = JSON.parse("\"/tags/vue3/\"");
+    
+    var langprefix = JSON.parse("\"\"");
     var searchResults = null;
     var searchMenu = null;
     var searchText = null;
     
+    
+    var enableSearch = JSON.parse("true");
+    
+    var searchDistance = JSON.parse("null");
+    
+    var searchThreshold = JSON.parse("null");
+    
+    var searchContent = JSON.parse("null");
     
     var enableSearchHighlight = JSON.parse("true");
     
     var searchResultPosition = JSON.parse("null");
     
     var sectionType = JSON.parse("\"tags\"");
-
+    
+    var kind = JSON.parse("\"term\"");
+    
     var fuse = null;
 
-    (function initFuse() {
-      var xhr = new XMLHttpRequest();
-      xhr.open('GET', permalink + "index.json");
-      xhr.setRequestHeader('Content-Type', 'application/json; charset=utf-8');
-      xhr.onload = function () {
-        if (xhr.status === 200) {
-          fuse = new Fuse(JSON.parse(xhr.response.toString('utf-8')), {
-            keys: sectionType.includes('publication') ? ['title', 'abstract'] : ['title', 'description', 'content'],
-            includeMatches: enableSearchHighlight,
-            shouldSort: true,
-            threshold: 0.4,
-            location: 0,
-            distance: 100,
-            maxPatternLength: 32,
-            minMatchCharLength: 1,
-          });
-          window.fuse = fuse;
+    if (enableSearch) {
+      (function initFuse() {
+        var xhr = new XMLHttpRequest();
+        if (sectionType === "publication" && kind !== "page") {
+          xhr.open('GET', permalink + "index.json");
+        } else {
+          xhr.open('GET', baseurl + langprefix + "/index.json");
         }
-        else {
-          console.error('[' + xhr.status + ']Error:', xhr.statusText);
-        }
-      };
-      xhr.send();
-    })();
+        
+        xhr.setRequestHeader('Content-Type', 'application/json; charset=utf-8');
+        xhr.onload = function () {
+          if (xhr.status === 200) {
+            fuse = new Fuse(JSON.parse(xhr.response.toString('utf-8')), {
+              keys: sectionType.includes('publication') ? ['title', 'abstract'] : 
+                searchContent ? ['title', 'description', 'content'] : ['title', 'description'],
+              includeMatches: enableSearchHighlight,
+              shouldSort: true, 
+              threshold: searchThreshold ? searchThreshold : 0.4, 
+              location: 0, 
+              distance: searchDistance ? searchDistance : 100, 
+              maxPatternLength: 32,
+              minMatchCharLength: 1,
+              isCaseSensitive: false, 
+              findAllMatches: false, 
+              useExtendedSearch: false, 
+            });
+            window.fuse = fuse;
+          }
+          else {
+            console.error('[' + xhr.status + ']Error:', xhr.statusText);
+          }
+        };
+        xhr.send();
+      })();
+    }
 
     function makeLi(ulElem, obj) {
       var li = document.createElement('li');
       li.className = 'search-result__item';
       
       var a = document.createElement('a');
-      a.innerHTML = obj.title;
+      a.innerHTML = obj.item.title;
       a.setAttribute('class', 'search-result__item--title');
-      a.setAttribute('href', obj.permalink);
+      a.setAttribute('href', obj.item.uri);
 
       var descDiv = document.createElement('div');
       descDiv.setAttribute('class', 'search-result__item--desc');
-      if (obj.description) {
-        descDiv.innerHTML = obj.description;
-      } else if (obj.content) {
-        descDiv.innerHTML = obj.content.substring(0, 225);
+      if (obj.item.description) {
+        descDiv.innerHTML = obj.item.description;
+      } else if (obj.item.content) {
+        descDiv.innerHTML = obj.item.content.substring(0, 225);
       }
       
       li.appendChild(a);
@@ -1078,7 +1203,7 @@
   
     var mobileSearchInputElem = document.querySelector('#search-mobile');
     var mobileSearchClassElem = document.querySelector('.mobile-search');
-    var mobileSearchBtnElem = document.querySelector('#mobileSearchBtn');
+    var mobileSearchBtnElems = document.querySelectorAll('.navbar-search');
     var mobileSearchCloseBtnElem = document.querySelector('#search-mobile-close');
     var mobileSearchContainer = document.querySelector('#search-mobile-container');
     var mobileSearchResultsElem = document.querySelector('#search-mobile-results');
@@ -1088,19 +1213,21 @@
       mobileSearchClassElem.style.display = 'none';
     }
 
-    mobileSearchBtnElem ? 
-    mobileSearchBtnElem.addEventListener('click', function () {
-      if (mobileSearchContainer) {
-        mobileSearchContainer.style.display = 'block';
-      }
+    mobileSearchBtnElems ? 
+    mobileSearchBtnElems.forEach(function (elem, idx) {
+      elem.addEventListener('click', function () {
+        if (mobileSearchContainer) {
+          mobileSearchContainer.style.display = 'block';
+        }
 
-      if (mobileSearchInputElem) {
-        mobileSearchInputElem.focus();
-      }
+        if (mobileSearchInputElem) {
+          mobileSearchInputElem.focus();
+        }
 
-      if (htmlElem) {
-        htmlElem.style.overflowY = 'hidden';
-      }
+        if (htmlElem) {
+          htmlElem.style.overflowY = 'hidden';
+        }
+      });
     }) : null;
 
     mobileSearchCloseBtnElem ? 
@@ -1195,7 +1322,8 @@
     }
   
   });
-</script>    
+</script>
+    
     
 
 
@@ -1217,7 +1345,7 @@
 
 
 <meta name="created" content="2020-12-22T16:39:01&#43;0900">
-<meta name="modified" content="2021-02-07T16:50:12&#43;0900">
+<meta name="modified" content="2022-02-16T15:16:52&#43;0900">
 <meta property="article:published_time" content="2020-12-22T16:39:01&#43;0900">
 
 <meta name="author" content="YOGO">
@@ -1229,7 +1357,7 @@
 <meta property="og:type" content="website">
 <meta property="og:description" content="Yogo&#39;s life and devlog">
 
-<meta name="generator" content="Hugo 0.92.1" />
+<meta name="generator" content="Hugo 0.92.2" />
 <meta name="msapplication-TileColor" content="#fff">
 
 <meta name="theme-color" content="#fff">
@@ -1317,7 +1445,7 @@ if (!doNotTrack) {
 
 
         <div class="wrapper" data-type="tags" data-kind="term">
-            <nav class="navbar" role="navigation" aria-label="main navigation" data-dir="ltr">
+            <nav class="navbar scrolling" role="navigation" aria-label="main navigation" data-dir="ltr">
   <div class="navbar__brand">
     
     &nbsp;&nbsp;
@@ -1364,7 +1492,7 @@ if (!doNotTrack) {
 </div>
 
 
-<div id="mobileSearchBtn" class="mobile-search__btn" data-ani="true">
+<div class="mobile-search__btn navbar-search" data-ani="true">
   <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path d="M15.5 14h-.79l-.28-.27c1.2-1.4 1.82-3.31 1.48-5.34-.47-2.78-2.79-5-5.59-5.34-4.23-.52-7.79 3.04-7.27 7.27.34 2.8 2.56 5.12 5.34 5.59 2.03.34 3.94-.28 5.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49L15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
 </div>
 
@@ -1426,6 +1554,8 @@ if (!doNotTrack) {
   </ul>
 </div>
   <div class="navbar__menu">
+  
+  
   
 <div class="theme" data-ani="true">
   <div class="dropdown">
@@ -1527,11 +1657,11 @@ if (!doNotTrack) {
 
     <div class="summary-classic__content">
       <header>
-        <h5 class="title h5"><a href='/posts/dev/vue/2020-12-22-vue-3-simple-tool-tip/'> Vue 3 - Implement simple tooltip</a> </h5>
+        <h5 class="title h5"><a href='/posts/dev/vue/2020-12-22-vue-3-simple-tool-tip/'>Vue 3 - Implement simple tooltip</a> </h5>
         <h6 class="subtitle caption">
           <time title="작성일" dir="ltr">📅&nbsp;2020년 12월 22일 </time>
           
-          <time title="수정일" dir="ltr"> &middot; 📝&nbsp;2021년 02월 07일 </time>
+          <time title="수정일" dir="ltr"> &middot; 📝&nbsp;2022년 02월 16일 </time>
           
           <span title="읽는 시간" dir="ltr"> &middot; ☕&nbsp;4&nbsp;min read </span>
           
@@ -1554,6 +1684,7 @@ if (!doNotTrack) {
   <hr />
 </article>
 
+
       
         
   <article class="summary-classic" data-ani="true">
@@ -1563,11 +1694,11 @@ if (!doNotTrack) {
 
     <div class="summary-classic__content">
       <header>
-        <h5 class="title h5"><a href='/posts/dev/vue/2020-10-06-vue-3-global-properties-and-typescript/'> Vue 3 Global Properties and Typescript</a> </h5>
+        <h5 class="title h5"><a href='/posts/dev/vue/2020-10-06-vue-3-global-properties-and-typescript/'>Vue 3 Global Properties and Typescript</a> </h5>
         <h6 class="subtitle caption">
           <time title="작성일" dir="ltr">📅&nbsp;2020년 10월 06일 </time>
           
-          <time title="수정일" dir="ltr"> &middot; 📝&nbsp;2020년 12월 22일 </time>
+          <time title="수정일" dir="ltr"> &middot; 📝&nbsp;2022년 02월 16일 </time>
           
           <span title="읽는 시간" dir="ltr"> &middot; ☕&nbsp;1&nbsp;min read </span>
           
@@ -1589,6 +1720,7 @@ if (!doNotTrack) {
   </div>
   <hr />
 </article>
+
 
       
       
@@ -1660,6 +1792,7 @@ if (!doNotTrack) {
         </span>
         
         
+        
             <span class="tag">
                 <a href="/tags/dualshock4/" class="is-tags taxo__link" data-dir="ltr">
                     <span class="taxo__text">
@@ -1692,7 +1825,7 @@ if (!doNotTrack) {
                         Hobby Electronics
                     </span>
                     <span class="taxo__num" dir="auto">
-                        3
+                        4
                     </span>
                 </a>
             </span>
@@ -1744,7 +1877,20 @@ if (!doNotTrack) {
                         project
                     </span>
                     <span class="taxo__num" dir="auto">
-                        5
+                        6
+                    </span>
+                </a>
+            </span>
+        
+        
+        
+            <span class="tag">
+                <a href="/tags/surface-dial/" class="is-tags taxo__link" data-dir="ltr">
+                    <span class="taxo__text">
+                        Surface Dial
+                    </span>
+                    <span class="taxo__num" dir="auto">
+                        1
                     </span>
                 </a>
             </span>
@@ -1861,7 +2007,7 @@ if (!doNotTrack) {
                         취미전자
                     </span>
                     <span class="taxo__num" dir="auto">
-                        3
+                        4
                     </span>
                 </a>
             </span>
@@ -1893,13 +2039,14 @@ if (!doNotTrack) {
         </span>
         
         
+        
             <span class="tag">
-                <a href="/categories/projects/" class="is-categories taxo__link" data-dir="ltr">
+                <a href="/categories/dev/" class="is-categories taxo__link" data-dir="ltr">
                     <span class="taxo__text">
-                        Projects
+                        Dev
                     </span>
                     <span class="taxo__num" dir="auto">
-                        5
+                        4
                     </span>
                 </a>
             </span>
@@ -1907,35 +2054,9 @@ if (!doNotTrack) {
         
         
             <span class="tag">
-                <a href="/categories/%EA%B0%9C%EB%B0%9C/" class="is-categories taxo__link" data-dir="ltr">
+                <a href="/categories/life/" class="is-categories taxo__link" data-dir="ltr">
                     <span class="taxo__text">
-                        개발
-                    </span>
-                    <span class="taxo__num" dir="auto">
-                        3
-                    </span>
-                </a>
-            </span>
-        
-        
-        
-            <span class="tag">
-                <a href="/categories/%EA%B0%9C%EB%B0%9C-%EB%B0%8F-%EA%B0%95%EC%A2%8C/" class="is-categories taxo__link" data-dir="ltr">
-                    <span class="taxo__text">
-                        개발 및 강좌
-                    </span>
-                    <span class="taxo__num" dir="auto">
-                        1
-                    </span>
-                </a>
-            </span>
-        
-        
-        
-            <span class="tag">
-                <a href="/categories/%EA%B0%9C%EC%9D%B8/" class="is-categories taxo__link" data-dir="ltr">
-                    <span class="taxo__text">
-                        개인
+                        Life
                     </span>
                     <span class="taxo__num" dir="auto">
                         2
@@ -1946,12 +2067,12 @@ if (!doNotTrack) {
         
         
             <span class="tag">
-                <a href="/categories/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/" class="is-categories taxo__link" data-dir="ltr">
+                <a href="/categories/projects/" class="is-categories taxo__link" data-dir="ltr">
                     <span class="taxo__text">
-                        프로젝트
+                        Projects
                     </span>
                     <span class="taxo__num" dir="auto">
-                        3
+                        9
                     </span>
                 </a>
             </span>
@@ -1970,6 +2091,7 @@ if (!doNotTrack) {
         </span>
         
         
+        
             <span class="tag">
                 <a href="/series/nes-emulator/" class="is-series taxo__link" data-dir="ltr">
                     <span class="taxo__text">
@@ -1977,6 +2099,19 @@ if (!doNotTrack) {
                     </span>
                     <span class="taxo__num" dir="auto">
                         3
+                    </span>
+                </a>
+            </span>
+        
+        
+        
+            <span class="tag">
+                <a href="/series/surface-dial/" class="is-series taxo__link" data-dir="ltr">
+                    <span class="taxo__text">
+                        Surface Dial
+                    </span>
+                    <span class="taxo__num" dir="auto">
+                        1
                     </span>
                 </a>
             </span>
@@ -2013,19 +2148,6 @@ if (!doNotTrack) {
                 <a href="/series/%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%EC%BB%A8%ED%8A%B8%EB%A1%A4%EB%9F%AC/" class="is-series taxo__link" data-dir="ltr">
                     <span class="taxo__text">
                         마이크로컨트롤러
-                    </span>
-                    <span class="taxo__num" dir="auto">
-                        1
-                    </span>
-                </a>
-            </span>
-        
-        
-        
-            <span class="tag">
-                <a href="/series/%EC%B4%88%EB%B3%B4%EC%9A%B4%EC%A0%84/" class="is-series taxo__link" data-dir="ltr">
-                    <span class="taxo__text">
-                        초보운전
                     </span>
                     <span class="taxo__num" dir="auto">
                         1
@@ -2147,11 +2269,11 @@ if (!doNotTrack) {
 
     <hr />
 
-    <div class="basicflex">
+    <div class="basicflex flexwrap">
         
-            <a href="" class="footer__link" target="_blank" rel="noreferrer"></a>
+            
         
-            <a href="" class="footer__link" target="_blank" rel="noreferrer"></a>
+            
         
     </div>
 

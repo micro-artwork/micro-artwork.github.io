@@ -13,12 +13,10 @@
     <language>ko</language>
     <managingEditor>rollcake.dev@gmail.com (YOGO)</managingEditor>
     <webMaster>rollcake.dev@gmail.com (YOGO)</webMaster>
-    <copyright>©{year}, All Rights Reserved</copyright>
+    <copyright>©2022, All Rights Reserved</copyright>
     <lastBuildDate>Thu, 07 Oct 2021 11:11:23 +0900</lastBuildDate>
     
         <atom:link href="/tags/web/index.xml" rel="self" type="application/rss+xml" />
-    
-    
     
 
       
@@ -27,7 +25,7 @@
         <link>/posts/dev/web/2021-10-07-simple-meme-generator/</link>
         <pubDate>Thu, 07 Oct 2021 11:11:23 +0900</pubDate>
         <author>rollcake.dev@gmail.com (YOGO)</author>
-        <atom:modified>Fri, 08 Oct 2021 16:44:40 +0900</atom:modified>
+        <atom:modified>Wed, 16 Feb 2022 15:16:52 +0900</atom:modified>
         <guid>/posts/dev/web/2021-10-07-simple-meme-generator/</guid>
         <description>요즘은 사회 전반적으로 특정 이벤트나 이슈가 생길 때마다 사람들이 재치있는 아이디어로 국내에선 짤, 해외에선 밈(meme)이라고 불리우는 패러디 이미지가 많이</description>
         
@@ -53,7 +51,7 @@
         
           
             
-              <category>개발</category>
+              <category>Dev</category>
             
           
         

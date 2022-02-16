@@ -13,14 +13,30 @@
     <language>ko</language>
     <managingEditor>rollcake.dev@gmail.com (YOGO)</managingEditor>
     <webMaster>rollcake.dev@gmail.com (YOGO)</webMaster>
-    <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Thu, 10 Feb 2022 23:35:55 +0900</lastBuildDate>
+    <copyright>©2022, All Rights Reserved</copyright>
+    <lastBuildDate>Tue, 15 Feb 2022 22:43:26 +0900</lastBuildDate>
     
         <atom:link href="/series/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    
 
+      
+      <item>
+        <title>Surface Dial</title>
+        <link>/series/surface-dial/</link>
+        <pubDate>Tue, 15 Feb 2022 22:43:26 +0900</pubDate>
+        <author>rollcake.dev@gmail.com (YOGO)</author>
+        
+        <guid>/series/surface-dial/</guid>
+        <description></description>
+        
+        <dc:creator>YOGO</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
       <item>
         <title>NES Emulator</title>
@@ -101,24 +117,6 @@
         <author>rollcake.dev@gmail.com (YOGO)</author>
         
         <guid>/series/vue/</guid>
-        <description></description>
-        
-        <dc:creator>YOGO</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>초보운전</title>
-        <link>/series/%EC%B4%88%EB%B3%B4%EC%9A%B4%EC%A0%84/</link>
-        <pubDate>Mon, 21 Sep 2020 19:21:22 +0900</pubDate>
-        <author>rollcake.dev@gmail.com (YOGO)</author>
-        
-        <guid>/series/%EC%B4%88%EB%B3%B4%EC%9A%B4%EC%A0%84/</guid>
         <description></description>
         
         <dc:creator>YOGO</dc:creator>

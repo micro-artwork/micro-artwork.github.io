@@ -13,37 +13,17 @@
     <language>ko</language>
     <managingEditor>rollcake.dev@gmail.com (YOGO)</managingEditor>
     <webMaster>rollcake.dev@gmail.com (YOGO)</webMaster>
-    <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Thu, 10 Feb 2022 23:35:55 +0900</lastBuildDate>
+    <copyright>©2022, All Rights Reserved</copyright>
+    <lastBuildDate>Tue, 15 Feb 2022 22:43:26 +0900</lastBuildDate>
     
         <atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
-    
-    
     
 
       
       <item>
-        <title>프로젝트</title>
-        <link>/categories/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/</link>
-        <pubDate>Thu, 10 Feb 2022 23:35:55 +0900</pubDate>
-        <author>rollcake.dev@gmail.com (YOGO)</author>
-        
-        <guid>/categories/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/</guid>
-        <description></description>
-        
-        <dc:creator>YOGO</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
         <title>Projects</title>
         <link>/categories/projects/</link>
-        <pubDate>Fri, 12 Nov 2021 11:29:20 +0900</pubDate>
+        <pubDate>Tue, 15 Feb 2022 22:43:26 +0900</pubDate>
         <author>rollcake.dev@gmail.com (YOGO)</author>
         
         <guid>/categories/projects/</guid>
@@ -59,12 +39,12 @@
       </item>
       
       <item>
-        <title>개발</title>
-        <link>/categories/%EA%B0%9C%EB%B0%9C/</link>
+        <title>Dev</title>
+        <link>/categories/dev/</link>
         <pubDate>Thu, 07 Oct 2021 11:11:23 +0900</pubDate>
         <author>rollcake.dev@gmail.com (YOGO)</author>
         
-        <guid>/categories/%EA%B0%9C%EB%B0%9C/</guid>
+        <guid>/categories/dev/</guid>
         <description></description>
         
         <dc:creator>YOGO</dc:creator>
@@ -77,30 +57,12 @@
       </item>
       
       <item>
-        <title>개발 및 강좌</title>
-        <link>/categories/%EA%B0%9C%EB%B0%9C-%EB%B0%8F-%EA%B0%95%EC%A2%8C/</link>
-        <pubDate>Wed, 27 Jan 2021 03:21:59 +0900</pubDate>
-        <author>rollcake.dev@gmail.com (YOGO)</author>
-        
-        <guid>/categories/%EA%B0%9C%EB%B0%9C-%EB%B0%8F-%EA%B0%95%EC%A2%8C/</guid>
-        <description></description>
-        
-        <dc:creator>YOGO</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>개인</title>
-        <link>/categories/%EA%B0%9C%EC%9D%B8/</link>
+        <title>Life</title>
+        <link>/categories/life/</link>
         <pubDate>Mon, 21 Sep 2020 19:21:22 +0900</pubDate>
         <author>rollcake.dev@gmail.com (YOGO)</author>
         
-        <guid>/categories/%EA%B0%9C%EC%9D%B8/</guid>
+        <guid>/categories/life/</guid>
         <description></description>
         
         <dc:creator>YOGO</dc:creator>

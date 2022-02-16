@@ -13,12 +13,10 @@
     <language>ko</language>
     <managingEditor>rollcake.dev@gmail.com (YOGO)</managingEditor>
     <webMaster>rollcake.dev@gmail.com (YOGO)</webMaster>
-    <copyright>©{year}, All Rights Reserved</copyright>
+    <copyright>©2022, All Rights Reserved</copyright>
     <lastBuildDate>Mon, 21 Sep 2020 19:21:22 +0900</lastBuildDate>
     
         <atom:link href="/tags/%EC%9D%BC%EC%83%81/index.xml" rel="self" type="application/rss+xml" />
-    
-    
     
 
       
@@ -27,7 +25,7 @@
         <link>/posts/life/daily/2020-09-21/</link>
         <pubDate>Mon, 21 Sep 2020 19:21:22 +0900</pubDate>
         <author>rollcake.dev@gmail.com (YOGO)</author>
-        <atom:modified>Sun, 07 Feb 2021 16:50:12 +0900</atom:modified>
+        <atom:modified>Wed, 16 Feb 2022 15:16:52 +0900</atom:modified>
         <guid>/posts/life/daily/2020-09-21/</guid>
         <description>최근 결혼을 하고 미루고 미루었던 차(車)를 구입 했다. 구입은 오래전부터 생각은 하고 있었지만 대중교통이 잘 마련되어 있는 수도권에서만 생활을 하다보니 내차에 대</description>
         
@@ -45,16 +43,10 @@
         
           
             
-              <category>개인</category>
+              <category>Life</category>
             
           
         
-        
-          
-            
-              <category>초보운전</category>
-            
-          
         
       </item>
       
@@ -63,7 +55,7 @@
         <link>/posts/life/daily/2020-05-31/</link>
         <pubDate>Sun, 31 May 2020 22:03:00 +0900</pubDate>
         <author>rollcake.dev@gmail.com (YOGO)</author>
-        <atom:modified>Sun, 08 Nov 2020 21:42:56 +0900</atom:modified>
+        <atom:modified>Wed, 16 Feb 2022 15:16:52 +0900</atom:modified>
         <guid>/posts/life/daily/2020-05-31/</guid>
         <description>새로이 블로그를 개설! :) 그간 많은 플랫폼을 오가면서 블로깅을 찔끔찔끔 했었는데 자유롭고 재미있는 환경을 찾아보다가 Github으로 정착을 하려고 한다. 나 또</description>
         
@@ -81,7 +73,7 @@
         
           
             
-              <category>개인</category>
+              <category>Life</category>
             
           
         

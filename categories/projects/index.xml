@@ -13,14 +13,148 @@
     <language>ko</language>
     <managingEditor>rollcake.dev@gmail.com (YOGO)</managingEditor>
     <webMaster>rollcake.dev@gmail.com (YOGO)</webMaster>
-    <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Fri, 12 Nov 2021 11:29:20 +0900</lastBuildDate>
+    <copyright>©2022, All Rights Reserved</copyright>
+    <lastBuildDate>Tue, 15 Feb 2022 22:43:26 +0900</lastBuildDate>
     
         <atom:link href="/categories/projects/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    
 
+      
+      <item>
+        <title>마이크로소프트 서피스 다이얼 클론 제작 - 1 (Wanna be Surface Dial)</title>
+        <link>/posts/projects/suface-dial/2022-02-15-how-to-make-1/</link>
+        <pubDate>Tue, 15 Feb 2022 22:43:26 +0900</pubDate>
+        <author>rollcake.dev@gmail.com (YOGO)</author>
+        <atom:modified>Wed, 16 Feb 2022 15:16:52 +0900</atom:modified>
+        <guid>/posts/projects/suface-dial/2022-02-15-how-to-make-1/</guid>
+        <description>마이크로소프트 서피스 다이얼(Microsoft Surface Dial)12 마이크로소프트 서피스 다이얼(이하 서피스다이얼 또는 다이얼)은 퍽(Puck) 형태로 회전과 클릭이</description>
+        
+        <dc:creator>Yogo</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>project</category>
+            
+          
+            
+              <category>취미전자</category>
+            
+          
+            
+              <category>Hobby Electronics</category>
+            
+          
+            
+              <category>Surface Dial</category>
+            
+          
+        
+        
+          
+            
+              <category>Projects</category>
+            
+          
+        
+        
+          
+            
+              <category>Surface Dial</category>
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>NES CPU(6502) 에뮬레이션 - 2</title>
+        <link>/posts/projects/nesdev/2022-02-10-nes-cpu-emulation-02/</link>
+        <pubDate>Thu, 10 Feb 2022 23:35:55 +0900</pubDate>
+        <author>rollcake.dev@gmail.com (YOGO)</author>
+        <atom:modified>Wed, 16 Feb 2022 15:16:52 +0900</atom:modified>
+        <guid>/posts/projects/nesdev/2022-02-10-nes-cpu-emulation-02/</guid>
+        <description>이전 포스트에서 6502 프로세서의 간략한 특징과 명령어, 어드레싱 모드에 대해서 정리를 했습니다. 에뮬레이션을 위해서는 더 많은 내용의 정리가 필요하지만 이미 레퍼런</description>
+        
+        <dc:creator>Yogo</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>프로젝트</category>
+            
+          
+            
+              <category>NES</category>
+            
+          
+            
+              <category>Emulator</category>
+            
+          
+        
+        
+          
+            
+              <category>Projects</category>
+            
+          
+        
+        
+          
+            
+              <category>NES Emulator</category>
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>NES CPU(6502) 에뮬레이션 - 1</title>
+        <link>/posts/projects/nesdev/2022-02-07-nes-cpu-emulation-01/</link>
+        <pubDate>Mon, 07 Feb 2022 18:07:00 +0900</pubDate>
+        <author>rollcake.dev@gmail.com (YOGO)</author>
+        <atom:modified>Wed, 16 Feb 2022 15:16:52 +0900</atom:modified>
+        <guid>/posts/projects/nesdev/2022-02-07-nes-cpu-emulation-01/</guid>
+        <description>NES 에뮬레이션을 위해서 C# 환경에서 6502 CPU를 구현 하면서 참조한 지식과 경험을 정리합니다. 이전의 NESDOC1 포스트 내용이 상당수 그대로 반영이 되어있습니다. 들어가며</description>
+        
+        <dc:creator>Yogo</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>프로젝트</category>
+            
+          
+            
+              <category>NES</category>
+            
+          
+            
+              <category>Emulator</category>
+            
+          
+        
+        
+          
+            
+              <category>Projects</category>
+            
+          
+        
+        
+          
+            
+              <category>NES Emulator</category>
+            
+          
+        
+      </item>
       
       <item>
         <title>유튜브 플레이어 컨트롤러 제작기 - 02</title>
@@ -239,6 +373,50 @@ Unfortunately, for some unknown reason, the touchpad press may not work in some 
           
             
               <category>XI2DS</category>
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>Nintendo Entertainment System - CPU</title>
+        <link>/posts/projects/nesdev/2021-07-06-nesdoc-kr-01/</link>
+        <pubDate>Tue, 06 Jul 2021 23:05:02 +0900</pubDate>
+        <author>rollcake.dev@gmail.com (YOGO)</author>
+        <atom:modified>Wed, 16 Feb 2022 15:16:52 +0900</atom:modified>
+        <guid>/posts/projects/nesdev/2021-07-06-nesdoc-kr-01/</guid>
+        <description>Nintendo Entertainment System NesDev Wiki1와 Nintendo Entertainment System Documentation2 문서를 기반으로 NES 시스템을 정리 하고자 합니다. 해당 문서에서는 하드웨어 및 프로세서에 대한 내용을 많이 담고 있어서 이해를 위해서</description>
+        
+        <dc:creator>Yogo</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>프로젝트</category>
+            
+          
+            
+              <category>NES</category>
+            
+          
+            
+              <category>Emulator</category>
+            
+          
+        
+        
+          
+            
+              <category>Projects</category>
+            
+          
+        
+        
+          
+            
+              <category>NES Emulator</category>
             
           
         

@@ -5,19 +5,22 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>life – Yogo&#39;s blog</title>
+    <title>Life – Yogo&#39;s blog</title>
     
+
+
+  
+  <script defer src="/js/fuse.min.8dfbf8696f107ab8b55732efbb04c5c51576692a4a2cce6effef9f6e92d341a7.js"></script>
+
 
 
 <script src="/js/enquire.min.aa37bdcb743826eecdae5c5d177fc7d6552340f1b4378ffaa9c82b2c6111400b.js"></script>
 
-<script defer src="/js/lazysizes.min.5e11d056075a05065b9c0bfec44084a113fc2976c2952ec804dedb61c7662db9.js"></script>
+<script defer src="/js/lazysizes.min.498676c34eb225e85357ab0ce19c3c1244f3bd0bf595e5684d1b9d50ea4fbc42.js"></script>
 
-<script defer src="/js/fuse.min.c4bee9a8d44273d6154fe86006923d4131eb2e8069d8897687137c6f37f553e3.js"></script>
+<script defer src="/js/helper/getParents.min.ccd45f158c1b17849307ba913a72beac239c410f2b6e648496a79842da84e55b.js"></script>
 
-<script defer src="/js/helper/getParents.min.1618c696be7c98933f9a92677f518b512a74e55bdbb976b09936b4182e93181b.js"></script>
-
-<script defer src="/js/helper/fadeinout.min.93a331f96194789a542f33690bbe4f0c102c7e78ffc018217f5a1c33010bad91.js"></script>
+<script defer src="/js/helper/fadeinout.min.1d13d3e810c3940e80cbba6216a1c76fbf42b5431fc83537ea6997863802362b.js"></script>
 
 <script defer src="/js/helper/closest.min.js"></script>
   
@@ -96,6 +99,74 @@
           navCollapse.setAttribute('data-open', 'true');
           navCollapse.style.maxHeight = navCollapse.scrollHeight + "px";
           navCollapseBtn.classList.add('is-active');
+        }
+      }
+    }) : null;
+    
+
+
+    
+    var tables = document.querySelectorAll('.single__contents > table');
+    for (let i = 0; i < tables.length; i++) {
+      var table = tables[i];
+      var wrapper = document.createElement('div');
+      wrapper.className = 'table-wrapper';
+      table.parentElement.replaceChild(wrapper, table);
+      wrapper.appendChild(table);
+    }
+    
+
+
+    
+    var footNoteRefs = document.querySelectorAll('.footnote-ref');
+    var footNoteBackRefs = document.querySelectorAll('.footnote-backref');
+
+    footNoteRefs ? 
+    footNoteRefs.forEach(function(elem, idx) {
+      elem.onmouseenter = function () {
+        if (navbar.classList.contains('scrolling')) {
+          navbar.classList.remove('scrolling');
+        }
+      }
+
+      elem.onmouseleave = function () {
+        if (!navbar.classList.contains('scrolling')) {
+          setTimeout(function () {
+            navbar.classList.add('scrolling');
+          }, 100);
+        }
+      }
+
+      elem.onclick = function () {
+        if (!navbar.classList.contains('scrolling')) {
+          navbar.classList.remove('navbar--show');
+          navbar.classList.remove('navbar--hide');
+          navbar.classList.add('navbar--hide');
+        }
+      }
+    }) : null;
+
+    footNoteBackRefs ? 
+    footNoteBackRefs.forEach(function(elem, idx) {
+      elem.onmouseenter = function () {
+        if (navbar.classList.contains('scrolling')) {
+          navbar.classList.remove('scrolling');
+        }
+      }
+
+      elem.onmouseleave = function () {
+        if (!navbar.classList.contains('scrolling')) {
+          setTimeout(function() {
+            navbar.classList.add('scrolling');
+          }, 100);
+        }
+      }
+
+      elem.onclick = function () {
+        if (!navbar.classList.contains('scrolling')) {
+          navbar.classList.remove('navbar--show');
+          navbar.classList.remove('navbar--hide');
+          navbar.classList.add('navbar--hide');
         }
       }
     }) : null;
@@ -289,11 +360,13 @@
         if (st < 45) {
           return null;
         }
-        
-        if (!navbar.classList.contains('navbar--hide')) {
-          navbar.classList.add('navbar--hide');
-        } else if (navbar.classList.contains('navbar--show')) {
-          navbar.classList.remove('navbar--show');
+
+        if (navbar.classList.contains('scrolling')) {
+          if (!navbar.classList.contains('navbar--hide')) {
+            navbar.classList.add('navbar--hide');
+          } else if (navbar.classList.contains('navbar--show')) {
+            navbar.classList.remove('navbar--show');
+          }
         }
 
         if (singleContentsElem) {
@@ -360,10 +433,12 @@
           gttBtn.style.display = "none";
         }
 
-        if (navbar.classList.contains('navbar--hide')) {
-          navbar.classList.remove('navbar--hide');
-        } else if (!navbar.classList.contains('navbar--show')) {
-          navbar.classList.add('navbar--show');
+        if (navbar.classList.contains('scrolling')) {
+          if (navbar.classList.contains('navbar--hide')) {
+            navbar.classList.remove('navbar--hide');
+          } else if (!navbar.classList.contains('navbar--show')) {
+            navbar.classList.add('navbar--show');
+          }
         }
 
         if (singleContentsElem) {
@@ -444,6 +519,17 @@
     var rootEleme = document.getElementById('root');
     var selectThemeElem = document.querySelectorAll('.select-theme');
     var selectThemeItemElem = document.querySelectorAll('.select-theme__item');
+    
+    
+    var skinDarkCode = JSON.parse("\"dark\"");
+    
+    var skinLightCode = JSON.parse("\"light\"");
+    
+    var skinHackerCode = JSON.parse("\"hacker\"");
+    
+    var skinSolarizedCode = JSON.parse("\"solarized\"");
+    
+    var skinKimbieCode = JSON.parse("\"kimbie\"");
 
     var setMetaColor = function(themeColor) {
       var metaMsapplicationTileColor = document.getElementsByName('msapplication-TileColor')[0];
@@ -476,7 +562,21 @@
         metaThemeColor.setAttribute('content', '#eee8d5');
         metaMsapplicationNavbuttonColor.setAttribute('content', '#eee8d5');
         metaAppleMobileWebAappStatusBarStyle.setAttribute('content', '#eee8d5');
-      } 
+      }
+    }
+
+    var parseSkinCode = function(themeText) {
+      if (themeText === skinDarkCode) {
+        return 'dark';
+      } else if (themeText === skinLightCode) {
+        return 'light';
+      } else if (themeText === skinHackerCode) {
+        return 'hacker';
+      } else if (themeText === skinSolarizedCode) {
+        return 'solarized';
+      } else if (themeText === skinKimbieCode) {
+        return 'kimbie';
+      }
     }
     
     if (localTheme) {
@@ -497,7 +597,7 @@
     selectThemeItemElem ? 
     selectThemeItemElem.forEach(function (v, i) {
       v.addEventListener('click', function (e) {
-        var selectedThemeVariant = e.target.text.trim();
+        var selectedThemeVariant = parseSkinCode(e.target.text.trim());
         localStorage.setItem('theme', selectedThemeVariant);
         setMetaColor(selectedThemeVariant);
 
@@ -551,60 +651,85 @@
 
   
     
+    var baseurl = JSON.parse("\"/\"");
+    
     var permalink = JSON.parse("\"/categories/life/\"");
+    
+    var langprefix = JSON.parse("\"\"");
     var searchResults = null;
     var searchMenu = null;
     var searchText = null;
     
+    
+    var enableSearch = JSON.parse("true");
+    
+    var searchDistance = JSON.parse("null");
+    
+    var searchThreshold = JSON.parse("null");
+    
+    var searchContent = JSON.parse("null");
     
     var enableSearchHighlight = JSON.parse("true");
     
     var searchResultPosition = JSON.parse("null");
     
     var sectionType = JSON.parse("\"categories\"");
-
+    
+    var kind = JSON.parse("\"term\"");
+    
     var fuse = null;
 
-    (function initFuse() {
-      var xhr = new XMLHttpRequest();
-      xhr.open('GET', permalink + "index.json");
-      xhr.setRequestHeader('Content-Type', 'application/json; charset=utf-8');
-      xhr.onload = function () {
-        if (xhr.status === 200) {
-          fuse = new Fuse(JSON.parse(xhr.response.toString('utf-8')), {
-            keys: sectionType.includes('publication') ? ['title', 'abstract'] : ['title', 'description', 'content'],
-            includeMatches: enableSearchHighlight,
-            shouldSort: true,
-            threshold: 0.4,
-            location: 0,
-            distance: 100,
-            maxPatternLength: 32,
-            minMatchCharLength: 1,
-          });
-          window.fuse = fuse;
+    if (enableSearch) {
+      (function initFuse() {
+        var xhr = new XMLHttpRequest();
+        if (sectionType === "publication" && kind !== "page") {
+          xhr.open('GET', permalink + "index.json");
+        } else {
+          xhr.open('GET', baseurl + langprefix + "/index.json");
         }
-        else {
-          console.error('[' + xhr.status + ']Error:', xhr.statusText);
-        }
-      };
-      xhr.send();
-    })();
+        
+        xhr.setRequestHeader('Content-Type', 'application/json; charset=utf-8');
+        xhr.onload = function () {
+          if (xhr.status === 200) {
+            fuse = new Fuse(JSON.parse(xhr.response.toString('utf-8')), {
+              keys: sectionType.includes('publication') ? ['title', 'abstract'] : 
+                searchContent ? ['title', 'description', 'content'] : ['title', 'description'],
+              includeMatches: enableSearchHighlight,
+              shouldSort: true, 
+              threshold: searchThreshold ? searchThreshold : 0.4, 
+              location: 0, 
+              distance: searchDistance ? searchDistance : 100, 
+              maxPatternLength: 32,
+              minMatchCharLength: 1,
+              isCaseSensitive: false, 
+              findAllMatches: false, 
+              useExtendedSearch: false, 
+            });
+            window.fuse = fuse;
+          }
+          else {
+            console.error('[' + xhr.status + ']Error:', xhr.statusText);
+          }
+        };
+        xhr.send();
+      })();
+    }
 
     function makeLi(ulElem, obj) {
       var li = document.createElement('li');
       li.className = 'search-result__item';
       
       var a = document.createElement('a');
-      a.innerHTML = obj.title;
+      a.innerHTML = obj.item.title;
       a.setAttribute('class', 'search-result__item--title');
-      a.setAttribute('href', obj.permalink);
+      a.setAttribute('href', obj.item.uri);
 
       var descDiv = document.createElement('div');
       descDiv.setAttribute('class', 'search-result__item--desc');
-      if (obj.description) {
-        descDiv.innerHTML = obj.description;
-      } else if (obj.content) {
-        descDiv.innerHTML = obj.content.substring(0, 225);
+      if (obj.item.description) {
+        descDiv.innerHTML = obj.item.description;
+      } else if (obj.item.content) {
+        descDiv.innerHTML = obj.item.content.substring(0, 225);
       }
       
       li.appendChild(a);
@@ -1078,7 +1203,7 @@
   
     var mobileSearchInputElem = document.querySelector('#search-mobile');
     var mobileSearchClassElem = document.querySelector('.mobile-search');
-    var mobileSearchBtnElem = document.querySelector('#mobileSearchBtn');
+    var mobileSearchBtnElems = document.querySelectorAll('.navbar-search');
     var mobileSearchCloseBtnElem = document.querySelector('#search-mobile-close');
     var mobileSearchContainer = document.querySelector('#search-mobile-container');
     var mobileSearchResultsElem = document.querySelector('#search-mobile-results');
@@ -1088,19 +1213,21 @@
       mobileSearchClassElem.style.display = 'none';
     }
 
-    mobileSearchBtnElem ? 
-    mobileSearchBtnElem.addEventListener('click', function () {
-      if (mobileSearchContainer) {
-        mobileSearchContainer.style.display = 'block';
-      }
+    mobileSearchBtnElems ? 
+    mobileSearchBtnElems.forEach(function (elem, idx) {
+      elem.addEventListener('click', function () {
+        if (mobileSearchContainer) {
+          mobileSearchContainer.style.display = 'block';
+        }
 
-      if (mobileSearchInputElem) {
-        mobileSearchInputElem.focus();
-      }
+        if (mobileSearchInputElem) {
+          mobileSearchInputElem.focus();
+        }
 
-      if (htmlElem) {
-        htmlElem.style.overflowY = 'hidden';
-      }
+        if (htmlElem) {
+          htmlElem.style.overflowY = 'hidden';
+        }
+      });
     }) : null;
 
     mobileSearchCloseBtnElem ? 
@@ -1195,7 +1322,8 @@
     }
   
   });
-</script>    
+</script>
+    
     
 
 
@@ -1216,20 +1344,20 @@
 <meta name="description" content="Yogo&#39;s life and devlog" />
 
 
-<meta name="created" content="2020-05-31T22:03:36&#43;0900">
-<meta name="modified" content="2020-05-31T22:03:36&#43;0900">
-<meta property="article:published_time" content="2020-05-31T22:03:36&#43;0900">
+<meta name="created" content="2020-09-21T19:21:22&#43;0900">
+<meta name="modified" content="2022-02-16T15:16:52&#43;0900">
+<meta property="article:published_time" content="2020-09-21T19:21:22&#43;0900">
 
 <meta name="author" content="YOGO">
 
 
 <meta property="og:site_name" content="Yogo&#39;s blog">
-<meta property="og:title" content="life">
+<meta property="og:title" content="Life">
 <meta property="og:url" content="/categories/life/">
 <meta property="og:type" content="website">
 <meta property="og:description" content="Yogo&#39;s life and devlog">
 
-<meta name="generator" content="Hugo 0.71.1" />
+<meta name="generator" content="Hugo 0.92.2" />
 <meta name="msapplication-TileColor" content="#fff">
 
 <meta name="theme-color" content="#fff">
@@ -1253,7 +1381,7 @@
     "@context": "https://schema.org",
     "@type": "WebPage",
     "url" : "/categories/life/",
-    "name": "life",
+    "name": "Life",
     "description": "Yogo's life and devlog",
     "mainEntityOfPage": {
       "@type": "WebPage",
@@ -1269,7 +1397,29 @@
 
     
   
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G83TEBX87R"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-G83TEBX87R', { 'anonymize_ip': false });
+}
+</script>
+
   
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'G-G83TEBX87R', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
 
 
 
@@ -1280,7 +1430,7 @@
     
 </head>
 
-<body id="root" class="theme__dark">
+<body id="root" class="theme__light">
     <script>
         var localTheme = localStorage.getItem('theme');
         if (localTheme) {
@@ -1294,8 +1444,8 @@
 
 
 
-        <div class="wrapper" data-type="categories" data-kind="taxonomy">
-            <nav class="navbar" role="navigation" aria-label="main navigation" data-dir="ltr">
+        <div class="wrapper" data-type="categories" data-kind="term">
+            <nav class="navbar scrolling" role="navigation" aria-label="main navigation" data-dir="ltr">
   <div class="navbar__brand">
     
     &nbsp;&nbsp;
@@ -1317,11 +1467,11 @@
       
         
         <a href="#" class="dropdown-item select-theme__item is-active">
-          dark
+          light
         </a>
         
         <a href="#" class="dropdown-item select-theme__item ">
-          light
+          dark
         </a>
         
         <a href="#" class="dropdown-item select-theme__item ">
@@ -1342,7 +1492,7 @@
 </div>
 
 
-<div id="mobileSearchBtn" class="mobile-search__btn" data-ani="true">
+<div class="mobile-search__btn navbar-search" data-ani="true">
   <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path d="M15.5 14h-.79l-.28-.27c1.2-1.4 1.82-3.31 1.48-5.34-.47-2.78-2.79-5-5.59-5.34-4.23-.52-7.79 3.04-7.27 7.27.34 2.8 2.56 5.12 5.34 5.59 2.03.34 3.94-.28 5.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49L15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
 </div>
 
@@ -1405,6 +1555,8 @@
 </div>
   <div class="navbar__menu">
   
+  
+  
 <div class="theme" data-ani="true">
   <div class="dropdown">
     <button class="dropdown-trigger navbar__slide-down" aria-label="Select Theme Button" data-ani="true">
@@ -1414,11 +1566,11 @@
       
         
         <a href="#" class="dropdown-item select-theme__item is-active">
-          dark
+          light
         </a>
         
         <a href="#" class="dropdown-item select-theme__item ">
-          light
+          dark
         </a>
         
         <a href="#" class="dropdown-item select-theme__item ">
@@ -1480,7 +1632,7 @@
   
   <li  class="is-active" >
     
-      <span>life</span>
+      <span>Life</span>
     
   </li>
   
@@ -1488,7 +1640,7 @@
   
 </nav>
     <header class="list__header">
-      <h5 class="list__header--title capitalize h5">life</h5>
+      <h5 class="list__header--title capitalize h5">Life</h5>
     </header>
     
     <div class="list__header--desc p2">
@@ -1505,11 +1657,13 @@
 
     <div class="summary-classic__content">
       <header>
-        <h5 class="title h5"><a href='/posts/2020/05/first/'> Hugo 블로그 시작</a> </h5>
+        <h5 class="title h5"><a href='/posts/life/daily/2020-09-21/'>18년 장롱면허의 첫차 구입과 운전</a> </h5>
         <h6 class="subtitle caption">
-          <time title="작성일" dir="ltr">📅&nbsp;2020년 05월 31일 </time>
+          <time title="작성일" dir="ltr">📅&nbsp;2020년 09월 21일 </time>
           
-          <span title="읽는 시간" dir="ltr"> &middot; ☕&nbsp;1&nbsp;min read </span>
+          <time title="수정일" dir="ltr"> &middot; 📝&nbsp;2022년 02월 16일 </time>
+          
+          <span title="읽는 시간" dir="ltr"> &middot; ☕&nbsp;11&nbsp;min read </span>
           
           &middot; <span title="글쓴이" dir="ltr">✍️&nbsp;Yogo</span>
           
@@ -1518,7 +1672,7 @@
       <div>
         <div class="summary-classic__text p2">
           
-            HUGO를 이용해서 드디어 깃헙 블로그를 개설! :) 그간 많은 플랫폼을 오고가고 비교하면서 블로깅을 했었는데 조금 더 자유롭고 재미있는 환경을 찾아오다가 Hugo
+            최근 결혼을 하고 미루고 미루었던 차(車)를 구입 했다. 구입은 오래전부터 생각은 하고 있었지만 대중교통이 잘 마련되어 있는 수도권에서만 생활을 하다보니 내차에 대
           
         </div>
       </div>
@@ -1529,6 +1683,44 @@
   </div>
   <hr />
 </article>
+
+
+      
+        
+  <article class="summary-classic" data-ani="true">
+  <div class="summary-classic__flex-box" >
+
+    
+
+    <div class="summary-classic__content">
+      <header>
+        <h5 class="title h5"><a href='/posts/life/daily/2020-05-31/'>블로그 재시작</a> </h5>
+        <h6 class="subtitle caption">
+          <time title="작성일" dir="ltr">📅&nbsp;2020년 05월 31일 </time>
+          
+          <time title="수정일" dir="ltr"> &middot; 📝&nbsp;2022년 02월 16일 </time>
+          
+          <span title="읽는 시간" dir="ltr"> &middot; ☕&nbsp;1&nbsp;min read </span>
+          
+          &middot; <span title="글쓴이" dir="ltr">✍️&nbsp;Yogo</span>
+          
+        </h6>
+      </header>
+      <div>
+        <div class="summary-classic__text p2">
+          
+            새로이 블로그를 개설! :) 그간 많은 플랫폼을 오가면서 블로깅을 찔끔찔끔 했었는데 자유롭고 재미있는 환경을 찾아보다가 Github으로 정착을 하려고 한다. 나 또
+          
+        </div>
+      </div>
+    </div>
+
+    
+    
+  </div>
+  <hr />
+</article>
+
 
       
       
@@ -1579,7 +1771,11 @@
     
         
         <li class="sidebar-recent">
-            <a href="/posts/2020/05/first/" class="sidebar-recent__title p1">Hugo 블로그 시작</a>
+            <a href="/posts/life/daily/2020-09-21/" class="sidebar-recent__title p1">18년 장롱면허의 첫차 구입과 운전</a>
+        </li>
+        
+        <li class="sidebar-recent">
+            <a href="/posts/life/daily/2020-05-31/" class="sidebar-recent__title p1">블로그 재시작</a>
         </li>
         
         <hr class="hr-fade sidebar-hr" />
@@ -1596,13 +1792,235 @@
         </span>
         
         
+        
             <span class="tag">
-                <a href="/tags/%EC%9E%A1%EB%8B%B4/" class="is-tags taxo__link" data-dir="ltr">
+                <a href="/tags/dualshock4/" class="is-tags taxo__link" data-dir="ltr">
                     <span class="taxo__text">
-                        잡담
+                        DualShock4
+                    </span>
+                    <span class="taxo__num" dir="auto">
+                        2
+                    </span>
+                </a>
+            </span>
+        
+        
+        
+            <span class="tag">
+                <a href="/tags/emulator/" class="is-tags taxo__link" data-dir="ltr">
+                    <span class="taxo__text">
+                        Emulator
+                    </span>
+                    <span class="taxo__num" dir="auto">
+                        3
+                    </span>
+                </a>
+            </span>
+        
+        
+        
+            <span class="tag">
+                <a href="/tags/hobby-electronics/" class="is-tags taxo__link" data-dir="ltr">
+                    <span class="taxo__text">
+                        Hobby Electronics
+                    </span>
+                    <span class="taxo__num" dir="auto">
+                        4
+                    </span>
+                </a>
+            </span>
+        
+        
+        
+            <span class="tag">
+                <a href="/tags/javascript/" class="is-tags taxo__link" data-dir="ltr">
+                    <span class="taxo__text">
+                        javascript
                     </span>
                     <span class="taxo__num" dir="auto">
                         1
+                    </span>
+                </a>
+            </span>
+        
+        
+        
+            <span class="tag">
+                <a href="/tags/meme/" class="is-tags taxo__link" data-dir="ltr">
+                    <span class="taxo__text">
+                        meme
+                    </span>
+                    <span class="taxo__num" dir="auto">
+                        1
+                    </span>
+                </a>
+            </span>
+        
+        
+        
+            <span class="tag">
+                <a href="/tags/nes/" class="is-tags taxo__link" data-dir="ltr">
+                    <span class="taxo__text">
+                        NES
+                    </span>
+                    <span class="taxo__num" dir="auto">
+                        3
+                    </span>
+                </a>
+            </span>
+        
+        
+        
+            <span class="tag">
+                <a href="/tags/project/" class="is-tags taxo__link" data-dir="ltr">
+                    <span class="taxo__text">
+                        project
+                    </span>
+                    <span class="taxo__num" dir="auto">
+                        6
+                    </span>
+                </a>
+            </span>
+        
+        
+        
+            <span class="tag">
+                <a href="/tags/surface-dial/" class="is-tags taxo__link" data-dir="ltr">
+                    <span class="taxo__text">
+                        Surface Dial
+                    </span>
+                    <span class="taxo__num" dir="auto">
+                        1
+                    </span>
+                </a>
+            </span>
+        
+        
+        
+            <span class="tag">
+                <a href="/tags/typescript/" class="is-tags taxo__link" data-dir="ltr">
+                    <span class="taxo__text">
+                        typescript
+                    </span>
+                    <span class="taxo__num" dir="auto">
+                        2
+                    </span>
+                </a>
+            </span>
+        
+        
+        
+            <span class="tag">
+                <a href="/tags/vue/" class="is-tags taxo__link" data-dir="ltr">
+                    <span class="taxo__text">
+                        vue
+                    </span>
+                    <span class="taxo__num" dir="auto">
+                        2
+                    </span>
+                </a>
+            </span>
+        
+        
+        
+            <span class="tag">
+                <a href="/tags/vue-next/" class="is-tags taxo__link" data-dir="ltr">
+                    <span class="taxo__text">
+                        vue-next
+                    </span>
+                    <span class="taxo__num" dir="auto">
+                        2
+                    </span>
+                </a>
+            </span>
+        
+        
+        
+            <span class="tag">
+                <a href="/tags/vue3/" class="is-tags taxo__link" data-dir="ltr">
+                    <span class="taxo__text">
+                        vue3
+                    </span>
+                    <span class="taxo__num" dir="auto">
+                        2
+                    </span>
+                </a>
+            </span>
+        
+        
+        
+            <span class="tag">
+                <a href="/tags/web/" class="is-tags taxo__link" data-dir="ltr">
+                    <span class="taxo__text">
+                        web
+                    </span>
+                    <span class="taxo__num" dir="auto">
+                        1
+                    </span>
+                </a>
+            </span>
+        
+        
+        
+            <span class="tag">
+                <a href="/tags/xbox/" class="is-tags taxo__link" data-dir="ltr">
+                    <span class="taxo__text">
+                        XBOX
+                    </span>
+                    <span class="taxo__num" dir="auto">
+                        2
+                    </span>
+                </a>
+            </span>
+        
+        
+        
+            <span class="tag">
+                <a href="/tags/%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%EC%BB%A8%ED%8A%B8%EB%A1%A4%EB%9F%AC/" class="is-tags taxo__link" data-dir="ltr">
+                    <span class="taxo__text">
+                        마이크로컨트롤러
+                    </span>
+                    <span class="taxo__num" dir="auto">
+                        1
+                    </span>
+                </a>
+            </span>
+        
+        
+        
+            <span class="tag">
+                <a href="/tags/%EC%9D%BC%EC%83%81/" class="is-tags taxo__link" data-dir="ltr">
+                    <span class="taxo__text">
+                        일상
+                    </span>
+                    <span class="taxo__num" dir="auto">
+                        2
+                    </span>
+                </a>
+            </span>
+        
+        
+        
+            <span class="tag">
+                <a href="/tags/%EC%B7%A8%EB%AF%B8%EC%A0%84%EC%9E%90/" class="is-tags taxo__link" data-dir="ltr">
+                    <span class="taxo__text">
+                        취미전자
+                    </span>
+                    <span class="taxo__num" dir="auto">
+                        4
+                    </span>
+                </a>
+            </span>
+        
+        
+        
+            <span class="tag">
+                <a href="/tags/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/" class="is-tags taxo__link" data-dir="ltr">
+                    <span class="taxo__text">
+                        프로젝트
+                    </span>
+                    <span class="taxo__num" dir="auto">
+                        3
                     </span>
                 </a>
             </span>
@@ -1621,13 +2039,40 @@
         </span>
         
         
+        
+            <span class="tag">
+                <a href="/categories/dev/" class="is-categories taxo__link" data-dir="ltr">
+                    <span class="taxo__text">
+                        Dev
+                    </span>
+                    <span class="taxo__num" dir="auto">
+                        4
+                    </span>
+                </a>
+            </span>
+        
+        
+        
             <span class="tag">
                 <a href="/categories/life/" class="is-categories taxo__link" data-dir="ltr">
                     <span class="taxo__text">
-                        life
+                        Life
                     </span>
                     <span class="taxo__num" dir="auto">
-                        1
+                        2
+                    </span>
+                </a>
+            </span>
+        
+        
+        
+            <span class="tag">
+                <a href="/categories/projects/" class="is-categories taxo__link" data-dir="ltr">
+                    <span class="taxo__text">
+                        Projects
+                    </span>
+                    <span class="taxo__num" dir="auto">
+                        9
                     </span>
                 </a>
             </span>
@@ -1636,6 +2081,96 @@
     </section>
 </div>
 
+
+<div class="taxo">
+    <section>
+        <span class="title p2">
+            <a href="/series/" class="taxo__title">
+                시리즈
+            </a>
+        </span>
+        
+        
+        
+            <span class="tag">
+                <a href="/series/nes-emulator/" class="is-series taxo__link" data-dir="ltr">
+                    <span class="taxo__text">
+                        NES Emulator
+                    </span>
+                    <span class="taxo__num" dir="auto">
+                        3
+                    </span>
+                </a>
+            </span>
+        
+        
+        
+            <span class="tag">
+                <a href="/series/surface-dial/" class="is-series taxo__link" data-dir="ltr">
+                    <span class="taxo__text">
+                        Surface Dial
+                    </span>
+                    <span class="taxo__num" dir="auto">
+                        1
+                    </span>
+                </a>
+            </span>
+        
+        
+        
+            <span class="tag">
+                <a href="/series/vue/" class="is-series taxo__link" data-dir="ltr">
+                    <span class="taxo__text">
+                        Vue
+                    </span>
+                    <span class="taxo__num" dir="auto">
+                        2
+                    </span>
+                </a>
+            </span>
+        
+        
+        
+            <span class="tag">
+                <a href="/series/xi2ds/" class="is-series taxo__link" data-dir="ltr">
+                    <span class="taxo__text">
+                        XI2DS
+                    </span>
+                    <span class="taxo__num" dir="auto">
+                        2
+                    </span>
+                </a>
+            </span>
+        
+        
+        
+            <span class="tag">
+                <a href="/series/%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%EC%BB%A8%ED%8A%B8%EB%A1%A4%EB%9F%AC/" class="is-series taxo__link" data-dir="ltr">
+                    <span class="taxo__text">
+                        마이크로컨트롤러
+                    </span>
+                    <span class="taxo__num" dir="auto">
+                        1
+                    </span>
+                </a>
+            </span>
+        
+        
+        
+            <span class="tag">
+                <a href="/series/%EC%B7%A8%EB%AF%B8%EC%A0%84%EC%9E%90/" class="is-series taxo__link" data-dir="ltr">
+                    <span class="taxo__text">
+                        취미전자
+                    </span>
+                    <span class="taxo__num" dir="auto">
+                        3
+                    </span>
+                </a>
+            </span>
+        
+        
+    </section>
+</div>
 
 
 </div>
@@ -1734,11 +2269,11 @@
 
     <hr />
 
-    <div class="basicflex">
+    <div class="basicflex flexwrap">
         
-            <a href="" class="footer__link" target="_blank" rel="noreferrer"></a>
+            
         
-            <a href="" class="footer__link" target="_blank" rel="noreferrer"></a>
+            
         
     </div>
 
@@ -1747,7 +2282,7 @@
                 
             <p class="caption">
                 
-                    ©2020, All Rights Reserved
+                    ©2022, All Rights Reserved
                 
             </p>
         

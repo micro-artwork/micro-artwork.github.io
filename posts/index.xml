@@ -13,21 +13,67 @@
     <language>ko</language>
     <managingEditor>rollcake.dev@gmail.com (YOGO)</managingEditor>
     <webMaster>rollcake.dev@gmail.com (YOGO)</webMaster>
-    <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Thu, 10 Feb 2022 23:35:55 +0900</lastBuildDate>
+    <copyright>©2022, All Rights Reserved</copyright>
+    <lastBuildDate>Tue, 15 Feb 2022 22:43:26 +0900</lastBuildDate>
     
         <atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    
 
+      
+      <item>
+        <title>마이크로소프트 서피스 다이얼 클론 제작 - 1 (Wanna be Surface Dial)</title>
+        <link>/posts/projects/suface-dial/2022-02-15-how-to-make-1/</link>
+        <pubDate>Tue, 15 Feb 2022 22:43:26 +0900</pubDate>
+        <author>rollcake.dev@gmail.com (YOGO)</author>
+        <atom:modified>Wed, 16 Feb 2022 15:16:52 +0900</atom:modified>
+        <guid>/posts/projects/suface-dial/2022-02-15-how-to-make-1/</guid>
+        <description>마이크로소프트 서피스 다이얼(Microsoft Surface Dial)12 마이크로소프트 서피스 다이얼(이하 서피스다이얼 또는 다이얼)은 퍽(Puck) 형태로 회전과 클릭이</description>
+        
+        <dc:creator>Yogo</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>project</category>
+            
+          
+            
+              <category>취미전자</category>
+            
+          
+            
+              <category>Hobby Electronics</category>
+            
+          
+            
+              <category>Surface Dial</category>
+            
+          
+        
+        
+          
+            
+              <category>Projects</category>
+            
+          
+        
+        
+          
+            
+              <category>Surface Dial</category>
+            
+          
+        
+      </item>
       
       <item>
         <title>NES CPU(6502) 에뮬레이션 - 2</title>
         <link>/posts/projects/nesdev/2022-02-10-nes-cpu-emulation-02/</link>
         <pubDate>Thu, 10 Feb 2022 23:35:55 +0900</pubDate>
         <author>rollcake.dev@gmail.com (YOGO)</author>
-        <atom:modified>Fri, 11 Feb 2022 00:15:53 +0900</atom:modified>
+        <atom:modified>Wed, 16 Feb 2022 15:16:52 +0900</atom:modified>
         <guid>/posts/projects/nesdev/2022-02-10-nes-cpu-emulation-02/</guid>
         <description>이전 포스트에서 6502 프로세서의 간략한 특징과 명령어, 어드레싱 모드에 대해서 정리를 했습니다. 에뮬레이션을 위해서는 더 많은 내용의 정리가 필요하지만 이미 레퍼런</description>
         
@@ -53,7 +99,7 @@
         
           
             
-              <category>프로젝트</category>
+              <category>Projects</category>
             
           
         
@@ -71,7 +117,7 @@
         <link>/posts/projects/nesdev/2022-02-07-nes-cpu-emulation-01/</link>
         <pubDate>Mon, 07 Feb 2022 18:07:00 +0900</pubDate>
         <author>rollcake.dev@gmail.com (YOGO)</author>
-        <atom:modified>Fri, 11 Feb 2022 00:15:53 +0900</atom:modified>
+        <atom:modified>Wed, 16 Feb 2022 15:16:52 +0900</atom:modified>
         <guid>/posts/projects/nesdev/2022-02-07-nes-cpu-emulation-01/</guid>
         <description>NES 에뮬레이션을 위해서 C# 환경에서 6502 CPU를 구현 하면서 참조한 지식과 경험을 정리합니다. 이전의 NESDOC1 포스트 내용이 상당수 그대로 반영이 되어있습니다. 들어가며</description>
         
@@ -97,7 +143,7 @@
         
           
             
-              <category>프로젝트</category>
+              <category>Projects</category>
             
           
         
@@ -337,7 +383,7 @@ Unfortunately, for some unknown reason, the touchpad press may not work in some 
         <link>/posts/dev/web/2021-10-07-simple-meme-generator/</link>
         <pubDate>Thu, 07 Oct 2021 11:11:23 +0900</pubDate>
         <author>rollcake.dev@gmail.com (YOGO)</author>
-        <atom:modified>Fri, 08 Oct 2021 16:44:40 +0900</atom:modified>
+        <atom:modified>Wed, 16 Feb 2022 15:16:52 +0900</atom:modified>
         <guid>/posts/dev/web/2021-10-07-simple-meme-generator/</guid>
         <description>요즘은 사회 전반적으로 특정 이벤트나 이슈가 생길 때마다 사람들이 재치있는 아이디어로 국내에선 짤, 해외에선 밈(meme)이라고 불리우는 패러디 이미지가 많이</description>
         
@@ -363,7 +409,7 @@ Unfortunately, for some unknown reason, the touchpad press may not work in some 
         
           
             
-              <category>개발</category>
+              <category>Dev</category>
             
           
         
@@ -375,7 +421,7 @@ Unfortunately, for some unknown reason, the touchpad press may not work in some 
         <link>/posts/projects/nesdev/2021-07-06-nesdoc-kr-01/</link>
         <pubDate>Tue, 06 Jul 2021 23:05:02 +0900</pubDate>
         <author>rollcake.dev@gmail.com (YOGO)</author>
-        <atom:modified>Sun, 06 Feb 2022 23:34:39 +0900</atom:modified>
+        <atom:modified>Wed, 16 Feb 2022 15:16:52 +0900</atom:modified>
         <guid>/posts/projects/nesdev/2021-07-06-nesdoc-kr-01/</guid>
         <description>Nintendo Entertainment System NesDev Wiki1와 Nintendo Entertainment System Documentation2 문서를 기반으로 NES 시스템을 정리 하고자 합니다. 해당 문서에서는 하드웨어 및 프로세서에 대한 내용을 많이 담고 있어서 이해를 위해서</description>
         
@@ -401,7 +447,7 @@ Unfortunately, for some unknown reason, the touchpad press may not work in some 
         
           
             
-              <category>프로젝트</category>
+              <category>Projects</category>
             
           
         
@@ -419,7 +465,7 @@ Unfortunately, for some unknown reason, the touchpad press may not work in some 
         <link>/posts/dev/micro/2021-01-27-dualshock2-reader-implementation/</link>
         <pubDate>Wed, 27 Jan 2021 03:21:59 +0900</pubDate>
         <author>rollcake.dev@gmail.com (YOGO)</author>
-        <atom:modified>Sun, 07 Feb 2021 16:50:12 +0900</atom:modified>
+        <atom:modified>Wed, 16 Feb 2022 15:16:52 +0900</atom:modified>
         <guid>/posts/dev/micro/2021-01-27-dualshock2-reader-implementation/</guid>
         <description>2007년 초쯤 마이크로프로세서(이하 MCU) 스터디를 하면서 주로 해외에서 하드웨어 관련 정보를 찾아보던 도중 우연히 어느 일본인이 개인 홈페이지에 플레이스테인션</description>
         
@@ -437,7 +483,7 @@ Unfortunately, for some unknown reason, the touchpad press may not work in some 
         
           
             
-              <category>개발 및 강좌</category>
+              <category>Dev</category>
             
           
         
@@ -455,7 +501,7 @@ Unfortunately, for some unknown reason, the touchpad press may not work in some 
         <link>/posts/dev/vue/2020-12-22-vue-3-simple-tool-tip/</link>
         <pubDate>Tue, 22 Dec 2020 16:39:01 +0900</pubDate>
         <author>rollcake.dev@gmail.com (YOGO)</author>
-        <atom:modified>Sun, 07 Feb 2021 16:50:12 +0900</atom:modified>
+        <atom:modified>Wed, 16 Feb 2022 15:16:52 +0900</atom:modified>
         <guid>/posts/dev/vue/2020-12-22-vue-3-simple-tool-tip/</guid>
         <description>Vue 3 - 간단한 툴팁 기능 구현 Vuetify를 사용하다 보면 복잡한 레이아웃으로 구성된 화면이나 content가 많은 즉, 스크롤해야 하는 화면에서 v-menu, v-tooltip 같이 별</description>
         
@@ -485,7 +531,7 @@ Unfortunately, for some unknown reason, the touchpad press may not work in some 
         
           
             
-              <category>개발</category>
+              <category>Dev</category>
             
           
         
@@ -503,7 +549,7 @@ Unfortunately, for some unknown reason, the touchpad press may not work in some 
         <link>/posts/dev/vue/2020-10-06-vue-3-global-properties-and-typescript/</link>
         <pubDate>Tue, 06 Oct 2020 10:45:16 +0900</pubDate>
         <author>rollcake.dev@gmail.com (YOGO)</author>
-        <atom:modified>Tue, 22 Dec 2020 20:02:27 +0900</atom:modified>
+        <atom:modified>Wed, 16 Feb 2022 15:16:52 +0900</atom:modified>
         <guid>/posts/dev/vue/2020-10-06-vue-3-global-properties-and-typescript/</guid>
         <description>기존 v2에서는 prototype에 변수나 모듈을 정의하면 this 키워드를 이용하여 접근할 수 있었는데 v3 부터는 config의 globalPropertie</description>
         
@@ -533,7 +579,7 @@ Unfortunately, for some unknown reason, the touchpad press may not work in some 
         
           
             
-              <category>개발</category>
+              <category>Dev</category>
             
           
         
@@ -551,7 +597,7 @@ Unfortunately, for some unknown reason, the touchpad press may not work in some 
         <link>/posts/life/daily/2020-09-21/</link>
         <pubDate>Mon, 21 Sep 2020 19:21:22 +0900</pubDate>
         <author>rollcake.dev@gmail.com (YOGO)</author>
-        <atom:modified>Sun, 07 Feb 2021 16:50:12 +0900</atom:modified>
+        <atom:modified>Wed, 16 Feb 2022 15:16:52 +0900</atom:modified>
         <guid>/posts/life/daily/2020-09-21/</guid>
         <description>최근 결혼을 하고 미루고 미루었던 차(車)를 구입 했다. 구입은 오래전부터 생각은 하고 있었지만 대중교통이 잘 마련되어 있는 수도권에서만 생활을 하다보니 내차에 대</description>
         
@@ -569,16 +615,10 @@ Unfortunately, for some unknown reason, the touchpad press may not work in some 
         
           
             
-              <category>개인</category>
+              <category>Life</category>
             
           
         
-        
-          
-            
-              <category>초보운전</category>
-            
-          
         
       </item>
       
@@ -587,7 +627,7 @@ Unfortunately, for some unknown reason, the touchpad press may not work in some 
         <link>/posts/life/daily/2020-05-31/</link>
         <pubDate>Sun, 31 May 2020 22:03:00 +0900</pubDate>
         <author>rollcake.dev@gmail.com (YOGO)</author>
-        <atom:modified>Sun, 08 Nov 2020 21:42:56 +0900</atom:modified>
+        <atom:modified>Wed, 16 Feb 2022 15:16:52 +0900</atom:modified>
         <guid>/posts/life/daily/2020-05-31/</guid>
         <description>새로이 블로그를 개설! :) 그간 많은 플랫폼을 오가면서 블로깅을 찔끔찔끔 했었는데 자유롭고 재미있는 환경을 찾아보다가 Github으로 정착을 하려고 한다. 나 또</description>
         
@@ -605,7 +645,7 @@ Unfortunately, for some unknown reason, the touchpad press may not work in some 
         
           
             
-              <category>개인</category>
+              <category>Life</category>
             
           
         
