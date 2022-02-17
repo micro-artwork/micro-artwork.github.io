@@ -2,13 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/categories/</loc>
-    <lastmod>2022-02-16T15:16:52+09:00</lastmod>
+    <loc>/posts/info/review/2022-02-17-omnipod/</loc>
+    <lastmod>2022-02-17T15:46:35+09:00</lastmod>
   </url><url>
-    <loc>/tags/hobby-electronics/</loc>
-    <lastmod>2022-02-16T15:16:52+09:00</lastmod>
+    <loc>/categories/</loc>
+    <lastmod>2022-02-17T15:46:35+09:00</lastmod>
   </url><url>
     <loc>/posts/</loc>
+    <lastmod>2022-02-17T15:46:35+09:00</lastmod>
+  </url><url>
+    <loc>/series/</loc>
+    <lastmod>2022-02-17T15:46:35+09:00</lastmod>
+  </url><url>
+    <loc>/tags/</loc>
+    <lastmod>2022-02-17T15:46:35+09:00</lastmod>
+  </url><url>
+    <loc>/series/tech-review/</loc>
+    <lastmod>2022-02-17T15:46:35+09:00</lastmod>
+  </url><url>
+    <loc>/categories/technical/</loc>
+    <lastmod>2022-02-17T15:46:35+09:00</lastmod>
+  </url><url>
+    <loc>/</loc>
+    <lastmod>2022-02-17T15:46:35+09:00</lastmod>
+  </url><url>
+    <loc>/tags/%EB%8B%B9%EB%87%A8/</loc>
+    <lastmod>2022-02-17T15:46:35+09:00</lastmod>
+  </url><url>
+    <loc>/tags/%EC%95%BD%EB%AC%BC/</loc>
+    <lastmod>2022-02-17T15:46:35+09:00</lastmod>
+  </url><url>
+    <loc>/tags/%EC%9D%B8%EC%8A%90%EB%A6%B0/</loc>
+    <lastmod>2022-02-17T15:46:35+09:00</lastmod>
+  </url><url>
+    <loc>/tags/hobby-electronics/</loc>
     <lastmod>2022-02-16T15:16:52+09:00</lastmod>
   </url><url>
     <loc>/tags/project/</loc>
@@ -17,19 +44,10 @@
     <loc>/categories/projects/</loc>
     <lastmod>2022-02-16T15:16:52+09:00</lastmod>
   </url><url>
-    <loc>/series/</loc>
-    <lastmod>2022-02-16T15:16:52+09:00</lastmod>
-  </url><url>
     <loc>/tags/surface-dial/</loc>
     <lastmod>2022-02-16T15:16:52+09:00</lastmod>
   </url><url>
     <loc>/series/surface-dial/</loc>
-    <lastmod>2022-02-16T15:16:52+09:00</lastmod>
-  </url><url>
-    <loc>/tags/</loc>
-    <lastmod>2022-02-16T15:16:52+09:00</lastmod>
-  </url><url>
-    <loc>/</loc>
     <lastmod>2022-02-16T15:16:52+09:00</lastmod>
   </url><url>
     <loc>/posts/projects/suface-dial/2022-02-15-how-to-make-1/</loc>

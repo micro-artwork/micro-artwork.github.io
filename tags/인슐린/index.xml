@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>인슐린 on Yogo&#39;s blog</title>
+    <link>/tags/%EC%9D%B8%EC%8A%90%EB%A6%B0/</link>
+    <description>Recent content in 인슐린 on Yogo&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <managingEditor>rollcake.dev@gmail.com (YOGO)</managingEditor>
+    <webMaster>rollcake.dev@gmail.com (YOGO)</webMaster>
+    <copyright>©2022 Yogo All Rights Reserved</copyright>
+    <lastBuildDate>Thu, 17 Feb 2022 15:44:39 +0900</lastBuildDate>
+    
+        <atom:link href="/tags/%EC%9D%B8%EC%8A%90%EB%A6%B0/index.xml" rel="self" type="application/rss+xml" />
+    
+
+      
+      <item>
+        <title>&#39;차세대&#39; 인슐린 펌프 옴니팟(Omnipod)</title>
+        <link>/posts/info/review/2022-02-17-omnipod/</link>
+        <pubDate>Thu, 17 Feb 2022 15:44:39 +0900</pubDate>
+        <author>rollcake.dev@gmail.com (YOGO)</author>
+        <atom:modified>Thu, 17 Feb 2022 15:46:35 +0900</atom:modified>
+        <guid>/posts/info/review/2022-02-17-omnipod/</guid>
+        <description>들어가며 과거 기업 연구소에서 헬스와 메디컬 분야 선행기술 연구 및 개발을 주로 했었습니다. 당시 여러 분야에 걸쳐 다양한 업무와 경험을 했는데 그 중에서도 당뇨와 관련</description>
+        
+        <dc:creator>Yogo</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>인슐린</category>
+            
+          
+            
+              <category>약물</category>
+            
+          
+            
+              <category>당뇨</category>
+            
+          
+        
+        
+          
+            
+              <category>Technical</category>
+            
+          
+        
+        
+          
+            
+              <category>Tech Review</category>
+            
+          
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>
