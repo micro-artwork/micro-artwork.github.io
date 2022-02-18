@@ -1217,7 +1217,7 @@
 <meta name="keywords" content="프로젝트,NES,Emulator">
 
 <meta name="created" content="2022-02-10T23:35:55&#43;0900">
-<meta name="modified" content="2022-02-16T15:16:52&#43;0900">
+<meta name="modified" content="2022-02-19T02:28:24&#43;0900">
 <meta property="article:published_time" content="2022-02-10T23:35:55&#43;0900">
 
 <meta name="author" content="Yogo">
@@ -1255,7 +1255,7 @@
     "@type": "WebPage",
     "headline": "NES CPU(6502) 에뮬레이션 - 2",
     "datePublished": "2022-02-10T23:35:55+09:00",
-    "dateModified": "2022-02-16T15:16:52+09:00",
+    "dateModified": "2022-02-19T02:28:24+09:00",
     "url" : "/posts/projects/nesdev/2022-02-10-nes-cpu-emulation-02/",
     "description": "이전 포스트에서 6502 프로세서의 간략한 특징과 명령어, 어드레싱 모드에 대해서 정리를 했습니다. 에뮬레이션을 위해서는 더 많은 내용의 정리가 필요하지만 이미 레퍼런",
     "keywords": ["프로젝트","NES","Emulator"],
@@ -1528,7 +1528,7 @@ if (!doNotTrack) {
 <div class="single__infos">
   <time class="single__info" title="작성일">📅&nbsp;2022년 02월 10일 </time>
   
-  &nbsp;&middot;&nbsp; <time class="single__info" title="수정일"> 📝&nbsp;2022년 02월 16일 </time>
+  &nbsp;&middot;&nbsp; <time class="single__info" title="수정일"> 📝&nbsp;2022년 02월 19일 </time>
   
   &nbsp;&middot;&nbsp; <span class="single__info" title="읽는 시간"> ☕&nbsp;8&nbsp;min read </span>
   
@@ -1864,6 +1864,20 @@ if (!doNotTrack) {
 </span><span class="lnt">44
 </span><span class="lnt">45
 </span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-C#" data-lang="C#"><span class="c1">// memory read/write in CPU instance
@@ -1910,14 +1924,28 @@ if (!doNotTrack) {
 <span class="k">private</span> <span class="kt">ushort</span> <span class="n">ReadShort</span><span class="p">(</span><span class="kt">ushort</span> <span class="n">address</span><span class="p">)</span> <span class="p">{</span> <span class="p">...</span> <span class="p">}</span>
 <span class="k">private</span> <span class="k">void</span> <span class="n">WriteShort</span><span class="p">(</span><span class="kt">ushort</span> <span class="n">address</span><span class="p">,</span> <span class="kt">ushort</span> <span class="k">value</span><span class="p">)</span> <span class="p">{</span> <span class="p">...</span> <span class="p">}</span>
 
-<span class="k">public</span> <span class="kt">ushort</span> <span class="n">ReadShortAbnormally</span><span class="p">(</span><span class="kt">ushort</span> <span class="n">address</span><span class="p">)</span> <span class="p">{</span> <span class="p">...</span> <span class="p">}</span>
+<span class="k">public</span> <span class="kt">ushort</span> <span class="n">ReadShortAbnormally</span><span class="p">(</span><span class="kt">ushort</span> <span class="n">address</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kt">byte</span> <span class="n">high</span><span class="p">;</span>
+    <span class="kt">byte</span> <span class="n">low</span> <span class="p">=</span> <span class="n">ReadByte</span><span class="p">(</span><span class="n">address</span><span class="p">);</span>
+
+    <span class="k">if</span> <span class="p">((</span><span class="n">address</span> <span class="p">&amp;</span> <span class="m">0xFF</span><span class="p">)</span> <span class="p">==</span> <span class="m">0xFF</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">high</span> <span class="p">=</span> <span class="n">ReadByte</span><span class="p">((</span><span class="kt">ushort</span><span class="p">)(</span><span class="n">address</span> <span class="p">&amp;</span> <span class="m">0xFF00</span><span class="p">));</span>
+    <span class="p">}</span>
+    <span class="k">else</span>
+    <span class="p">{</span>
+        <span class="n">high</span> <span class="p">=</span> <span class="n">ReadByte</span><span class="p">((</span><span class="kt">ushort</span><span class="p">)(</span><span class="n">address</span> <span class="p">+</span> <span class="m">1</span><span class="p">));</span>
+    <span class="p">}</span>
+
+    <span class="k">return</span> <span class="p">(</span><span class="kt">ushort</span><span class="p">)((</span><span class="n">high</span> <span class="p">&lt;&lt;</span> <span class="m">8</span><span class="p">)</span> <span class="p">|</span> <span class="n">low</span><span class="p">);</span>
+<span class="p">}</span>
 
 </code></pre></td></tr></table>
 </div>
 </div><p>Zero Page, Stack, RAM을 통합하여 0x800 크기의 배열 형태로 정의하였습니다. 해당 영역은 CPU 메모리 맵 기준에서 0x2000 이하의 주소에서 접근할 수 있습니다. 하지만 실질적 메모리 크기는 0x800 이므로 접근 가능한 실제 주소와 인덱스 크기가 일치하지 않습니다. 실제 하드웨어 동작에서는 $800 이상 주소부터는 Mirrors 되어 참조 메모리 위치가 반복되므로($800을 참조하면 $00을 참조하는 것과 동일), 0x7FF로 AND 마스킹을 하면 인덱스를 벗어나지 않고 미러링 되는 효과를 나타낼 수 있습니다.</p>
 <p>ReadMapperByte의 경우는 Cartridge(여기서는 ROM 파일)의 메모리에 접근하기 위한 메서드 입니다. 코드에는 생략되어 있지만 cartridge와 mapper 인스턴스를 생성하고 bus에 연결하여 CPU에서 참조 할 수 있도록 하였습니다. 이와 관련된 부분은 차후 테스트 관련 포스트에서 다룰 예정입니다.</p>
-<p>ReadShort, WriteShort는 16비트 크기의 데이터를 읽고/쓰기는 메서드를 별도로 정의한 것 입니다. value를 바이트 단위로 쪼개거나 합치는 과정과 ReadByte, WriteByte를 두번 씩 호출하는 방식으로 되어 있습니다. 그리고 ReadShortAbnormally 라는 이름의 말 그대로 비정상적인 16비트 읽기를 수행하는 메서드를 정의가 되어있는데요 이는 6502의 하드웨어 버그 때문에 버그까지 에뮬레이션하기 위해서 별도로 정의한 것 입니다.</p>
-<p>이 부분도 현재 포스트에서는 설명을 생략하고 나중에 다루겠습니다.</p>
+<p>ReadShort, WriteShort는 16비트 크기의 데이터를 읽고/쓰기는 메서드를 별도로 정의한 것 입니다. value를 바이트 단위로 쪼개거나 합치는 과정과 ReadByte, WriteByte를 두번 씩 호출하는 방식으로 되어 있습니다. 그리고 ReadShortAbnormally 라는 이름의 말 그대로 비정상적인 16비트 읽기를 수행하는 메서드를 정의가 되어있는데요 이는 6502의 하드웨어 버그로 인해서 일부 어드레싱 모드에서 비정상적인 주소를 참조하는 상황을 에뮬레이션 하기 위해서 별도로 선언한 것 입니다.</p>
+<p>이 부분은 나중에 어드레싱 모드에서 설명하도록 하겠습니다.</p>
 <h6 id="스택-포인터">스택 포인터</h6>
 <p>Zero Page 페이지와 Stack, CPU RAM 영역중에서 Zero Page와 RAM 부분은 위에 작성된 메모리 인터페이스를 통하여 직접 엑세스하여 읽고 쓰기를 수행하면 됩니다. 하지만 Stack은 별도의 동작 방식이 있으므로 SP 레지스터를 활용하여 Push, Pull(or Pop) 동작 정의가 필요합니다.</p>
 <p>6502는 스택 포인터가 오버플로우나 언더플로우가 발생하면, 다른 메모리 영역을 가리키지 않고 스택 메모리 영역안에서 순환하여 가리켜야 하므로 이 부분을 유의하여 정의를 하도록 합니다.</p>

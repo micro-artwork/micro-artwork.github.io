@@ -14,13 +14,57 @@
     <managingEditor>rollcake.dev@gmail.com (YOGO)</managingEditor>
     <webMaster>rollcake.dev@gmail.com (YOGO)</webMaster>
     <copyright>©{year} Yogo All Rights Reserved</copyright>
-    <lastBuildDate>Thu, 17 Feb 2022 15:44:39 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 19 Feb 2022 02:25:57 +0900</lastBuildDate>
     
         <atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     
 
+      
+      <item>
+        <title>NES CPU(6502) 에뮬레이션 - 3</title>
+        <link>/posts/projects/nesdev/2022-02-19-nes-cpu-emulation-03/</link>
+        <pubDate>Sat, 19 Feb 2022 02:25:57 +0900</pubDate>
+        <author>rollcake.dev@gmail.com (YOGO)</author>
+        <atom:modified>Sat, 19 Feb 2022 02:28:24 +0900</atom:modified>
+        <guid>/posts/projects/nesdev/2022-02-19-nes-cpu-emulation-03/</guid>
+        <description>이전 포스트에서 레지스터와 메모리 인터페이스를 정의 하였고 이번 포스트에서는 명령어 세트와 어드레싱 모드 구현에 대해 다루어 보고자 합니다. 명령어 세트 (Instruction Sets) 공식</description>
+        
+        <dc:creator>Yogo</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>프로젝트</category>
+            
+          
+            
+              <category>NES</category>
+            
+          
+            
+              <category>Emulator</category>
+            
+          
+        
+        
+          
+            
+              <category>Projects</category>
+            
+          
+        
+        
+          
+            
+              <category>NES Emulator</category>
+            
+          
+        
+      </item>
       
       <item>
         <title>&#39;차세대&#39; 인슐린 펌프 옴니팟(Omnipod)</title>
@@ -119,7 +163,7 @@
         <link>/posts/projects/nesdev/2022-02-10-nes-cpu-emulation-02/</link>
         <pubDate>Thu, 10 Feb 2022 23:35:55 +0900</pubDate>
         <author>rollcake.dev@gmail.com (YOGO)</author>
-        <atom:modified>Wed, 16 Feb 2022 15:16:52 +0900</atom:modified>
+        <atom:modified>Sat, 19 Feb 2022 02:28:24 +0900</atom:modified>
         <guid>/posts/projects/nesdev/2022-02-10-nes-cpu-emulation-02/</guid>
         <description>이전 포스트에서 6502 프로세서의 간략한 특징과 명령어, 어드레싱 모드에 대해서 정리를 했습니다. 에뮬레이션을 위해서는 더 많은 내용의 정리가 필요하지만 이미 레퍼런</description>
         
