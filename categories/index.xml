@@ -14,7 +14,7 @@
     <managingEditor>rollcake.dev@gmail.com (YOGO)</managingEditor>
     <webMaster>rollcake.dev@gmail.com (YOGO)</webMaster>
     <copyright>©{year} Yogo All Rights Reserved</copyright>
-    <lastBuildDate>Sat, 19 Feb 2022 02:25:57 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 27 Feb 2022 16:10:23 +0900</lastBuildDate>
     
         <atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
@@ -25,7 +25,7 @@
       <item>
         <title>Projects</title>
         <link>/categories/projects/</link>
-        <pubDate>Sat, 19 Feb 2022 02:25:57 +0900</pubDate>
+        <pubDate>Sun, 27 Feb 2022 16:10:23 +0900</pubDate>
         <author>rollcake.dev@gmail.com (YOGO)</author>
         
         <guid>/categories/projects/</guid>
