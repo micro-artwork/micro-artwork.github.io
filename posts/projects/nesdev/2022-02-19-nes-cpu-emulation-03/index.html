@@ -1217,7 +1217,7 @@
 <meta name="keywords" content="프로젝트,NES,Emulator">
 
 <meta name="created" content="2022-02-19T02:25:57&#43;0900">
-<meta name="modified" content="2022-02-19T02:28:24&#43;0900">
+<meta name="modified" content="2022-02-28T15:58:03&#43;0900">
 <meta property="article:published_time" content="2022-02-19T02:25:57&#43;0900">
 
 <meta name="author" content="Yogo">
@@ -1255,7 +1255,7 @@
     "@type": "WebPage",
     "headline": "NES CPU(6502) 에뮬레이션 - 3",
     "datePublished": "2022-02-19T02:25:57+09:00",
-    "dateModified": "2022-02-19T02:28:24+09:00",
+    "dateModified": "2022-02-28T15:58:03+09:00",
     "url" : "/posts/projects/nesdev/2022-02-19-nes-cpu-emulation-03/",
     "description": "이전 포스트에서 레지스터와 메모리 인터페이스를 정의 하였고 이번 포스트에서는 명령어 세트와 어드레싱 모드 구현에 대해 다루어 보고자 합니다. 명령어 세트 (Instruction Sets) 공식",
     "keywords": ["프로젝트","NES","Emulator"],
@@ -1528,6 +1528,8 @@ if (!doNotTrack) {
 <div class="single__infos">
   <time class="single__info" title="작성일">📅&nbsp;2022년 02월 19일 </time>
   
+  &nbsp;&middot;&nbsp; <time class="single__info" title="수정일"> 📝&nbsp;2022년 02월 28일 </time>
+  
   &nbsp;&middot;&nbsp; <span class="single__info" title="읽는 시간"> ☕&nbsp;8&nbsp;min read </span>
   
   &nbsp;&middot;&nbsp; <span class="single__info" title="글쓴이">✍️&nbsp;Yogo</span>
@@ -1554,14 +1556,14 @@ if (!doNotTrack) {
     <article class="single__contents" data-dir="ltr" data-ani="true">
       
       <p>이전 포스트에서 레지스터와 메모리 인터페이스를 정의 하였고 이번 포스트에서는 명령어 세트와 어드레싱 모드 구현에 대해 다루어 보고자 합니다.</p>
-<h4 id="명령어-세트-instruction-sets">명령어 세트 (Instruction Sets)</h4>
+<h2 id="명령어-세트-instruction-sets">명령어 세트 (Instruction Sets)</h2>
 <p>공식 명령어 개수는 56개 정도이지만 어드레싱 모드가 다른 경우의 수를 고려하면 실제 실행 가능한 명령어 세트 수는 더 많습니다. 그리고 비공식 명령어와 더불어 중복 명령어까지 포함하면 1바이트 opcode 어느 값을 참조하더라도 특정 명령어 세트와 매핑이 가능합니다.</p>
 <!-- 여기서 Instructions 와 Opcodes가 정의가 조금 헷갈릴 수 있는데 여기서 Instructions는 ADD, SUB, MOV와 같이 특정 명령 작업 지시문을 의미하고 Opcodes는 어드레싱 모드가 다른 경우의 수가 포함된 의미입니다. -->
 <ul>
 <li>명령어 테이블<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup><br />
 <img src="/images/projects/nesdev/instruction_table.png" alt="Instruction Table" /></li>
 </ul>
-<h4 id="명령어-사이클-instruction-cyclescycle">명령어 사이클 (Instruction Cycles)<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></h4>
+<h2 id="명령어-사이클-instruction-cyclescycle">명령어 사이클 (Instruction Cycles)<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></h2>
 <p>명령어를 처리하는 단계는 설명마다 조금씩 차이가 있지만 보통 3 ~ 4단계로 구분할 수 있습니다. 여기서는 3단계로 명령어를 가져오는 단계(Fetch Stage), 그리고 명령어를 해석하는 디코딩 단계(Decode State), 마지막으로 실행 단계(Excute Stage)로 구분하여 진행합니다.</p>
 <p>Fetch 단계에서는 프로그램 카운터(PC)를 참조하여 메모리 주소로 부터 1바이트 opcode를 가져온 후 다음 PC를 가리킵니다. Decode 단계에서는 해석에 따라 명령어나 어드레싱 모드에 의해 다른 크기의 operand 정보를 가져옵니다. 마지막으로 디코딩 된 정보를 바탕으로 실제 연산을 수행합니다.</p>
 <p>그리고 이 단계들은 PC가 중단될 때까지 계속 반복하며, 이 순차적인 과정을 만드는 것이 CPU 에뮬레이션의 기본적인 목표가 되겠습니다.</p>
@@ -1576,8 +1578,7 @@ if (!doNotTrack) {
 </span><span class="c1"></span><span class="kt">byte</span> <span class="n">opcode</span> <span class="p">=</span> <span class="n">ReadByte</span><span class="p">(</span><span class="n">registers</span><span class="p">.</span><span class="n">PC</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
-</div><br/>
-<h6 id="명령어-세트-디코딩-decoding">명령어 세트 디코딩 (Decoding)</h6>
+</div><h3 id="명령어-세트-디코딩-decoding">명령어 세트 디코딩 (Decoding)</h3>
 <p>PC를 통해 opcode를 읽어들였다면 디코딩 과정을 통해 실행할 명령어(instruction)와 어드레싱 모드를 통한 피연산자 위치와 크기를 결정합니다.</p>
 <p>The 6502/65C02/65C816 Instruction Set Decoded<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>를 참고하면 명령어 세트는 일부 규칙이 있어서 1바이트 opcode를 aaabbbcc 포맷이라고 할 경우 aaa와 cc를 통해 명령어 종류, bbb를 통해 어드레싱 모드를 디코딩 할 수 있습니다. 하지만 아쉽게도 모든 명령어가 이 규칙을 따르지 않기 때문에 이 포맷의 규칙을 따르는 일부 명령어를 제외하면 나머지는 예외 처리가 요구됩니다.</p>
 <p>opcode의 크기가 1바이트이고 어떤 값을 참조하던지 특정 명령어 세트를 참조할 수 있기 때문에 포맷을 이용한 디코딩 방법 대신 좀 더 쉽고 단순한 방법을 사용할 수도 있습니다. 명령어 종류, 어드레싱 모드, 명령어 소요 사이클 등 명령어와 연관된 정보들을 256 크기를 가지는 룩업 테이블로 만들어 opcode를 인덱스로 사용하여 각 정보를 참조하는 방법입니다.</p>
@@ -1672,8 +1673,7 @@ if (!doNotTrack) {
 <span class="p">};</span>
 </code></pre></td></tr></table>
 </div>
-</div><br/>
-<h6 id="명령어-세트-실행-execution">명령어 세트 실행 (Execution)</h6>
+</div><h3 id="명령어-세트-실행-execution">명령어 세트 실행 (Execution)</h3>
 <p>디코딩에 의해 명령어와 어드레싱 모드가 결정 되었으면 이제 어드레싱 모드에 의해 피연산자 위치를 찾아내서 명령을 수행하면 됩니다. 그리고 당연히 실행을 위해서는 그 전에 명령어 프로세스와 피연산자 참조를 위한 어드레싱 모드 정의가 필요한데요 6502 Instruction Set<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>나 Ultimate Commodore 64 Reference<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup> 등을 참조하면 명령어와 어드레싱 모드에 대한 세부 설명과 동작 프로세스를 확인 할 수 있습니다.</p>
 <ul>
 <li>명령어 세트 구현</li>
@@ -2461,9 +2461,11 @@ document.addEventListener('DOMContentLoaded', function () {
   <div class="toc hide" data-dir="ltr" data-folding="false" data-ani="true">
     <nav id="TableOfContents">
   <ul>
-    <li>
+    <li><a href="#명령어-세트-instruction-sets">명령어 세트 (Instruction Sets)</a></li>
+    <li><a href="#명령어-사이클-instruction-cyclescycle">명령어 사이클 (Instruction Cycles)</a>
       <ul>
-        <li></li>
+        <li><a href="#명령어-세트-디코딩-decoding">명령어 세트 디코딩 (Decoding)</a></li>
+        <li><a href="#명령어-세트-실행-execution">명령어 세트 실행 (Execution)</a></li>
       </ul>
     </li>
   </ul>

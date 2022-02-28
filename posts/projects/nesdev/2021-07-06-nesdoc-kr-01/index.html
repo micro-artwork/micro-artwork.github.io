@@ -1217,7 +1217,7 @@
 <meta name="keywords" content="프로젝트,NES,Emulator">
 
 <meta name="created" content="2021-07-06T23:05:02&#43;0900">
-<meta name="modified" content="2022-02-16T15:16:52&#43;0900">
+<meta name="modified" content="2022-02-28T15:58:03&#43;0900">
 <meta property="article:published_time" content="2021-07-06T23:05:02&#43;0900">
 
 <meta name="author" content="Yogo">
@@ -1255,7 +1255,7 @@
     "@type": "WebPage",
     "headline": "Nintendo Entertainment System - CPU",
     "datePublished": "2021-07-06T23:05:02+09:00",
-    "dateModified": "2022-02-16T15:16:52+09:00",
+    "dateModified": "2022-02-28T15:58:03+09:00",
     "url" : "/posts/projects/nesdev/2021-07-06-nesdoc-kr-01/",
     "description": "Nintendo Entertainment System NesDev Wiki1와 Nintendo Entertainment System Documentation2 문서를 기반으로 NES 시스템을 정리 하고자 합니다. 해당 문서에서는 하드웨어 및 프로세서에 대한 내용을 많이 담고 있어서 이해를 위해서",
     "keywords": ["프로젝트","NES","Emulator"],
@@ -1528,7 +1528,7 @@ if (!doNotTrack) {
 <div class="single__infos">
   <time class="single__info" title="작성일">📅&nbsp;2021년 07월 06일 </time>
   
-  &nbsp;&middot;&nbsp; <time class="single__info" title="수정일"> 📝&nbsp;2022년 02월 16일 </time>
+  &nbsp;&middot;&nbsp; <time class="single__info" title="수정일"> 📝&nbsp;2022년 02월 28일 </time>
   
   &nbsp;&middot;&nbsp; <span class="single__info" title="읽는 시간"> ☕&nbsp;10&nbsp;min read </span>
   
@@ -1558,7 +1558,7 @@ if (!doNotTrack) {
       <p>Nintendo Entertainment System</p>
 <p>NesDev Wiki<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>와 Nintendo Entertainment System Documentation<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> 문서를 기반으로 NES 시스템을 정리 하고자 합니다. 해당 문서에서는 하드웨어 및 프로세서에 대한 내용을 많이 담고 있어서 이해를 위해서는 기본적인 마이크로 프로세서에 대한 지식이 요구됩니다.</p>
 <p>문제가 발생할 경우 해당 포스트는 삭제 또는 비공개 처리 됩니다.</p>
-<h5 id="cpu-오버뷰">CPU 오버뷰</h5>
+<h2 id="cpu-오버뷰">CPU 오버뷰</h2>
 <p>메인 CPU는 Richo 2A03<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> 8비트 프로세서로 BCD 모드를 제거한 6502 코어에 22개의 메모리 맵 I/O 레지스터를 가지고 있으며 PSG(Programmable Sound Generator) 사운드, DMA, 게임 컨트롤러 폴링 등의 기능을 추가 한 CPU 입니다.</p>
 <p>동작은 NTSC 모드에서 1.79MHz, PAL 모드에서는 1.66 MHz 속도로 동작하며, 리틀엔디안을 사용합니다.</p>
 <p>2kB의 온보드 램을 포함하고 있으며, 카트리지를 통해서 최대 8k ~ 1MB 까지 확장된 램을 사용할 수 있으며 대부분 128 ~ 384kB를 사용합니다.</p>
@@ -1567,7 +1567,7 @@ if (!doNotTrack) {
 <p>시스템은 48개 색상과 6개의 그레이 팔레트를 사용할 수 있으며, 중간 프레임에 새 값을 쓰지 않고 최대 25개 색을 사용할 수 있습니다.<br />
 (배경색, 3가지 타일 색상 4세트, 3가지 스프라이트 색상 4세트)</p>
 <p>NES의 팔레트는 RGB가아닌 NTSC를 기반으로 하며, 화면 중간에 스프라이트를 다시 로드하지 않고 총 64 개의 스프라이트를 화면에 표시 할 수 있다. NES의 표준 디스플레이 해상도는 256 x 240 픽셀로 구성됩니다.</p>
-<h5 id="cpu-메모리-맵">CPU 메모리 맵</h5>
+<h2 id="cpu-메모리-맵">CPU 메모리 맵</h2>
 <p>2A03은 16비트 어드레스 버스를 가지고 있고, $0000-$ffff의 주소로 64kB 메모리를 지원할 수 있습니다.</p>
 <p>Zero Page는 $0000-$00FF를 참조 합니다. 이 영역은 메모리의 첫 페이지이자 빠른 실행을 위한 명확한 어드레싱 모드에 의해 사용됩니다. 메모리 영역 중 $0000-$07FF는  $0800-$1FFF에서 세번 미러링 됩니다. 이것은 $0000 에 어떤 데이터를 기록하면 $0800, $1000, $1800 에도 기록이 된다는 의미이며 $2000-$401F에 위치한 I/O 레지스터도 8k 마다 $2008-$3FFF이나 남은 레지스터 영역에 미러링 됩니다. SRAM(WRAM)은 Save RAM이고, 카트리지 내 게임 저장을 위한 RAM에 엑세스 하기 위해 사용 됩니다.</p>
 <p>$8000 부터는 카트리지 PRG-ROM에 위치한 어드레스 입니다. PPG-ROM 16KB 뱅크가 오직 하나인 게임은 $8000과 $C000에 모두 로드 되고, 2개의 PPG-ROM 16KB 뱅크를 가진 게임은 하나는 $8000, 나머지는 $C000에 로드 됩니다. 2개 이상의 뱅크를 가진 게임은 어느 뱅크에 로드 할 것인 결정하기 위해서 메모리 매퍼를 이용합니다. 메모리 매퍼는 특정 주소(또는 범위)에 메모리가 기록되는 것을 감시하고 메모리가 기록 될 때 뱅크를 스위칭 합니다.</p>
@@ -1672,19 +1672,19 @@ $FFFA-$FFFB = NMI vector<br />
 $FFFC-$FFFD = Reset vector<br />
 $FFFE-$FFFF = IRQ/BRK vector</li>
 </ul>
-<h5 id="레지스터">레지스터</h5>
+<h2 id="레지스터">레지스터</h2>
 <p>6502는 유사한 프로세서보다 적은 수의 레지스터를 가지고 있습니다. 세 가지 특수 목적 레지스터, 즉 프로그램 카운터, 스택 포인터 및 상태 레지스터가 있으며 각각 특정 용도를 가지고 있습니다. 또한 3개의 범용 레지스터, 누산기 및 인덱스 레지스터 X, Y가 있습니다. 데이터를 임시로 저장하거나 정보를 제어하는 데 사용할 수 있습니다.</p>
-<h6 id="프로그램-카운터pc">프로그램 카운터(PC)</h6>
+<h3 id="프로그램-카운터pc">프로그램 카운터(PC)</h3>
 <p>프로그램 카운터는 다음에 실행할 명령어의 주소를 저장하는 16비트 레지스터입니다. 명령어가 실행되면 프로그램 카운터의 값이 업데이트되며 일반적으로 시퀀스의 다음 명령어로 이동합니다. 값은 분기 및 점프 명령, 프로시저 호출 및 인터럽트의 영향을 받을 수 있습니다.</p>
-<h6 id="스택-포인터sp">스택 포인터(SP)</h6>
+<h3 id="스택-포인터sp">스택 포인터(SP)</h3>
 <p>스택은 $0100-$01FF 메모리 위치에 있습니다. 스택 포인터는 $0100에서 오프셋 역할을 하는 8비트 레지스터입니다. 스택은 하향식으로 작동하므로 바이트가 스택에 푸시되면 스택 포인터가 감소하고 스택에서 바이트를 가져오면 스택 포인터가 증가합니다. 스택 영역을 초과하는 경우 별도로 오버플로우가 감지되지 않고 스택 포인터가 $00에서 $FF로 순환 됩니다.</p>
-<h6 id="누산기a">누산기(A)</h6>
+<h3 id="누산기a">누산기(A)</h3>
 <p>누산기는 산술 및 논리 연산의 결과를 저장하는 8비트 레지스터입니다. 누산기는 메모리에서 조회된 값으로 설정할 수도 있습니다.</p>
-<h6 id="인덱스-레지스터-xx">인덱스 레지스터 X(X)</h6>
+<h3 id="인덱스-레지스터-xx">인덱스 레지스터 X(X)</h3>
 <p>X 레지스터는 일반적으로 특정 주소 지정 모드에 대한 카운터 또는 오프셋으로 사용되는 8비트 레지스터입니다. X 레지스터는 메모리에서 조회된 값으로 설정할 수 있으며 스택 포인터의 값을 가져오거나 설정하는 데 사용할 수 있습니다.</p>
-<h6 id="인덱스-레지스터-yy">인덱스 레지스터 Y(Y)</h6>
+<h3 id="인덱스-레지스터-yy">인덱스 레지스터 Y(Y)</h3>
 <p>Y 레지스터는 X 레지스터와 같은 방식으로 카운터로 사용되거나 오프셋을 저장하는 데 사용되는 8비트 레지스터입니다. X 레지스터와 달리 Y 레지스터는 스택 포인터에 영향을 줄 수 없습니다.</p>
-<h6 id="상태-레지스터-p">상태 레지스터 (P)</h6>
+<h3 id="상태-레지스터-p">상태 레지스터 (P)</h3>
 <p>상태 레지스터는 연산이 실행 될 때마다 세트 또는 클리어 되는 비트 플래그들의 집합으로 구성되는 레지스터 입니다.</p>
 <ul>
 <li>
@@ -1715,7 +1715,7 @@ $FFFE-$FFFF = IRQ/BRK vector</li>
 | N | V |   | B | D | I | Z | C |
 +-------------------------------+
 // 5비트는 unused
-</code></pre><h5 id="인터럽트">인터럽트</h5>
+</code></pre><h2 id="인터럽트">인터럽트</h2>
 <p>인터럽트는 코드의 순차 실행을 중지하고 인터럽트에 집중하도록 합니다. 인터럽트는 일반적으로 특정 상황에 의해 하드웨어에 의해 발생하지만, 소프트웨어에 의해 트리거될 수 있습니다. NES에는 세 가지 유형의 인터럽트 NMI, IRQ, reset이  있습니다. 인터럽트가 발생할 때 점프할 주소는 $FFFA-$FFFF의 벡터 테이블에 저장됩니다. 인터럽트가 발생하면 시스템은 다음 작업을 수행합니다.</p>
 <ol>
 <li>인터럽트 요청이 발생 인식</li>
@@ -1766,9 +1766,9 @@ $FFFE-$FFFF = IRQ/BRK vector</li>
                    +---------+
                    |         |
                    +---------+
-</code></pre><h5 id="어드레싱-모드">어드레싱 모드</h5>
+</code></pre><h2 id="어드레싱-모드">어드레싱 모드</h2>
 <p>6502에는 메모리에 액세스하기 위한 몇 가지 다른 주소 지정 모드가 있습니다. 또한 메모리가 아닌 레지스터 컨텐츠 상에서 작동하는 에드레싱 모드도 있습니다. 6502에는 총 13개의 다른 주소 지정 모드가 있으며, 일부 명령어는 둘 이상의 다른 주소 지정 모드를 사용할 수 있습니다. 주소 지정 모드에 대한 자세한 내용은 문서의 Appendix E에서 확인 가능합니다.</p>
-<h5 id="명령어-집합">명령어 집합</h5>
+<h2 id="명령어-집합">명령어 집합</h2>
 <p>6502는 56개의 명령어가 있지만 일부는 다른 주소 지정 모드를 사용하여 여러 변형이 있어 가능한 256개 중 총 151개의 유효한 opcode를 생성합니다. <br />
 명령은 주소 지정 모드에 따라 1바이트, 2바이트 또는 3바이트입니다. 첫 번째 바이트는 opcode이고 나머지 바이트는 피연산자입니다.</p>
 <ul>
@@ -2289,11 +2289,21 @@ document.addEventListener('DOMContentLoaded', function () {
   <div class="toc hide" data-dir="ltr" data-folding="false" data-ani="true">
     <nav id="TableOfContents">
   <ul>
-    <li>
+    <li><a href="#cpu-오버뷰">CPU 오버뷰</a></li>
+    <li><a href="#cpu-메모리-맵">CPU 메모리 맵</a></li>
+    <li><a href="#레지스터">레지스터</a>
       <ul>
-        <li></li>
+        <li><a href="#프로그램-카운터pc">프로그램 카운터(PC)</a></li>
+        <li><a href="#스택-포인터sp">스택 포인터(SP)</a></li>
+        <li><a href="#누산기a">누산기(A)</a></li>
+        <li><a href="#인덱스-레지스터-xx">인덱스 레지스터 X(X)</a></li>
+        <li><a href="#인덱스-레지스터-yy">인덱스 레지스터 Y(Y)</a></li>
+        <li><a href="#상태-레지스터-p">상태 레지스터 (P)</a></li>
       </ul>
     </li>
+    <li><a href="#인터럽트">인터럽트</a></li>
+    <li><a href="#어드레싱-모드">어드레싱 모드</a></li>
+    <li><a href="#명령어-집합">명령어 집합</a></li>
   </ul>
 </nav>
   </div>

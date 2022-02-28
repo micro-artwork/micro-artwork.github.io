@@ -1217,7 +1217,7 @@
 <meta name="keywords" content="web,javascript,meme">
 
 <meta name="created" content="2021-10-07T11:11:23&#43;0900">
-<meta name="modified" content="2022-02-16T15:16:52&#43;0900">
+<meta name="modified" content="2022-02-28T15:58:03&#43;0900">
 <meta property="article:published_time" content="2021-10-07T11:11:23&#43;0900">
 
 <meta name="author" content="Yogo">
@@ -1255,7 +1255,7 @@
     "@type": "WebPage",
     "headline": "짤(밈) 생성 페이지 제작",
     "datePublished": "2021-10-07T11:11:23+09:00",
-    "dateModified": "2022-02-16T15:16:52+09:00",
+    "dateModified": "2022-02-28T15:58:03+09:00",
     "url" : "/posts/dev/web/2021-10-07-simple-meme-generator/",
     "description": "요즘은 사회 전반적으로 특정 이벤트나 이슈가 생길 때마다 사람들이 재치있는 아이디어로 국내에선 짤, 해외에선 밈(meme)이라고 불리우는 패러디 이미지가 많이",
     "keywords": ["web","javascript","meme"],
@@ -1528,7 +1528,7 @@ if (!doNotTrack) {
 <div class="single__infos">
   <time class="single__info" title="작성일">📅&nbsp;2021년 10월 07일 </time>
   
-  &nbsp;&middot;&nbsp; <time class="single__info" title="수정일"> 📝&nbsp;2022년 02월 16일 </time>
+  &nbsp;&middot;&nbsp; <time class="single__info" title="수정일"> 📝&nbsp;2022년 02월 28일 </time>
   
   &nbsp;&middot;&nbsp; <span class="single__info" title="읽는 시간"> ☕&nbsp;11&nbsp;min read </span>
   
@@ -1558,23 +1558,17 @@ if (!doNotTrack) {
       <p>요즘은 사회 전반적으로 특정 이벤트나 이슈가 생길 때마다 사람들이 재치있는 아이디어로 국내에선 짤, 해외에선 밈(meme)이라고 불리우는 패러디 이미지가 많이 퍼지고 있습니다.</p>
 <p>보통은 이런 이미지를 그림판이나 포토샵 등을 이용해서 만드는데 인기있는 짤의 경우 보통 대사 위치가 정해져있는 경우가 많기 때문에 별도의 이미지 도구 없이 html과 javascript를 이용하여 간단하게 짤 이미지를 생성할 수 있는 웹페이지를 한번 만들어 보겠습니다.</p>
 <p>가급적 관련 기술에 대해서 모르시는 분들도 어느정도 이해하고 읽을 수 있도록 내용을 풀어서 작성하였습니다. 오히려 복잡할 수도 있는데요 만약 이해하기 어려우시면 html이나 css, javascript에 대한 일부 기초 지식을 참고하시길 바랍니다.</p>
-<ol>
-<li>이미지 선정</li>
-</ol>
+<h2 id="이미지-선정">이미지 선정</h2>
 <p><img src="https://i.imgflip.com/5bg92c.jpg" alt="for the better right" /></p>
 <p>이 이미지는 for the better, right? 라는 짤(밈)으로 커뮤니티에서 자주 볼 수 있는 스타워즈의 한장면 입니다.</p>
 <p>파드메의 해맑은 표정, 당황하는 표정, 아나킨의 무표정 장면을 연결해서 만들어진 이미지로 각종 패러디 이미지로 만들어지고 있습니다.</p>
 <p><img src="/images/dev/web/meme/for-the-better-right.png" alt="for the better right" /></p>
-<ol start="2">
-<li>기본 레이아웃 설계</li>
-</ol>
+<h2 id="기본-레이아웃-설계">기본 레이아웃 설계</h2>
 <p>패러디되는 짤을 보면 보통 파드메 영역에만 대사를 넣거나 또는 상단 부분에는 역할 내지 이름에 해당하는 내용을 넣기도 하기 때문에 이미지를 각 장면별로 구분하여 네등분 한다고 할 때 각 장면마다 상단, 하단에 각각 텍스트를 입력 받는 형태를 가정했습니다.</p>
 <p><img src="/images/dev/web/meme/layout.jpg" alt="for the better right" /></p>
-<ol start="3">
-<li>HTML 문서 작성</li>
-</ol>
+<h2 id="html-문서-작성">HTML 문서 작성</h2>
 <p>HTML 포맷은 웹페이지에서 사용되는 문서 포맷중 하나 입니다. 크게 head와 body 영역으로 구분되어있고 head는 보통 문서의 정보 및 외부 참조 스크립트, 스타일 등이 포함되고 body는 실제 표시할 컨텐츠나 사용자 스크립트 등이 포함됩니다. 여기서는 자세한 내용은 다루지 않을 예정이니 기초 정보는 <a href="https://www.w3schools.com/html/">https://www.w3schools.com/html/</a> 같은 사이트를 참조하시길 바랍니다.</p>
-<p>(1) 레이아웃</p>
+<h3 id="레이아웃">레이아웃</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -1649,7 +1643,7 @@ if (!doNotTrack) {
 <p>이미지 밑에 검은 박스는 contenteditable 영역을 마우스로 클릭하여 텍스트 입력 상태로 전환된 상태이고 현재 상태에서는 이미지의 각 장면에서 텍스트 입력이나 표시가 불가한 상태입니다. 이미지 하단에서만 텍스트 입력이 되는 상태이므로 원래 계획했던 레이아웃을 만들기 위해서는 div 영역에 대한 스타일을 지정해주는 작업이 필요합니다.</p>
 <p>스타일은 CSS(Cascading Style Sheets)<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>라는 스타일 언어로 각 영역의 디자인 요소를 지정 할 수 있는데 해당 언어는 영역 태그 내 style 속성이나 또는 head 내에 style 태그를 이용하거나 css 확장자를 가진 별도의 파일을 생성하고 연결하여 정의할 수 있습니다.</p>
 <p>여기서는 head 내의 style 영역에서 스타일을 지정하겠습니다.</p>
-<p>(2) 스타일 지정</p>
+<h3 id="스타일-지정">스타일 지정</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -1756,10 +1750,8 @@ if (!doNotTrack) {
 </ul>
 <p>이렇게 스타일을 적용한 뒤 저장하고 다시 불러오면 다음 화면과 같이 원래 의도했던 디자인 레이아웃이 적용된 것을 확인 할 수 있고 해당 위치에 텍스트 입력이 가능하게 됩니다.</p>
 <p><img src="/images/dev/web/meme/style3.png" alt="style2" /></p>
-<ol start="4">
-<li>스크립트 작성</li>
-</ol>
-<p>(1) 사전 준비</p>
+<h2 id="스크립트-작성">스크립트 작성</h2>
+<h3 id="사전-준비">사전 준비</h3>
 <p>기본적인 레이아웃이 완성되었지만 현재 상태에서는 이미지와 텍스트를 각각 표시만 가능한 상태이므로 이미지와 텍스트를 합쳐서 하나의 이미지로 만드는 작업이 필요합니다. 이러한 작업은 html과 css만으로는 어렵기 때문에 자바스크립트를 작성해서 기능을 구현할 것 입니다.</p>
 <p>마침 이러한 동작을 쉽게 구현할 수 있게 해주는 html2canvas<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>라는 라이브러리가 있습니다. html2canvas는 html내 특정 영역을 선택하여 화면에 표시된 모양 그대로 이미지화(캡쳐) 시킬 수 있도록 도와줍니다.</p>
 <p>이 라이브러리를 사용하기 위해서 head 영역에 script 태그를 이용하여 라이브러리를 등록합니다.</p>
@@ -1878,7 +1870,7 @@ if (!doNotTrack) {
 <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>(2) 스크립트</p>
+</div><h3 id="스크립트">스크립트</h3>
 <p>UI 요소가 마련되었으므로 실제로 동작 수행을 위해서 스크립트를 작성합니다. body 하단 영역에 script를 태그를 추가해줍니다. 해당 스크립트는 문서가 모두 로드 되면 호출이 될 것입니다.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1963,9 +1955,7 @@ if (!doNotTrack) {
 <p>그래서 캡쳐 직전에 일시적으로 숨김처리하고 캡쳐 이후에 이미지 컨테이너 class에서 placeholder&ndash;hidden 값을 제거해서 다시 원래 상태로 되돌려 놓습니다.</p>
 <p>그 다음엔 html2canvas 라이브러리로 이미지 컨테이너 영역을 캡쳐합니다. 이때 반환되는 canvas element를 결과 이미지를 표시할 다이얼로그 컨텐트 영역에 추가하면 캡쳐된 이미지를 확인 할 수 있습니다.</p>
 <p>닫기 버튼은 아까 생성하여 추가한 canvas를 지우고 다이얼로그 영역을 숨김처리 합니다. 텍스트 지우기 버튼은 getElementsByClassName를 이용하여 모든 텍스트 인풋 영역들을 선택해서 내부 컨텐츠를 공백 문자로 변경하여 초기화 시킵니다.</p>
-<ol start="5">
-<li>결과</li>
-</ol>
+<h2 id="결과">결과</h2>
 <p>자 그럼 이렇게 작성된 코드를 저장해서 다시 불러오면 다음과 같이 쉽게 짤을 생성할 수 있는 페이지가 완성되었습니다. 캡쳐된 이미지는 마우스 오른 클릭 메뉴를 통해 저장 또는 복사가 가능합니다.</p>
 <p>만들어진 페이지는 다음 주소에서 사용해보실 수 있습니다.</p>
 <p><a href="/web/meme-starwars.html" target="_blank" location="yes" width="800" >스타워즈 밈 생성기</a></p>
@@ -1973,9 +1963,7 @@ if (!doNotTrack) {
 <p>그리고 최근 인기가 있는 김연경 선수 밈이나 집이 무너졌어요 슬펐어요 (그것이 알고싶다 싱크홀 편) 밈도 추가된 페이지 링크도 공유드립니다.</p>
 <p><a href="/web/simple-meme-generator.html" target="_blank" location="yes" width="800" >밈 생성기</a></p>
 <p><img src="/images/dev/web/meme/meme-generator.jpg" alt="meme-generator" /></p>
-<ol start="6">
-<li>추가 정보</li>
-</ol>
+<h2 id="추가-정보">추가 정보</h2>
 <p>아까 CSS 파일이 별도로 작성하여 연결이 가능하지만 head 내에 직접 삽입도 가능했습니다. 이미지 파일도 Base64라는 문자열 데이터로 변환하면 마찬가지로 html에 삽입할 수 있습니다.</p>
 <p>물론 이렇게 하는 경우 매우 긴 문자로 문서개 가득채워지기 때문에 복잡하지만 html 파일 하나로만 작성이 가능하기 때문에 변환 및 적용 방법을 알려드리겠습니다.</p>
 <p>먼저 이미지 변환을 위해 <a href="https://elmah.io/tools/base64-image-encoder/">https://elmah.io/tools/base64-image-encoder/</a> 같은 사이트에 이미지를 업로드 하여 변환을 합니다.</p>
@@ -2460,7 +2448,26 @@ document.addEventListener('DOMContentLoaded', function () {
     
   </div>
   <div class="toc hide" data-dir="ltr" data-folding="false" data-ani="true">
-    <nav id="TableOfContents"></nav>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#이미지-선정">이미지 선정</a></li>
+    <li><a href="#기본-레이아웃-설계">기본 레이아웃 설계</a></li>
+    <li><a href="#html-문서-작성">HTML 문서 작성</a>
+      <ul>
+        <li><a href="#레이아웃">레이아웃</a></li>
+        <li><a href="#스타일-지정">스타일 지정</a></li>
+      </ul>
+    </li>
+    <li><a href="#스크립트-작성">스크립트 작성</a>
+      <ul>
+        <li><a href="#사전-준비">사전 준비</a></li>
+        <li><a href="#스크립트">스크립트</a></li>
+      </ul>
+    </li>
+    <li><a href="#결과">결과</a></li>
+    <li><a href="#추가-정보">추가 정보</a></li>
+  </ul>
+</nav>
   </div>
 </section>
 

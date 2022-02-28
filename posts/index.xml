@@ -27,7 +27,7 @@
         <link>/posts/projects/suface-dial/2022-02-27-how-to-make-2/</link>
         <pubDate>Sun, 27 Feb 2022 16:10:23 +0900</pubDate>
         <author>rollcake.dev@gmail.com (YOGO)</author>
-        <atom:modified>Sun, 27 Feb 2022 16:10:23 +0900</atom:modified>
+        <atom:modified>Mon, 28 Feb 2022 15:58:03 +0900</atom:modified>
         <guid>/posts/projects/suface-dial/2022-02-27-how-to-make-2/</guid>
         <description>Wanna be surface dial 펌웨어 개발 nrf52 SDK 폴더내에 샘플이 포함되어 있습니다. examples 폴더 안에 관련 샘플들을 찾아볼 수 있는데, 서피스 다이얼은 HID 디바이스 이므로 ble_app_h</description>
         
@@ -75,7 +75,7 @@
         <link>/posts/projects/nesdev/2022-02-19-nes-cpu-emulation-03/</link>
         <pubDate>Sat, 19 Feb 2022 02:25:57 +0900</pubDate>
         <author>rollcake.dev@gmail.com (YOGO)</author>
-        <atom:modified>Sat, 19 Feb 2022 02:28:24 +0900</atom:modified>
+        <atom:modified>Mon, 28 Feb 2022 15:58:03 +0900</atom:modified>
         <guid>/posts/projects/nesdev/2022-02-19-nes-cpu-emulation-03/</guid>
         <description>이전 포스트에서 레지스터와 메모리 인터페이스를 정의 하였고 이번 포스트에서는 명령어 세트와 어드레싱 모드 구현에 대해 다루어 보고자 합니다. 명령어 세트 (Instruction Sets) 공식</description>
         
@@ -119,7 +119,7 @@
         <link>/posts/info/review/2022-02-17-omnipod/</link>
         <pubDate>Thu, 17 Feb 2022 15:44:39 +0900</pubDate>
         <author>rollcake.dev@gmail.com (YOGO)</author>
-        <atom:modified>Thu, 17 Feb 2022 15:46:35 +0900</atom:modified>
+        <atom:modified>Mon, 28 Feb 2022 15:58:03 +0900</atom:modified>
         <guid>/posts/info/review/2022-02-17-omnipod/</guid>
         <description>들어가며 과거 기업 연구소에서 헬스와 메디컬 분야 선행기술 연구 및 개발을 주로 했었습니다. 당시 여러 분야에 걸쳐 다양한 업무와 경험을 했는데 그 중에서도 당뇨와 관련</description>
         
@@ -163,7 +163,7 @@
         <link>/posts/projects/suface-dial/2022-02-15-how-to-make-1/</link>
         <pubDate>Tue, 15 Feb 2022 22:43:26 +0900</pubDate>
         <author>rollcake.dev@gmail.com (YOGO)</author>
-        <atom:modified>Mon, 21 Feb 2022 17:45:26 +0900</atom:modified>
+        <atom:modified>Mon, 28 Feb 2022 15:58:03 +0900</atom:modified>
         <guid>/posts/projects/suface-dial/2022-02-15-how-to-make-1/</guid>
         <description>Wanna be surface dial 마이크로소프트 서피스 다이얼(Microsoft Surface Dial)12 마이크로소프트 서피스 다이얼(이하 서피스다이얼 또는 다이얼)은 퍽(Puck) 형태로 회전</description>
         
@@ -211,7 +211,7 @@
         <link>/posts/projects/nesdev/2022-02-10-nes-cpu-emulation-02/</link>
         <pubDate>Thu, 10 Feb 2022 23:35:55 +0900</pubDate>
         <author>rollcake.dev@gmail.com (YOGO)</author>
-        <atom:modified>Sat, 19 Feb 2022 02:28:24 +0900</atom:modified>
+        <atom:modified>Mon, 28 Feb 2022 15:58:03 +0900</atom:modified>
         <guid>/posts/projects/nesdev/2022-02-10-nes-cpu-emulation-02/</guid>
         <description>이전 포스트에서 6502 프로세서의 간략한 특징과 명령어, 어드레싱 모드에 대해서 정리를 했습니다. 에뮬레이션을 위해서는 더 많은 내용의 정리가 필요하지만 이미 레퍼런</description>
         
@@ -255,7 +255,7 @@
         <link>/posts/projects/nesdev/2022-02-07-nes-cpu-emulation-01/</link>
         <pubDate>Mon, 07 Feb 2022 18:07:00 +0900</pubDate>
         <author>rollcake.dev@gmail.com (YOGO)</author>
-        <atom:modified>Wed, 16 Feb 2022 15:16:52 +0900</atom:modified>
+        <atom:modified>Mon, 28 Feb 2022 15:58:03 +0900</atom:modified>
         <guid>/posts/projects/nesdev/2022-02-07-nes-cpu-emulation-01/</guid>
         <description>NES 에뮬레이션을 위해서 C# 환경에서 6502 CPU를 구현 하면서 참조한 지식과 경험을 정리합니다. 이전의 NESDOC1 포스트 내용이 상당수 그대로 반영이 되어있습니다. 들어가며</description>
         
@@ -299,7 +299,7 @@
         <link>/posts/projects/media-controller/2021-11-12-media-controller-dev-02/</link>
         <pubDate>Fri, 12 Nov 2021 11:29:20 +0900</pubDate>
         <author>rollcake.dev@gmail.com (YOGO)</author>
-        <atom:modified>Fri, 12 Nov 2021 16:37:41 +0900</atom:modified>
+        <atom:modified>Mon, 28 Feb 2022 15:58:03 +0900</atom:modified>
         <guid>/posts/projects/media-controller/2021-11-12-media-controller-dev-02/</guid>
         <description>지난 포스트에서 미디어 컨트롤러를 제작하고 동작하는 것을 확인하였습니다. 다만, 포스트 마지막에 남겼듯이 유튜브 다양한 기능 제어를 위해서는 미디어 컨트롤러만</description>
         
@@ -343,7 +343,7 @@
         <link>/posts/projects/media-controller/2021-11-08-media-controller-dev-01/</link>
         <pubDate>Mon, 08 Nov 2021 11:22:45 +0900</pubDate>
         <author>rollcake.dev@gmail.com (YOGO)</author>
-        <atom:modified>Fri, 12 Nov 2021 16:37:41 +0900</atom:modified>
+        <atom:modified>Mon, 28 Feb 2022 15:58:03 +0900</atom:modified>
         <guid>/posts/projects/media-controller/2021-11-08-media-controller-dev-01/</guid>
         <description>PC에서 게임을 하거나 음악을 들을 때 간혹 소리가 너무 작거나 또는 큰 이유로 볼륨을 조절해야할 때가 종종 있습니다. 외장 DAC이나 사운드 카드 또는 스피커를 사용 시</description>
         
@@ -387,7 +387,7 @@
         <link>/posts/projects/morse-keyboard/2021-10-28-morse-keyboard-dev/</link>
         <pubDate>Thu, 28 Oct 2021 11:58:34 +0900</pubDate>
         <author>rollcake.dev@gmail.com (YOGO)</author>
-        <atom:modified>Fri, 29 Oct 2021 19:34:04 +0900</atom:modified>
+        <atom:modified>Mon, 28 Feb 2022 15:58:03 +0900</atom:modified>
         <guid>/posts/projects/morse-keyboard/2021-10-28-morse-keyboard-dev/</guid>
         <description>잠이오지 않아 뒤척이던 어느 늦은밤 커뮤니티의 게시물을 훑어보던 도중 재미있는 짤을 하나 발견했습니다. 아앗! 작고 아름다운 그것은 야심한 새벽에 그렇게 제 마음에</description>
         
@@ -431,7 +431,7 @@
         <link>/posts/projects/xi2ds/2021-10-27-xi2ds-dev/</link>
         <pubDate>Wed, 27 Oct 2021 13:39:06 +0900</pubDate>
         <author>rollcake.dev@gmail.com (YOGO)</author>
-        <atom:modified>Fri, 29 Oct 2021 03:16:05 +0900</atom:modified>
+        <atom:modified>Mon, 28 Feb 2022 15:58:03 +0900</atom:modified>
         <guid>/posts/projects/xi2ds/2021-10-27-xi2ds-dev/</guid>
         <description>개발동기 18년도 초 몬스터헌터 월드가 플스로 발매될 때 워낙 유명한 게임이기도 하고 추천을 받아서 한번은 플레이를 해보고자 매제로부터 PS4를 빌린 후 게임을 예약</description>
         
@@ -475,7 +475,7 @@
         <link>/posts/projects/xi2ds/2021-10-26-xi2ds/</link>
         <pubDate>Tue, 26 Oct 2021 19:34:10 +0900</pubDate>
         <author>rollcake.dev@gmail.com (YOGO)</author>
-        <atom:modified>Thu, 28 Oct 2021 17:15:50 +0900</atom:modified>
+        <atom:modified>Mon, 28 Feb 2022 15:58:03 +0900</atom:modified>
         <guid>/posts/projects/xi2ds/2021-10-26-xi2ds/</guid>
         <description>XInput to Dualshock 4 (XI2DS) https://github.com/micro-artwork/xi2ds
 About The XI2DS is designed to run and control Play Station Remote Play(PSRP) using Xbox(or XInput) controllers(XC) instead of DualShock4(DS4) controllers on Windows. Although it is considered to be able to recognize and map up to 4 controllers, PSRP only accepts one controller input, so only the first connected controller can be recognized.
@@ -521,7 +521,7 @@ Unfortunately, for some unknown reason, the touchpad press may not work in some 
         <link>/posts/dev/web/2021-10-07-simple-meme-generator/</link>
         <pubDate>Thu, 07 Oct 2021 11:11:23 +0900</pubDate>
         <author>rollcake.dev@gmail.com (YOGO)</author>
-        <atom:modified>Wed, 16 Feb 2022 15:16:52 +0900</atom:modified>
+        <atom:modified>Mon, 28 Feb 2022 15:58:03 +0900</atom:modified>
         <guid>/posts/dev/web/2021-10-07-simple-meme-generator/</guid>
         <description>요즘은 사회 전반적으로 특정 이벤트나 이슈가 생길 때마다 사람들이 재치있는 아이디어로 국내에선 짤, 해외에선 밈(meme)이라고 불리우는 패러디 이미지가 많이</description>
         
@@ -559,7 +559,7 @@ Unfortunately, for some unknown reason, the touchpad press may not work in some 
         <link>/posts/projects/nesdev/2021-07-06-nesdoc-kr-01/</link>
         <pubDate>Tue, 06 Jul 2021 23:05:02 +0900</pubDate>
         <author>rollcake.dev@gmail.com (YOGO)</author>
-        <atom:modified>Wed, 16 Feb 2022 15:16:52 +0900</atom:modified>
+        <atom:modified>Mon, 28 Feb 2022 15:58:03 +0900</atom:modified>
         <guid>/posts/projects/nesdev/2021-07-06-nesdoc-kr-01/</guid>
         <description>Nintendo Entertainment System NesDev Wiki1와 Nintendo Entertainment System Documentation2 문서를 기반으로 NES 시스템을 정리 하고자 합니다. 해당 문서에서는 하드웨어 및 프로세서에 대한 내용을 많이 담고 있어서 이해를 위해서</description>
         
@@ -603,7 +603,7 @@ Unfortunately, for some unknown reason, the touchpad press may not work in some 
         <link>/posts/dev/micro/2021-01-27-dualshock2-reader-implementation/</link>
         <pubDate>Wed, 27 Jan 2021 03:21:59 +0900</pubDate>
         <author>rollcake.dev@gmail.com (YOGO)</author>
-        <atom:modified>Wed, 16 Feb 2022 15:16:52 +0900</atom:modified>
+        <atom:modified>Mon, 28 Feb 2022 15:58:03 +0900</atom:modified>
         <guid>/posts/dev/micro/2021-01-27-dualshock2-reader-implementation/</guid>
         <description>2007년 초쯤 마이크로프로세서(이하 MCU) 스터디를 하면서 주로 해외에서 하드웨어 관련 정보를 찾아보던 도중 우연히 어느 일본인이 개인 홈페이지에 플레이스테인션</description>
         
