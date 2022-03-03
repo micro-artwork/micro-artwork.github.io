@@ -1217,7 +1217,7 @@
 <meta name="keywords" content="project,취미전자,Hobby Electronics,Surface Dial">
 
 <meta name="created" content="2022-02-27T16:10:23&#43;0900">
-<meta name="modified" content="2022-02-28T15:58:03&#43;0900">
+<meta name="modified" content="2022-03-03T20:51:55&#43;0900">
 <meta property="article:published_time" content="2022-02-27T16:10:23&#43;0900">
 
 <meta name="author" content="Yogo">
@@ -1255,7 +1255,7 @@
     "@type": "WebPage",
     "headline": "마이크로소프트 서피스 다이얼 클론 제작 - 2",
     "datePublished": "2022-02-27T16:10:23+09:00",
-    "dateModified": "2022-02-28T15:58:03+09:00",
+    "dateModified": "2022-03-03T20:51:55+09:00",
     "url" : "/posts/projects/suface-dial/2022-02-27-how-to-make-2/",
     "description": "Wanna be surface dial 펌웨어 개발 nrf52 SDK 폴더내에 샘플이 포함되어 있습니다. examples 폴더 안에 관련 샘플들을 찾아볼 수 있는데, 서피스 다이얼은 HID 디바이스 이므로 ble_app_h",
     "keywords": ["project","취미전자","Hobby Electronics","Surface Dial"],
@@ -1528,7 +1528,7 @@ if (!doNotTrack) {
 <div class="single__infos">
   <time class="single__info" title="작성일">📅&nbsp;2022년 02월 27일 </time>
   
-  &nbsp;&middot;&nbsp; <time class="single__info" title="수정일"> 📝&nbsp;2022년 02월 28일 </time>
+  &nbsp;&middot;&nbsp; <time class="single__info" title="수정일"> 📝&nbsp;2022년 03월 03일 </time>
   
   &nbsp;&middot;&nbsp; <span class="single__info" title="읽는 시간"> ☕&nbsp;8&nbsp;min read </span>
   
@@ -1958,7 +1958,7 @@ if (!doNotTrack) {
 </code></pre></td></tr></table>
 </div>
 </div><h3 id="그-외">그 외</h3>
-<p>알 수 없는 원인으로 하드웨어가 정지되어 panic 상태 시 자동으로 리셋하기 위한 WDT(Watch Dog Timer) 설정과 배터리 전압이 너무 낮거나(0% 수치) 또는 배터리 소모를 줄이기 위해서 일정 시간동안 입력이 없으면 강제 슬립 상태로 진입하는 등의 실제 사용 시 필요한 기능들이 있습니다.</p>
+<p>알 수 없는 원인으로 하드웨어가 정지되어 panic 상태 시 자동으로 리셋하기 위한 WDT(Watch Dog Timer) 설정과 배터리 전압이 너무 낮거나(0% 수치) 또는 배터리 소모를 줄이기 위해서 일정 시간동안(약 5분간) 입력이 없으면 강제 슬립 상태로 진입하는 등의 실제 사용 시 필요한 기능들이 있습니다.</p>
 <p>이 기능들은 고려하지 않아도 구동에는 문제가 없지만 일단 문제가 발생하면 하드웨어 먹통이 되어 강제적인 리셋이 필요할 수 있습니다. 그리고 제때 충전하지 않아서 배터리가 완전 방전(3v 이하 전압)이 되면 배터리 수명이 급격히 나빠질 수 있으니 가급적 해당 기능을 고려하는 것이 좋습니다.</p>
 <p>실제 작업에서는 이 부분을 적용하였지만 일단 여기서는 생략하고 포스팅을 마무리 합니다.</p>
 <p>다음 포스팅에서는 하드웨어 제작과 실제 구동 관련하여 내용을 남기겠습니다.</p>
@@ -2098,6 +2098,13 @@ if (!doNotTrack) {
       </a>
     
     <div class="grow"></div>
+    
+      <a href="/posts/projects/suface-dial/2022-02-28-how-to-make-3/" class="pagination-single__right">      
+        <div class="pagination-single__right-title">마이크로소프트 서피스 다이얼 클론 제작 - 3 (v0.5 마무리)</div>
+        <div class="pagination-single__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 1.42.39.39 1.02.39 1.41 0l6.59-6.59c.39-.39.39-1.02 0-1.41l-6.58-6.6c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41L16.17 11H5c-.55 0-1 .45-1 1s.45 1 1 1z"/></svg>
+        </div>
+      </a>
     
   
 </nav>

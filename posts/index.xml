@@ -14,7 +14,7 @@
     <managingEditor>rollcake.dev@gmail.com (YOGO)</managingEditor>
     <webMaster>rollcake.dev@gmail.com (YOGO)</webMaster>
     <copyright>©{year} Yogo All Rights Reserved</copyright>
-    <lastBuildDate>Sun, 27 Feb 2022 16:10:23 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 28 Feb 2022 18:23:32 +0900</lastBuildDate>
     
         <atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     
@@ -23,11 +23,59 @@
 
       
       <item>
+        <title>마이크로소프트 서피스 다이얼 클론 제작 - 3 (v0.5 마무리)</title>
+        <link>/posts/projects/suface-dial/2022-02-28-how-to-make-3/</link>
+        <pubDate>Mon, 28 Feb 2022 18:23:32 +0900</pubDate>
+        <author>rollcake.dev@gmail.com (YOGO)</author>
+        <atom:modified>Thu, 03 Mar 2022 20:51:55 +0900</atom:modified>
+        <guid>/posts/projects/suface-dial/2022-02-28-how-to-make-3/</guid>
+        <description>테스트 환경에서 기본적인 기능을 구현하고 회로와 기구를 구성합니다. 제작 회로 설계 회로 설계 자체는 모두 모듈을 사용하기 때문에 크게 어려운 점이 없습니다. NRF</description>
+        
+        <dc:creator>Yogo</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>project</category>
+            
+          
+            
+              <category>취미전자</category>
+            
+          
+            
+              <category>Hobby Electronics</category>
+            
+          
+            
+              <category>Surface Dial</category>
+            
+          
+        
+        
+          
+            
+              <category>Projects</category>
+            
+          
+        
+        
+          
+            
+              <category>Surface Dial</category>
+            
+          
+        
+      </item>
+      
+      <item>
         <title>마이크로소프트 서피스 다이얼 클론 제작 - 2</title>
         <link>/posts/projects/suface-dial/2022-02-27-how-to-make-2/</link>
         <pubDate>Sun, 27 Feb 2022 16:10:23 +0900</pubDate>
         <author>rollcake.dev@gmail.com (YOGO)</author>
-        <atom:modified>Mon, 28 Feb 2022 15:58:03 +0900</atom:modified>
+        <atom:modified>Thu, 03 Mar 2022 20:51:55 +0900</atom:modified>
         <guid>/posts/projects/suface-dial/2022-02-27-how-to-make-2/</guid>
         <description>Wanna be surface dial 펌웨어 개발 nrf52 SDK 폴더내에 샘플이 포함되어 있습니다. examples 폴더 안에 관련 샘플들을 찾아볼 수 있는데, 서피스 다이얼은 HID 디바이스 이므로 ble_app_h</description>
         
