@@ -14,13 +14,57 @@
     <managingEditor>rollcake.dev@gmail.com (YOGO)</managingEditor>
     <webMaster>rollcake.dev@gmail.com (YOGO)</webMaster>
     <copyright>©{year} Yogo All Rights Reserved</copyright>
-    <lastBuildDate>Mon, 28 Feb 2022 18:23:32 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 07 Mar 2022 13:10:06 +0900</lastBuildDate>
     
         <atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     
 
+      
+      <item>
+        <title>NES CPU(6502) 에뮬레이션 - 4 (마무리)</title>
+        <link>/posts/projects/nesdev/2022-03-07-nes-cpu-emulation-04/</link>
+        <pubDate>Mon, 07 Mar 2022 13:10:06 +0900</pubDate>
+        <author>rollcake.dev@gmail.com (YOGO)</author>
+        <atom:modified>Sat, 12 Mar 2022 15:07:55 +0900</atom:modified>
+        <guid>/posts/projects/nesdev/2022-03-07-nes-cpu-emulation-04/</guid>
+        <description>테스트 롬파일 CPU 에뮬레이션이 어느정도 완료가 되었으면 실제 코드를 구동 시켜서 정상적으로 동작 하는지 검증이 필요합니다. 검증을 위해서 6502에 맞게 컴파일된</description>
+        
+        <dc:creator>Yogo</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>프로젝트</category>
+            
+          
+            
+              <category>NES</category>
+            
+          
+            
+              <category>Emulator</category>
+            
+          
+        
+        
+          
+            
+              <category>Projects</category>
+            
+          
+        
+        
+          
+            
+              <category>NES Emulator</category>
+            
+          
+        
+      </item>
       
       <item>
         <title>마이크로소프트 서피스 다이얼 클론 제작 - 3 (v0.5 마무리)</title>

@@ -14,13 +14,67 @@
     <managingEditor>rollcake.dev@gmail.com (YOGO)</managingEditor>
     <webMaster>rollcake.dev@gmail.com (YOGO)</webMaster>
     <copyright>©{year} Yogo All Rights Reserved</copyright>
-    <lastBuildDate>Mon, 28 Feb 2022 18:23:32 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 07 Mar 2022 13:10:06 +0900</lastBuildDate>
     
         <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     
 
+      
+      <item>
+        <title>Emulator</title>
+        <link>/tags/emulator/</link>
+        <pubDate>Mon, 07 Mar 2022 13:10:06 +0900</pubDate>
+        <author>rollcake.dev@gmail.com (YOGO)</author>
+        
+        <guid>/tags/emulator/</guid>
+        <description></description>
+        
+        <dc:creator>YOGO</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>NES</title>
+        <link>/tags/nes/</link>
+        <pubDate>Mon, 07 Mar 2022 13:10:06 +0900</pubDate>
+        <author>rollcake.dev@gmail.com (YOGO)</author>
+        
+        <guid>/tags/nes/</guid>
+        <description></description>
+        
+        <dc:creator>YOGO</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>프로젝트</title>
+        <link>/tags/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/</link>
+        <pubDate>Mon, 07 Mar 2022 13:10:06 +0900</pubDate>
+        <author>rollcake.dev@gmail.com (YOGO)</author>
+        
+        <guid>/tags/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/</guid>
+        <description></description>
+        
+        <dc:creator>YOGO</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
       <item>
         <title>Hobby Electronics</title>
@@ -83,60 +137,6 @@
         <author>rollcake.dev@gmail.com (YOGO)</author>
         
         <guid>/tags/%EC%B7%A8%EB%AF%B8%EC%A0%84%EC%9E%90/</guid>
-        <description></description>
-        
-        <dc:creator>YOGO</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>Emulator</title>
-        <link>/tags/emulator/</link>
-        <pubDate>Sat, 19 Feb 2022 02:25:57 +0900</pubDate>
-        <author>rollcake.dev@gmail.com (YOGO)</author>
-        
-        <guid>/tags/emulator/</guid>
-        <description></description>
-        
-        <dc:creator>YOGO</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>NES</title>
-        <link>/tags/nes/</link>
-        <pubDate>Sat, 19 Feb 2022 02:25:57 +0900</pubDate>
-        <author>rollcake.dev@gmail.com (YOGO)</author>
-        
-        <guid>/tags/nes/</guid>
-        <description></description>
-        
-        <dc:creator>YOGO</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>프로젝트</title>
-        <link>/tags/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/</link>
-        <pubDate>Sat, 19 Feb 2022 02:25:57 +0900</pubDate>
-        <author>rollcake.dev@gmail.com (YOGO)</author>
-        
-        <guid>/tags/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/</guid>
         <description></description>
         
         <dc:creator>YOGO</dc:creator>

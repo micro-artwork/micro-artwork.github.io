@@ -14,7 +14,7 @@
     <managingEditor>rollcake.dev@gmail.com (YOGO)</managingEditor>
     <webMaster>rollcake.dev@gmail.com (YOGO)</webMaster>
     <copyright>©{year} Yogo All Rights Reserved</copyright>
-    <lastBuildDate>Mon, 28 Feb 2022 18:23:32 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 07 Mar 2022 13:10:06 +0900</lastBuildDate>
     
         <atom:link href="/series/index.xml" rel="self" type="application/rss+xml" />
     
@@ -23,12 +23,12 @@
 
       
       <item>
-        <title>Surface Dial</title>
-        <link>/series/surface-dial/</link>
-        <pubDate>Mon, 28 Feb 2022 18:23:32 +0900</pubDate>
+        <title>NES Emulator</title>
+        <link>/series/nes-emulator/</link>
+        <pubDate>Mon, 07 Mar 2022 13:10:06 +0900</pubDate>
         <author>rollcake.dev@gmail.com (YOGO)</author>
         
-        <guid>/series/surface-dial/</guid>
+        <guid>/series/nes-emulator/</guid>
         <description></description>
         
         <dc:creator>YOGO</dc:creator>
@@ -41,12 +41,12 @@
       </item>
       
       <item>
-        <title>NES Emulator</title>
-        <link>/series/nes-emulator/</link>
-        <pubDate>Sat, 19 Feb 2022 02:25:57 +0900</pubDate>
+        <title>Surface Dial</title>
+        <link>/series/surface-dial/</link>
+        <pubDate>Mon, 28 Feb 2022 18:23:32 +0900</pubDate>
         <author>rollcake.dev@gmail.com (YOGO)</author>
         
-        <guid>/series/nes-emulator/</guid>
+        <guid>/series/surface-dial/</guid>
         <description></description>
         
         <dc:creator>YOGO</dc:creator>
