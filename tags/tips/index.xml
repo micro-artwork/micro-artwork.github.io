@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>tips on Yogo&#39;s blog</title>
+    <link>/tags/tips/</link>
+    <description>Recent content in tips on Yogo&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <managingEditor>rollcake.dev@gmail.com (YOGO)</managingEditor>
+    <webMaster>rollcake.dev@gmail.com (YOGO)</webMaster>
+    <copyright>©{year} Yogo All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 03 Jul 2022 14:09:56 +0900</lastBuildDate>
+    
+        <atom:link href="/tags/tips/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+
+      
+      <item>
+        <title>Visual Studio Code 터미널에 개발자 PowerShell 추가하기</title>
+        <link>/posts/dev/common/2022-07-03-how-to-add-developer-powershell/</link>
+        <pubDate>Sun, 03 Jul 2022 14:09:56 +0900</pubDate>
+        <author>rollcake.dev@gmail.com (YOGO)</author>
+        <atom:modified>Sun, 03 Jul 2022 14:09:56 +0900</atom:modified>
+        <guid>/posts/dev/common/2022-07-03-how-to-add-developer-powershell/</guid>
+        <description>How to add Developer PowerShell for Visual Studio 2022 on Terminal Tab of VS Code. 윈도우 환경에서 Visual Studio(Code 아님) 또는 관련된 개발툴을 설치하면 Devloper Command Prompt나 Developer PowerShell을 별도로 제공을 하는데</description>
+        
+        <dc:creator>Yogo</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>vscode</category>
+            
+          
+            
+              <category>tips</category>
+            
+          
+        
+        
+          
+            
+              <category>Dev</category>
+            
+          
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

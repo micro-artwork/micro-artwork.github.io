@@ -14,7 +14,7 @@
     <managingEditor>rollcake.dev@gmail.com (YOGO)</managingEditor>
     <webMaster>rollcake.dev@gmail.com (YOGO)</webMaster>
     <copyright>©{year} Yogo All Rights Reserved</copyright>
-    <lastBuildDate>Mon, 07 Mar 2022 13:10:06 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 03 Jul 2022 14:09:56 +0900</lastBuildDate>
     
         <atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     
@@ -23,11 +23,45 @@
 
       
       <item>
+        <title>Visual Studio Code 터미널에 개발자 PowerShell 추가하기</title>
+        <link>/posts/dev/common/2022-07-03-how-to-add-developer-powershell/</link>
+        <pubDate>Sun, 03 Jul 2022 14:09:56 +0900</pubDate>
+        <author>rollcake.dev@gmail.com (YOGO)</author>
+        <atom:modified>Sun, 03 Jul 2022 14:09:56 +0900</atom:modified>
+        <guid>/posts/dev/common/2022-07-03-how-to-add-developer-powershell/</guid>
+        <description>How to add Developer PowerShell for Visual Studio 2022 on Terminal Tab of VS Code. 윈도우 환경에서 Visual Studio(Code 아님) 또는 관련된 개발툴을 설치하면 Devloper Command Prompt나 Developer PowerShell을 별도로 제공을 하는데</description>
+        
+        <dc:creator>Yogo</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>vscode</category>
+            
+          
+            
+              <category>tips</category>
+            
+          
+        
+        
+          
+            
+              <category>Dev</category>
+            
+          
+        
+        
+      </item>
+      
+      <item>
         <title>NES CPU(6502) 에뮬레이션 - 4 (마무리)</title>
         <link>/posts/projects/nesdev/2022-03-07-nes-cpu-emulation-04/</link>
         <pubDate>Mon, 07 Mar 2022 13:10:06 +0900</pubDate>
         <author>rollcake.dev@gmail.com (YOGO)</author>
-        <atom:modified>Sat, 12 Mar 2022 15:07:55 +0900</atom:modified>
+        <atom:modified>Sat, 12 Mar 2022 15:10:33 +0900</atom:modified>
         <guid>/posts/projects/nesdev/2022-03-07-nes-cpu-emulation-04/</guid>
         <description>테스트 롬파일 CPU 에뮬레이션이 어느정도 완료가 되었으면 실제 코드를 구동 시켜서 정상적으로 동작 하는지 검증이 필요합니다. 검증을 위해서 6502에 맞게 컴파일된</description>
         
