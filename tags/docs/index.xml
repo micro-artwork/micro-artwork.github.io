@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Docs on Oops Hardware</title><link>https://opensourcehardware.io/tags/docs/</link><description>Recent content in Docs on Oops Hardware</description><generator>Hugo -- gohugo.io</generator><language>ko</language><managingEditor>rollcake.dev@gmail.com (Yogo)</managingEditor><webMaster>rollcake.dev@gmail.com (Yogo)</webMaster><copyright>© 2025 Yogo</copyright><lastBuildDate>Tue, 06 Jul 2021 23:05:02 +0900</lastBuildDate><atom:link href="https://opensourcehardware.io/tags/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>Nintendo Entertainment System - CPU</title><link>https://opensourcehardware.io/projects/nes/nesdoc-cpu/</link><pubDate>Tue, 06 Jul 2021 23:05:02 +0900</pubDate><author>rollcake.dev@gmail.com (Yogo)</author><guid>https://opensourcehardware.io/projects/nes/nesdoc-cpu/</guid><description>&lt;!-- +++
+author = "Yogo"
+title = "Nintendo Entertainment System - CPU"
+date = 2021-07-06T23:05:02+09:00
+draft = false
+categories = ["Projects"]
+series = ["NES Emulator"]
+tags = ["프로젝트", "NES", "Emulator"]
+type = "post"
++++ -->
+&lt;h1 class="relative group">Nintendo Entertainment System
+&lt;div id="nintendo-entertainment-system" class="anchor">&lt;/div>
+&lt;span
+class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none">
+&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#nintendo-entertainment-system" aria-label="앵커">#&lt;/a>
+&lt;/span>
+&lt;/h1>
+&lt;p>NesDev Wiki&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>와 Nintendo Entertainment System Documentation&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup> 문서를 기반으로 NES 시스템을 정리 하고자 합니다. 해당 문서에서는 하드웨어 및 프로세서에 대한 내용을 많이 담고 있어서 이해를 위해서는 기본적인 마이크로 프로세서에 대한 지식이 요구됩니다.&lt;/p></description></item></channel></rss>

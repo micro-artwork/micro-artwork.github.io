@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Nintendo Entertainment System on Oops Hardware</title><link>https://opensourcehardware.io/projects/nes/</link><description>Recent content in Nintendo Entertainment System on Oops Hardware</description><generator>Hugo -- gohugo.io</generator><language>ko</language><managingEditor>rollcake.dev@gmail.com (Yogo)</managingEditor><webMaster>rollcake.dev@gmail.com (Yogo)</webMaster><copyright>© 2025 Yogo</copyright><lastBuildDate>Mon, 07 Mar 2022 13:10:06 +0900</lastBuildDate><atom:link href="https://opensourcehardware.io/projects/nes/index.xml" rel="self" type="application/rss+xml"/><item><title>NES CPU(6502) 에뮬레이션 - 4</title><link>https://opensourcehardware.io/projects/nes/cpu-emulation-4/</link><pubDate>Mon, 07 Mar 2022 13:10:06 +0900</pubDate><author>rollcake.dev@gmail.com (Yogo)</author><guid>https://opensourcehardware.io/projects/nes/cpu-emulation-4/</guid><description>&lt;!-- +++
+author = "Yogo"
+title = "NES CPU(6502) 에뮬레이션 - 4 (마무리)"
+date = 2022-03-07T13:10:06+09:00
+draft = false
+# categories = ["Projects"]
+series = ["NES Emulator"]
+tags = ["프로젝트", "NES", "Emulator"]
+# type = "post"
++++ -->
+&lt;h2 class="relative group">테스트 롬파일
+&lt;div id="테스트-롬파일" class="anchor">&lt;/div>
+&lt;span
+class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none">
+&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#%ed%85%8c%ec%8a%a4%ed%8a%b8-%eb%a1%ac%ed%8c%8c%ec%9d%bc" aria-label="앵커">#&lt;/a>
+&lt;/span>
+&lt;/h2>
+&lt;p>CPU 에뮬레이션이 어느정도 완료가 되었으면 실제 코드를 구동 시켜서 정상적으로 동작 하는지 검증이 필요합니다. 검증을 위해서 6502에 맞게 컴파일된 바이너리가 필요한데 NES ROM 파일에는 당연히 게임 실행을 위한 바이너리 코드가 포함되어 있으므로 이를 활용하면 됩니다.&lt;/p></description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://opensourcehardware.io/projects/nes/cpu-emulation-4/featured_cpu_test.png"/></item><item><title>NES CPU(6502) 에뮬레이션 - 3</title><link>https://opensourcehardware.io/projects/nes/cpu-emulation-3/</link><pubDate>Sat, 19 Feb 2022 02:25:57 +0900</pubDate><author>rollcake.dev@gmail.com (Yogo)</author><guid>https://opensourcehardware.io/projects/nes/cpu-emulation-3/</guid><description>&lt;!-- +++
+author = "Yogo"
+title = "NES CPU(6502) 에뮬레이션 - 3"
+date = 2022-02-19T02:25:57+09:00
+draft = false
+# # categories = ["Projects"]
+series = ["NES Emulator"]
+tags = ["프로젝트", "NES", "Emulator"]
+# # type = "post"
++++ -->
+&lt;p>이전 포스트에서 레지스터와 메모리 인터페이스를 정의 하였고 이번 포스트에서는 명령어 세트와 어드레싱 모드 구현에 대해 다루어 보고자 합니다.&lt;/p></description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://opensourcehardware.io/projects/nes/cpu-emulation-3/featured.png"/></item><item><title>NES CPU(6502) 에뮬레이션 - 2</title><link>https://opensourcehardware.io/projects/nes/cpu-emulation-2/</link><pubDate>Thu, 10 Feb 2022 23:35:55 +0900</pubDate><author>rollcake.dev@gmail.com (Yogo)</author><guid>https://opensourcehardware.io/projects/nes/cpu-emulation-2/</guid><description>&lt;!-- +++
+author = "Yogo"
+title = "NES CPU(6502) 에뮬레이션 - 2"
+date = 2022-02-10T23:35:55+09:00
+draft = false
+# # categories = ["Projects"]
+series = ["NES Emulator"]
+tags = ["프로젝트", "NES", "Emulator"]
+# type = "post"
++++ -->
+&lt;p>이전 포스트에서 6502 프로세서의 간략한 특징과 명령어, 어드레싱 모드에 대해서 정리를 했습니다. 에뮬레이션을 위해서는 더 많은 내용의 정리가 필요하지만 이미 레퍼런스 자료가 많이 있으므로 상세한 정보는 생략하고 일부 코드 예제를 들어 어떻게 구현할 것인지에 대한 고찰과 짤막한 코드와 함께 구현하는 과정을 남겨 보겠습니다.&lt;/p></description></item><item><title>NES CPU(6502) 에뮬레이션 - 1</title><link>https://opensourcehardware.io/projects/nes/cpu-emulation-1/</link><pubDate>Mon, 07 Feb 2022 18:07:00 +0900</pubDate><author>rollcake.dev@gmail.com (Yogo)</author><guid>https://opensourcehardware.io/projects/nes/cpu-emulation-1/</guid><description>&lt;!-- +++
+author = "Yogo"
+title = "NES CPU(6502) 에뮬레이션 - 1"
+date = 2022-02-07T18:07:00+09:00
+draft = false
+# categories = ["Projects"]
+series = ["NES Emulator"]
+tags = ["프로젝트", "NES", "Emulator"]
+# type = "post"
++++ -->
+&lt;p>NES 에뮬레이션을 위해서 C# 환경에서 6502 CPU를 구현 하면서 참조한 지식과 경험을 정리합니다. 이전의 NESDOC&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup> 포스트 내용이 상당수 그대로 반영이 되어있습니다.&lt;/p></description></item><item><title>Nintendo Entertainment System - CPU</title><link>https://opensourcehardware.io/projects/nes/nesdoc-cpu/</link><pubDate>Tue, 06 Jul 2021 23:05:02 +0900</pubDate><author>rollcake.dev@gmail.com (Yogo)</author><guid>https://opensourcehardware.io/projects/nes/nesdoc-cpu/</guid><description>&lt;!-- +++
+author = "Yogo"
+title = "Nintendo Entertainment System - CPU"
+date = 2021-07-06T23:05:02+09:00
+draft = false
+categories = ["Projects"]
+series = ["NES Emulator"]
+tags = ["프로젝트", "NES", "Emulator"]
+type = "post"
++++ -->
+&lt;h1 class="relative group">Nintendo Entertainment System
+&lt;div id="nintendo-entertainment-system" class="anchor">&lt;/div>
+&lt;span
+class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none">
+&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#nintendo-entertainment-system" aria-label="앵커">#&lt;/a>
+&lt;/span>
+&lt;/h1>
+&lt;p>NesDev Wiki&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>와 Nintendo Entertainment System Documentation&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup> 문서를 기반으로 NES 시스템을 정리 하고자 합니다. 해당 문서에서는 하드웨어 및 프로세서에 대한 내용을 많이 담고 있어서 이해를 위해서는 기본적인 마이크로 프로세서에 대한 지식이 요구됩니다.&lt;/p></description></item></channel></rss>
