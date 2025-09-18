@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Bitnari Project on Oops Hardware</title><link>https://opensourcehardware.io/series/bitnari-project/</link><description>Recent content in Bitnari Project on Oops Hardware</description><generator>Hugo -- gohugo.io</generator><language>ko</language><managingEditor>rollcake.dev@gmail.com (Yogo)</managingEditor><webMaster>rollcake.dev@gmail.com (Yogo)</webMaster><copyright>© 2025 Yogo</copyright><lastBuildDate>Mon, 15 Sep 2025 15:09:27 +0900</lastBuildDate><atom:link href="https://opensourcehardware.io/series/bitnari-project/index.xml" rel="self" type="application/rss+xml"/><item><title>[빛나리] 주간 작업 일지</title><link>https://opensourcehardware.io/projects/bitnari/tasks/</link><pubDate>Mon, 15 Sep 2025 15:09:27 +0900</pubDate><author>rollcake.dev@gmail.com (Yogo)</author><guid>https://opensourcehardware.io/projects/bitnari/tasks/</guid><description>&lt;p>주차별 진행했던 작업 또는 고찰에 대해서 간략하게 정리 합니다.&lt;/p>
+&lt;p>처음부터 보시면 의식의 흐름대로 정처없이 흘러가는 작업기에 대한 간접적 체감이 가능합니다.&lt;/p></description></item><item><title>[빛나리] 하드웨어 설계 고려사항</title><link>https://opensourcehardware.io/projects/bitnari/03/</link><pubDate>Fri, 05 Sep 2025 03:49:26 +0900</pubDate><author>rollcake.dev@gmail.com (Yogo)</author><guid>https://opensourcehardware.io/projects/bitnari/03/</guid><description>&lt;!-- ## 하드웨어 설계 고려사항
+앰비엔트 라이트 개발 결정 전부터 전반적인 시스템 형태에 대해서 고민을 했었고, 기능 요구사항 설계에 앞서 필수 하드웨어 또는 모듈에 대한 사전 조사와 이해를 우선했습니다. 그 이후 하드웨어 사양을 결정을 하였고 관련 사항에 대해서 기술해보겠습니다.
+## MCU (Micro Controller Unit)
+MCU를 사용하는 지난 프로젝트들에서는 모두 Microchip 사의 PIC를 사용했습니다. PIC을 사용해야하는 특별한 이유가 있던건 아니고 집에서 굴러다니는 MCU 보드였음이 주된 이유였습니다. 산업군에서는 여전히 인기있고 잘 알려진 제품이지만, 최근에는 ARM 계열의 압도적인 인기로 인하여 취미를 대상으로 하는 메이커들에게는 마이너한 MCU 이기 때문에 접근성이 낮을 수 있겠다 싶었습니다.
+그래서 몇 가지 이유로 Raspberry PI Pico 시리즈를 사용하기로 결정 했습니다. 일단 많이 알려진 제품이고 공식 모듈이 존재하며 별도의 JTAG이나 ROM 라이터, UART 모듈이 없어도 부트로더에 의해 USB MSD 방식으로 펌웨어 쓰기가 가능한 점이 가장 큰 이유입니다. 그리고 별도 RPI Pico 시리즈를 하나 더 구비하면 고가의 디버거를 구매하지 않아도 디버깅이 가능하니 취미와 메이커 들 기준에서는 좋은 선택이라고 생각했습니다.
+RP2040(W), RP2350(W)와 같은 공식 보드들은 모두 동일한 핀맵으로 호환 가능하기 때문에, 도터(또는 쉴드) 보드로 구성할 경우 처리 속도나 통신 방식에 따라 특정 버전 선택이나 상호 마이그레이션이 용이하다는 장점이 있습니다. -->
+&lt;h1 class="relative group">하드웨어 설계 고려사항
+&lt;div id="하드웨어-설계-고려사항" class="anchor">&lt;/div>
+&lt;span
+class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none">
+&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#%ed%95%98%eb%93%9c%ec%9b%a8%ec%96%b4-%ec%84%a4%ea%b3%84-%ea%b3%a0%eb%a0%a4%ec%82%ac%ed%95%ad" aria-label="앵커">#&lt;/a>
+&lt;/span>
+&lt;/h1>
+&lt;p>앰비언트 라이트(Ambient Light) 시스템 개발을 위한 하드웨어 설계 시 고려해야 할 핵심 요소들을 다뤄보겠습니다. 프로젝트의 기능적 요구사항을 충족시키기 위해 MCU(Micro Controller Unit), LED 스트립, 그리고 전력 관리의 세 가지 주요 하드웨어 구성 요소에 대한 기술적 검토 및 결정 과정을 정리합니다.&lt;/p></description></item><item><title>[빛나리] 프로젝트 이름과 이유</title><link>https://opensourcehardware.io/projects/bitnari/02/</link><pubDate>Fri, 29 Aug 2025 11:09:12 +0900</pubDate><author>rollcake.dev@gmail.com (Yogo)</author><guid>https://opensourcehardware.io/projects/bitnari/02/</guid><description>&lt;h1 class="relative group">프로젝트 이름과 이유
+&lt;div id="프로젝트-이름과-이유" class="anchor">&lt;/div>
+&lt;span
+class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none">
+&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#%ed%94%84%eb%a1%9c%ec%a0%9d%ed%8a%b8-%ec%9d%b4%eb%a6%84%ea%b3%bc-%ec%9d%b4%ec%9c%a0" aria-label="앵커">#&lt;/a>
+&lt;/span>
+&lt;/h1>
+&lt;p>프로젝트 이름이 어떻게 탄생했는지 배경 에피소드와 프로젝트를 왜 진행하는지에 대한 이유를 공유합니다.&lt;/p></description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://opensourcehardware.io/projects/bitnari/02/featured.png"/></item><item><title>[빛나리] 프로젝트의 시작</title><link>https://opensourcehardware.io/projects/bitnari/01/</link><pubDate>Mon, 25 Aug 2025 23:35:09 +0900</pubDate><author>rollcake.dev@gmail.com (Yogo)</author><guid>https://opensourcehardware.io/projects/bitnari/01/</guid><description>&lt;h1 class="relative group">프로젝트의 시작
+&lt;div id="프로젝트의-시작" class="anchor">&lt;/div>
+&lt;span
+class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none">
+&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#%ed%94%84%eb%a1%9c%ec%a0%9d%ed%8a%b8%ec%9d%98-%ec%8b%9c%ec%9e%91" aria-label="앵커">#&lt;/a>
+&lt;/span>
+&lt;/h1>
+&lt;p>프로젝트를 시작하게 된 배경에 대한 이야기 입니다.&lt;/p></description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://opensourcehardware.io/projects/bitnari/01/featured.jpg"/></item></channel></rss>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>서피스 다이얼 클론 on Oops Hardware</title><link>https://opensourcehardware.io/projects/suface-dial/</link><description>Recent content in 서피스 다이얼 클론 on Oops Hardware</description><generator>Hugo -- gohugo.io</generator><language>ko</language><managingEditor>rollcake.dev@gmail.com (Yogo)</managingEditor><webMaster>rollcake.dev@gmail.com (Yogo)</webMaster><copyright>© 2025 Yogo</copyright><lastBuildDate>Tue, 15 Feb 2022 22:43:26 +0900</lastBuildDate><atom:link href="https://opensourcehardware.io/projects/suface-dial/index.xml" rel="self" type="application/rss+xml"/><item><title>마이크로소프트 서피스 다이얼 클론 제작 - 3 (v0.5 마무리)</title><link>https://opensourcehardware.io/projects/suface-dial/3/</link><pubDate>Mon, 28 Feb 2022 18:23:32 +0900</pubDate><author>rollcake.dev@gmail.com (Yogo)</author><guid>https://opensourcehardware.io/projects/suface-dial/3/</guid><description>&lt;p>테스트 환경에서 기본적인 기능을 구현하고 회로와 기구를 구성합니다.&lt;/p>
+&lt;h2 class="relative group">제작
+&lt;div id="제작" class="anchor">&lt;/div>
+&lt;span
+class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none">
+&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#%ec%a0%9c%ec%9e%91" aria-label="앵커">#&lt;/a>
+&lt;/span>
+&lt;/h2>
+&lt;h3 class="relative group">회로 설계
+&lt;div id="회로-설계" class="anchor">&lt;/div>
+&lt;span
+class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none">
+&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#%ed%9a%8c%eb%a1%9c-%ec%84%a4%ea%b3%84" aria-label="앵커">#&lt;/a>
+&lt;/span>
+&lt;/h3>
+&lt;p>회로 설계 자체는 모두 모듈을 사용하기 때문에 크게 어려운 점이 없습니다. NRF52와 배터리 충전 역시 모듈을 사용하기 때문에 엔코더와 스위치 연결만 잘 해주어도 됩니다. NRF52 모듈은 Holyiot사의 YJ-17095&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>을 사용하였습니다. 크기가 9.4 x 9.25mm 밖에 안될 정도로 매우 작습니다.&lt;/p></description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://opensourcehardware.io/projects/suface-dial/3/featured.jpg"/></item><item><title>마이크로소프트 서피스 다이얼 클론 제작 - 2</title><link>https://opensourcehardware.io/projects/suface-dial/2/</link><pubDate>Sun, 27 Feb 2022 16:10:23 +0900</pubDate><author>rollcake.dev@gmail.com (Yogo)</author><guid>https://opensourcehardware.io/projects/suface-dial/2/</guid><description>&lt;p>본문 이미지 출처 - 마이크로소프트&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>&lt;/p>
+&lt;h2 class="relative group">펌웨어 개발
+&lt;div id="펌웨어-개발" class="anchor">&lt;/div>
+&lt;span
+class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none">
+&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#%ed%8e%8c%ec%9b%a8%ec%96%b4-%ea%b0%9c%eb%b0%9c" aria-label="앵커">#&lt;/a>
+&lt;/span>
+&lt;/h2>
+&lt;p>nrf52 SDK 폴더내에 샘플이 포함되어 있습니다. examples 폴더 안에 관련 샘플들을 찾아볼 수 있는데, 서피스 다이얼은 HID 디바이스 이므로 ble_app_hids_keyboard나 ble_app_hids_mouse를 베이스로 작성하면 어렵지 않게 시작할 수 있습니다.&lt;/p></description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://opensourcehardware.io/projects/suface-dial/2/featured.jpg"/></item><item><title>마이크로소프트 서피스 다이얼 클론 제작 - 1 (Wanna be Surface Dial)</title><link>https://opensourcehardware.io/projects/suface-dial/1/</link><pubDate>Tue, 15 Feb 2022 22:43:26 +0900</pubDate><author>rollcake.dev@gmail.com (Yogo)</author><guid>https://opensourcehardware.io/projects/suface-dial/1/</guid><description>&lt;h2 class="relative group">마이크로소프트 서피스 다이얼(Microsoft Surface Dial)&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>
+&lt;div id="마이크로소프트-서피스-다이얼microsoft-surface-dial" class="anchor">&lt;/div>
+&lt;span
+class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none">
+&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#%eb%a7%88%ec%9d%b4%ed%81%ac%eb%a1%9c%ec%86%8c%ed%94%84%ed%8a%b8-%ec%84%9c%ed%94%bc%ec%8a%a4-%eb%8b%a4%ec%9d%b4%ec%96%bcmicrosoft-surface-dial" aria-label="앵커">#&lt;/a>
+&lt;/span>
+&lt;/h2>
+&lt;p>마이크로소프트 서피스 다이얼(이하 서피스다이얼 또는 다이얼)은 퍽(Puck) 형태로 회전과 클릭이 가능한 새로운 형태의 입력 디바이스 입니다.&lt;/p></description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://opensourcehardware.io/projects/suface-dial/1/featured.jpg"/></item></channel></rss>

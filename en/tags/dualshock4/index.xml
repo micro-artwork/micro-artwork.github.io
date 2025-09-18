@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>DualShock4 on Oops Hardware</title><link>https://opensourcehardware.io/en/tags/dualshock4/</link><description>Recent content in DualShock4 on Oops Hardware</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>rollcake.dev@gmail.com (Yogo)</managingEditor><webMaster>rollcake.dev@gmail.com (Yogo)</webMaster><copyright>© 2025 Yogo</copyright><lastBuildDate>Wed, 27 Oct 2021 13:39:06 +0900</lastBuildDate><atom:link href="https://opensourcehardware.io/en/tags/dualshock4/index.xml" rel="self" type="application/rss+xml"/><item><title>XInput to DualShock 4 (XI2DS)</title><link>https://opensourcehardware.io/en/projects/xi2ds/</link><pubDate>Wed, 27 Oct 2021 13:39:06 +0900</pubDate><author>rollcake.dev@gmail.com (Yogo)</author><guid>https://opensourcehardware.io/en/projects/xi2ds/</guid><description>&lt;p>
+&lt;figure>
+&lt;img class="my-0 rounded-md" loading="lazy" alt="icon" src="https://opensourcehardware.io/projects/xi2ds/icon.png">
+&lt;/figure>
+&lt;/p>
+&lt;h2 class="relative group">XInput to Dualshock 4 (XI2DS)
+&lt;div id="xinput-to-dualshock-4-xi2ds" class="anchor">&lt;/div>
+&lt;span
+class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none">
+&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#xinput-to-dualshock-4-xi2ds" aria-label="Anchor">#&lt;/a>
+&lt;/span>
+&lt;/h2>
+&lt;p>&lt;a
+href="https://github.com/micro-artwork/xi2ds"
+target="_blank"
+>https://github.com/micro-artwork/xi2ds&lt;/a>&lt;/p>
+&lt;h3 class="relative group">About
+&lt;div id="about" class="anchor">&lt;/div>
+&lt;span
+class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none">
+&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#about" aria-label="Anchor">#&lt;/a>
+&lt;/span>
+&lt;/h3>
+&lt;p>The XI2DS is designed to run and control Play Station Remote Play(PSRP) using Xbox(or XInput) controllers(XC) instead of DualShock4(DS4) controllers on Windows. Although it is considered to be able to recognize and map up to 4 controllers, PSRP only accepts one controller input, so only the first connected controller can be recognized.&lt;/p></description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://opensourcehardware.io/projects/xi2ds/featured.jpg"/></item></channel></rss>
